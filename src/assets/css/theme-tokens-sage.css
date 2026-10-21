@@ -1,0 +1,74 @@
+/* =========================================================================
+   Alneya — sage palette
+   Green, but gentle. Soft eucalyptus and warm cream rather than deep forest:
+   the layout stays light the whole way down, and the one "deep" band per page
+   is a mid sage rather than a near-black moss.
+
+   This is almost entirely a palette swap — the light theme's structure
+   already does the airy part, so only the colour tokens change, plus a few
+   places that named a hue directly.
+   ========================================================================= */
+
+:root {
+  /* grounds — warm whites with a breath of green in them */
+  --ivory:     #fcfbf7;
+  --shell:     #f2f4ed;
+  --blush:     #f8f5ee;
+  --lilac:     #edf1e9;   /* the wash band: pale eucalyptus, not lavender */
+  --lilac-200: #dfe6d9;
+  --lilac-300: #c5d1bf;
+  --sage:      #e9efe4;
+  --sage-200:  #d9e2d2;
+
+  --line:      #dde3d6;
+  --line-soft: #e9ede3;
+
+  /* gold, pulled very slightly olive so it sits inside the green family */
+  --gold-700: #6f5d26;
+  --gold-600: #77632a;
+  --gold-500: #bba463;
+  --gold-400: #d3c192;
+  --gold-300: #e6dcbc;
+  --gold-100: #f4efdf;
+
+  /* "deep" is a softened sage — far gentler than the forest green, but still
+     dark enough that the light text on it clears WCAG AA (4.5:1) */
+  --deep-900: #3c4a37;
+  --deep-800: #45553f;
+  --deep-700: #4e5f49;
+  --deep-500: #7d8e77;
+  --deep-300: #cfd9c9;
+  --deep-200: #dfe6d9;
+
+  --moss-700: #63765c;
+  --moss-500: #8a9a84;
+
+  /* ink carries a green undertone so text never looks pasted on */
+  --ink:       #343a31;
+  --ink-soft:  #5d6459;
+  --ink-faint: #646a60;
+
+  --shadow-sm: 0 1px 2px rgba(62, 72, 58, .04), 0 8px 24px rgba(62, 72, 58, .05);
+  --shadow-md: 0 2px 6px rgba(62, 72, 58, .05), 0 22px 50px rgba(62, 72, 58, .09);
+  --shadow-gold: 0 16px 42px rgba(150, 128, 66, .16);
+
+  /* the drifting stars go olive-gold to match */
+  --stars: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='%23bba463'%3E%3Ccircle cx='26' cy='48' r='1.5' opacity='.5'/%3E%3Ccircle cx='128' cy='22' r='1' opacity='.35'/%3E%3Ccircle cx='214' cy='70' r='1.6' opacity='.45'/%3E%3Ccircle cx='276' cy='150' r='1' opacity='.3'/%3E%3Ccircle cx='60' cy='168' r='1.2' opacity='.4'/%3E%3Ccircle cx='172' cy='198' r='1.5' opacity='.35'/%3E%3Ccircle cx='96' cy='262' r='1' opacity='.4'/%3E%3Ccircle cx='242' cy='286' r='1.3' opacity='.3'/%3E%3Ccircle cx='8' cy='232' r='1' opacity='.3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* the copyright line is the smallest text on the darkest ground, so it takes
+   the brighter tint rather than the muted one */
+.site-footer__bar p, .lang-switch--footer a { color: var(--deep-200); }
+
+/* the hero wash: eucalyptus into cream, with a low gold sun at the right */
+.hero {
+  background:
+    radial-gradient(90% 70% at 16% 6%, color-mix(in srgb, var(--sage) 92%, transparent), transparent 62%),
+    radial-gradient(70% 60% at 88% 80%, color-mix(in srgb, var(--gold-100) 85%, transparent), transparent 66%),
+    linear-gradient(150deg, var(--lilac) 0%, var(--blush) 48%, var(--shell) 100%);
+}
+
+/* the wash bands lean green rather than pink */
+.section--blush { background: linear-gradient(170deg, var(--blush), var(--shell)); }
+.section--lilac { background: linear-gradient(165deg, var(--lilac), var(--blush) 78%); }
+.section--sage  { background: linear-gradient(170deg, var(--sage), var(--ivory)); }

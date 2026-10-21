@@ -1,0 +1,54 @@
+name: Build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish; queue at most one more behind it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build
+        # All three are repository variables (Settings → Secrets and variables
+        # → Actions → Variables), so the live site can be changed without
+        # touching this file.
+        #   SITE_URL  canonical/hreflang tags, the sitemap, and the CNAME
+        #   BASE_URL  "/" for a custom domain, "/<repo-name>/" for a project site
+        #   THEME     which palette ships; see the THEMES map in build.js
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://alneya.com' }}
+          BASE_URL: ${{ vars.BASE_URL || '/' }}
+          THEME: ${{ vars.THEME || 'light' }}
+        run: node build.js
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

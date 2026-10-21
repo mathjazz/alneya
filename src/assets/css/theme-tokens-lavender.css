@@ -1,0 +1,62 @@
+/* =========================================================================
+   Alneya — lavender palette
+   Purple, but gentle. Wisteria and soft lilac rather than deep amethyst:
+   this is to the violet palette what sage is to green.
+   Palette only — pair with theme-dark.css for the dark header and hero.
+   ========================================================================= */
+
+:root {
+  /* grounds — airier and paler than the violet palette */
+  --ivory:     #fdfcff;
+  --shell:     #f6f1fa;
+  --blush:     #fbf4fa;
+  --lilac:     #f3ecfa;
+  --lilac-200: #e7dcf2;
+  --lilac-300: #d3c2e6;
+  --sage:      #f4effb;
+  --sage-200:  #e9e0f4;
+
+  --line:      #e8dff2;
+  --line-soft: #f0eaf7;
+
+  /* gold kept soft and antique so it never competes with the lilac */
+  --gold-700: #7c6230;
+  --gold-600: #846a34;
+  --gold-500: #b69c66;
+  --gold-400: #d2c097;
+  --gold-300: #e9dcbe;
+  --gold-100: #f7f0e2;
+
+  /* "deep" is a soft wisteria-plum — far lighter than the violet palette's
+     amethyst, but still dark enough for white text to clear WCAG AA */
+  --deep-900: #463a5c;
+  --deep-800: #51446a;
+  --deep-700: #5d4f78;
+  --deep-500: #8f82a8;
+  --deep-300: #dbd1ea;
+  --deep-200: #e8e1f2;
+
+  --moss-700: #5d4f78;
+  --moss-500: #8f82a8;
+
+  --ink:       #363043;
+  --ink-soft:  #5e5670;
+  --ink-faint: #6c647c;
+
+  --shadow-sm: 0 1px 2px rgba(70, 58, 92, .05), 0 8px 24px rgba(70, 58, 92, .06);
+  --shadow-md: 0 2px 6px rgba(70, 58, 92, .06), 0 22px 50px rgba(70, 58, 92, .10);
+  --shadow-gold: 0 16px 42px rgba(150, 128, 76, .16);
+
+  --stars: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='%23b69c66'%3E%3Ccircle cx='26' cy='48' r='1.5' opacity='.5'/%3E%3Ccircle cx='128' cy='22' r='1' opacity='.35'/%3E%3Ccircle cx='214' cy='70' r='1.6' opacity='.45'/%3E%3Ccircle cx='276' cy='150' r='1' opacity='.3'/%3E%3Ccircle cx='60' cy='168' r='1.2' opacity='.4'/%3E%3Ccircle cx='172' cy='198' r='1.5' opacity='.35'/%3E%3Ccircle cx='96' cy='262' r='1' opacity='.4'/%3E%3Ccircle cx='242' cy='286' r='1.3' opacity='.3'/%3E%3Ccircle cx='8' cy='232' r='1' opacity='.3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero {
+  background:
+    radial-gradient(90% 70% at 16% 6%, color-mix(in srgb, var(--lilac-200) 80%, transparent), transparent 62%),
+    radial-gradient(70% 60% at 88% 80%, color-mix(in srgb, var(--gold-100) 85%, transparent), transparent 66%),
+    linear-gradient(150deg, var(--lilac) 0%, var(--blush) 46%, var(--shell) 100%);
+}
+
+.section--blush { background: linear-gradient(170deg, var(--blush), var(--shell)); }
+.section--lilac { background: linear-gradient(165deg, var(--lilac), var(--blush) 76%); }
+.section--sage  { background: linear-gradient(170deg, var(--sage), var(--ivory)); }

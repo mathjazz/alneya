@@ -1,0 +1,79 @@
+<section class="section hero hero--slim">
+  <div class="wrap hero--slim__inner">
+    <p class="eyebrow">{{ contact.hero.eyebrow }}</p>
+    <h1 class="h1">{{ contact.hero.title }}</h1>
+    {{> ornament}}
+    <p class="lede">{{ contact.hero.lede }}</p>
+  </div>
+</section>
+
+<section class="section section--ivory contact">
+  <div class="wrap contact__grid">
+    <div class="contact__form-wrap">
+      <h2 class="h3">{{ contact.form.title }}</h2>
+      <p>{{ contact.form.lede }}</p>
+
+      <!-- TODO: point action= at a real form endpoint (Formspree, Getform, Basin…). -->
+      <form class="form" action="{{ links.contactAction }}" method="post" data-form="contact">
+        <div class="field">
+          <label for="c-name">{{ forms.name }}</label>
+          <input id="c-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="c-email">{{ forms.email }}</label>
+          <input id="c-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="c-topic">{{ forms.topic }}</label>
+          <select id="c-topic" name="topic">
+            {{#each contact.form.topics}}<option value="{{ .value }}">{{ .label }}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">{{ forms.message }}</label>
+          <textarea id="c-message" name="message" rows="6" required></textarea>
+        </div>
+        <div class="field field--check">
+          <input id="c-consent" name="consent" type="checkbox" required>
+          <label for="c-consent">{{ contact.form.consent }}</label>
+        </div>
+        <button class="btn btn--gold" type="submit">{{ forms.send }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </form>
+    </div>
+
+    <aside class="contact__aside">
+      <div class="panel">
+        <h2 class="h4">{{ contact.direct.title }}</h2>
+        <ul class="contact__list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>{{ contact.direct.response }}</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg>{{ contact.direct.languages }}</li>
+        </ul>
+        {{> social}}
+      </div>
+
+      <div class="panel panel--gold">
+        <h2 class="h4">{{ contact.book.title }}</h2>
+        <p>{{ contact.book.text }}</p>
+        <a class="btn btn--gold btn--block" href="{{ links.booking }}">{{ contact.book.cta }}</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--shell faq">
+  <div class="wrap wrap--narrow">
+    <h2 class="h2 h2--center">{{ contact.faq.title }}</h2>
+    {{> ornament}}
+    <div class="faq__list">
+      {{#each contact.faq.items}}<details class="faq__item">
+        <summary>{{ .q }}</summary>
+        <div class="faq__answer"><p>{{{ .a }}}</p></div>
+      </details>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+{{> newsletter}}

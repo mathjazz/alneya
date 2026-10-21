@@ -1,0 +1,30 @@
+<section class="section section--blush newsletter" id="newsletter">
+  <div class="wrap newsletter__grid">
+    <div class="newsletter__copy">
+      <p class="eyebrow">{{ newsletter.eyebrow }}</p>
+      <h2 class="h2">{{ newsletter.title }}</h2>
+      {{> ornament}}
+      <p class="lede">{{ newsletter.lede }}</p>
+      <ul class="tick-list">
+        {{#each newsletter.perks}}<li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>{{ .value }}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="newsletter__form-card">
+      <!-- TODO: point action= at a real form endpoint (Formspree, Buttondown, MailerLite…). -->
+      <form class="form" action="{{ links.newsletterAction }}" method="post" data-form="newsletter">
+        <div class="field">
+          <label for="nl-name">{{ forms.name }}</label>
+          <input id="nl-name" name="name" type="text" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="nl-email">{{ forms.email }}</label>
+          <input id="nl-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <button class="btn btn--gold btn--block" type="submit">{{ newsletter.submit }}</button>
+        <p class="form__note">{{ newsletter.privacy }}</p>
+      </form>
+    </div>
+  </div>
+</section>

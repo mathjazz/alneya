@@ -1,0 +1,93 @@
+<section class="section hero hero--about">
+  <div class="hero__media">
+    <img src="{{ @assets }}/img/alneya-about.jpg" alt="{{ about.hero.imageAlt }}" width="1080" height="1350" fetchpriority="high">
+  </div>
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">{{ about.hero.eyebrow }}</p>
+      <h1 class="h1">{{ about.hero.title }}</h1>
+      {{> ornament}}
+      <p class="lede">{{ about.hero.lede }}</p>
+      <p class="btn-row">
+        <a class="btn btn--gold" href="{{ links.booking }}">{{ about.hero.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
+  </div>
+</section>
+
+{{> press-strip}}
+
+<section class="section section--ivory prose-section">
+  <div class="wrap wrap--narrow">
+    <h2 class="h2 h2--center">{{ about.story.title }}</h2>
+    {{> ornament}}
+    <div class="prose">
+      {{#each about.story.paragraphs}}<p>{{{ .value }}}</p>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="section section--shell split split--reverse">
+  <div class="wrap split__grid">
+    <figure class="split__media split__media--framed">
+      <img src="{{ @assets }}/img/alneya-approach.jpg" alt="{{ about.turning.imageAlt }}" width="1080" height="1350" loading="lazy">
+    </figure>
+    <div class="split__copy">
+      <p class="eyebrow">{{ about.turning.eyebrow }}</p>
+      <h2 class="h2">{{ about.turning.title }}</h2>
+      {{#each about.turning.paragraphs}}<p>{{{ .value }}}</p>
+      {{/each}}
+      <h3 class="h4">{{ about.turning.listTitle }}</h3>
+      <ul class="glyph-list">
+        {{#each about.turning.items}}<li>{{ .value }}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--deep values">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">{{ about.values.eyebrow }}</p>
+    <h2 class="h2 h2--center">{{ about.values.title }}</h2>
+    {{> ornament}}
+    <ul class="values__grid">
+      {{#each about.values.items}}<li class="value-card">
+        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-{{ .icon }}"/></svg>
+        <h3 class="value-card__title">{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--ivory credentials">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--center">{{ about.credentials.eyebrow }}</p>
+    <h2 class="h2 h2--center">{{ about.credentials.title }}</h2>
+    {{> ornament}}
+    <ul class="tick-list tick-list--two">
+      {{#each about.credentials.items}}<li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>{{ .value }}</li>
+      {{/each}}
+    </ul>
+    <p class="credentials__note">{{ about.credentials.note }}</p>
+  </div>
+</section>
+
+<section class="section section--lilac cta-band">
+  <div class="wrap wrap--narrow">
+    <h2 class="h2 h2--center">{{ about.cta.title }}</h2>
+    {{> ornament}}
+    <p class="lede lede--center">{{ about.cta.lede }}</p>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--gold" href="{{ links.booking }}">{{ about.cta.primary }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--outline" href="{{ @nav.services.url }}">{{ about.cta.secondary }}</a>
+    </p>
+  </div>
+</section>
+
+{{> press-covers}}
+
+{{> newsletter}}

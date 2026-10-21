@@ -1,0 +1,33 @@
+{
+  "name": "alneya-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static bilingual (EN/SL) website for Alneya \u2014 Soul Decoder & Healer.",
+  "scripts": {
+    "build": "node build.js",
+    "build:green": "THEME=green OUT_DIR=dist-green node build.js",
+    "build:sage": "THEME=sage OUT_DIR=dist-sage node build.js",
+    "build:sage-deep": "THEME=sage-deep OUT_DIR=dist-sage-deep node build.js",
+    "build:violet": "THEME=violet OUT_DIR=dist-violet node build.js",
+    "build:violet-deep": "THEME=violet-deep OUT_DIR=dist-violet-deep node build.js",
+    "build:lavender": "THEME=lavender OUT_DIR=dist-lavender node build.js",
+    "build:baumit-1033": "THEME=baumit-1033 OUT_DIR=dist-baumit-1033 node build.js",
+    "build:baumit-1023": "THEME=baumit-1023 OUT_DIR=dist-baumit-1023 node build.js",
+    "build:baumit-0674": "THEME=baumit-0674 OUT_DIR=dist-baumit-0674 node build.js",
+    "build:all": "npm run build && npm run build:green && npm run build:sage && npm run build:sage-deep && npm run build:violet && npm run build:violet-deep && npm run build:lavender && npm run build:baumit-1033 && npm run build:baumit-1023 && npm run build:baumit-0674",
+    "serve": "node serve.js",
+    "serve:green": "DIST=dist-green PORT=4322 node serve.js",
+    "serve:sage": "DIST=dist-sage PORT=4323 node serve.js",
+    "serve:sage-deep": "DIST=dist-sage-deep PORT=4324 node serve.js",
+    "serve:violet": "DIST=dist-violet PORT=4325 node serve.js",
+    "serve:violet-deep": "DIST=dist-violet-deep PORT=4326 node serve.js",
+    "serve:lavender": "DIST=dist-lavender PORT=4327 node serve.js",
+    "serve:baumit-1033": "DIST=dist-baumit-1033 PORT=4328 node serve.js",
+    "serve:baumit-1023": "DIST=dist-baumit-1023 PORT=4329 node serve.js",
+    "serve:baumit-0674": "DIST=dist-baumit-0674 PORT=4330 node serve.js",
+    "start": "node build.js && node serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

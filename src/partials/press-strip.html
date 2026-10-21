@@ -1,0 +1,13 @@
+<section class="section section--shell press-strip">
+  <div class="wrap press-strip__inner">
+    <p class="press-strip__label">{{ press.title }}</p>
+    <ul class="press-logos">
+      {{#each press.outlets}}<li>
+        {{#if .logo}}<img class="press-logo press-logo--img" src="{{ @assets }}/img/{{ .logo }}" alt="{{ .name }}" loading="lazy">
+        {{else}}<span class="press-logo press-logo--{{ .style }}">{{ .name }}</span>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+<section class="section hero hero--slim">
+  <div class="wrap hero--slim__inner">
+    <p class="eyebrow">{{ experiences.hero.eyebrow }}</p>
+    <h1 class="h1">{{ experiences.hero.title }}</h1>
+    {{> ornament}}
+    <p class="lede">{{ experiences.hero.lede }}</p>
+  </div>
+</section>
+
+<section class="section section--ivory quotes quotes--light">
+  <div class="wrap">
+    <ul class="quotes__grid">
+      {{#each quotes.all}}<li class="quote-card">
+        <svg class="icon icon--quote" aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote><p>{{{ .quote }}}</p></blockquote>
+        <p class="quote-card__who">{{ .who }}{{#if .role}}<span class="quote-card__role">{{ .role }}</span>{{/if}}</p>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="experiences__note">{{ experiences.note }}</p>
+  </div>
+</section>
+
+<section class="section section--deep cta-band">
+  <div class="wrap wrap--narrow">
+    <h2 class="h2 h2--center">{{ experiences.cta.title }}</h2>
+    {{> ornament}}
+    <p class="lede lede--center">{{ experiences.cta.lede }}</p>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--gold" href="{{ links.booking }}">{{ experiences.cta.primary }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost-light" href="{{ @nav.contact.url }}">{{ experiences.cta.secondary }}</a>
+    </p>
+  </div>
+</section>
+
+{{> newsletter}}

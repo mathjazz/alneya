@@ -1,0 +1,65 @@
+/* =========================================================================
+   Alneya — violet palette
+   Amethyst and wisteria with antique gold. More overtly purple than the
+   default theme, where the violet is only a whisper in one band: here the
+   grounds themselves carry it.
+   Palette only — pair with theme-dark.css for the dark header and hero.
+   ========================================================================= */
+
+:root {
+  /* grounds — whites and washes with violet in them */
+  --ivory:     #fdfaff;
+  --shell:     #f4eef9;
+  --blush:     #f9f0f7;
+  --lilac:     #efe6f7;
+  --lilac-200: #e0d0ee;
+  --lilac-300: #c9b0dd;
+  --sage:      #f1eaf8;
+  --sage-200:  #e3d7ef;
+
+  --line:      #e4d9ee;
+  --line-soft: #ede5f4;
+
+  /* antique gold — warm enough to lift the violet, muted enough not to clash */
+  --gold-700: #7a5e2a;
+  --gold-600: #806330;
+  --gold-500: #b2975c;
+  --gold-400: #cdb98c;
+  --gold-300: #e6d8b6;
+  --gold-100: #f5eedd;
+
+  /* deep amethyst for the dark band, the footer and the contact panel */
+  --deep-900: #2e1f42;
+  --deep-800: #3a2852;
+  --deep-700: #4a3566;
+  --deep-500: #7d64a0;
+  --deep-300: #c9b9df;
+  --deep-200: #ded2ed;
+
+  --moss-700: #4a3566;
+  --moss-500: #7d64a0;
+
+  /* ink with a violet undertone so type sits in the palette, not on it */
+  --ink:       #342c3d;
+  --ink-soft:  #5c5267;
+  --ink-faint: #6f6579;
+
+  --shadow-sm: 0 1px 2px rgba(58, 40, 82, .05), 0 8px 24px rgba(58, 40, 82, .06);
+  --shadow-md: 0 2px 6px rgba(58, 40, 82, .06), 0 22px 50px rgba(58, 40, 82, .10);
+  --shadow-gold: 0 16px 42px rgba(146, 118, 60, .18);
+
+  --stars: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='%23b2975c'%3E%3Ccircle cx='26' cy='48' r='1.5' opacity='.5'/%3E%3Ccircle cx='128' cy='22' r='1' opacity='.35'/%3E%3Ccircle cx='214' cy='70' r='1.6' opacity='.45'/%3E%3Ccircle cx='276' cy='150' r='1' opacity='.3'/%3E%3Ccircle cx='60' cy='168' r='1.2' opacity='.4'/%3E%3Ccircle cx='172' cy='198' r='1.5' opacity='.35'/%3E%3Ccircle cx='96' cy='262' r='1' opacity='.4'/%3E%3Ccircle cx='242' cy='286' r='1.3' opacity='.3'/%3E%3Ccircle cx='8' cy='232' r='1' opacity='.3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* the hero: wisteria into a low gold light at the right */
+.hero {
+  background:
+    radial-gradient(90% 70% at 16% 6%, color-mix(in srgb, var(--lilac-200) 80%, transparent), transparent 62%),
+    radial-gradient(70% 60% at 88% 80%, color-mix(in srgb, var(--gold-100) 85%, transparent), transparent 66%),
+    linear-gradient(150deg, var(--lilac) 0%, var(--blush) 46%, var(--shell) 100%);
+}
+
+/* keep the three light washes distinguishable from one another */
+.section--blush { background: linear-gradient(170deg, var(--blush), var(--shell)); }
+.section--lilac { background: linear-gradient(165deg, var(--lilac), var(--blush) 76%); }
+.section--sage  { background: linear-gradient(170deg, var(--sage), var(--ivory)); }

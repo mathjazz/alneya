@@ -1,0 +1,52 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="brand brand--footer" href="{{ @nav.home.url }}">
+        <span class="brand__mark">{{> logo-mark}}</span>
+        <span class="brand__text">
+          <span class="brand__name">{{ site.name }}</span>
+          <span class="brand__sub">{{ site.subtitle }}</span>
+        </span>
+      </a>
+      <p class="site-footer__tagline">{{{ footer.tagline }}}</p>
+      {{> social}}
+    </div>
+
+    <nav class="site-footer__col" aria-label="{{ footer.exploreTitle }}">
+      <h2 class="site-footer__title">{{ footer.exploreTitle }}</h2>
+      <ul>
+        <li><a href="{{ @nav.home.url }}">{{ nav.home }}</a></li>
+        <li><a href="{{ @nav.services.url }}">{{ nav.services }}</a></li>
+        <li><a href="{{ @nav.library.url }}">{{ nav.library }}</a></li>
+        <li><a href="{{ @nav.experiences.url }}">{{ nav.experiences }}</a></li>
+        <li><a href="{{ @nav.about.url }}">{{ nav.about }}</a></li>
+        <li><a href="{{ @nav.contact.url }}">{{ nav.contact }}</a></li>
+      </ul>
+    </nav>
+
+    <nav class="site-footer__col" aria-label="{{ footer.workTitle }}">
+      <h2 class="site-footer__title">{{ footer.workTitle }}</h2>
+      <ul>
+        {{#each footer.workLinks}}<li><a href="{{ @nav.services.url }}#{{ .id }}">{{ .label }}</a></li>
+        {{/each}}
+      </ul>
+    </nav>
+
+    <div class="site-footer__col">
+      <h2 class="site-footer__title">{{ footer.contactTitle }}</h2>
+      <ul>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a href="{{ @nav.contact.url }}">{{ footer.contactLink }}</a></li>
+        <li><a href="{{ links.booking }}">{{ nav.cta }}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap site-footer__bar">
+    <p>&copy; {{ @year }} {{ site.name }} &middot; {{ site.founder }}. {{ footer.rights }}</p>
+    <ul class="lang-switch lang-switch--footer">
+      {{#each @alternates}}<li><a href="{{ .url }}" lang="{{ .lang }}" hreflang="{{ .lang }}"{{#if .current}} aria-current="true"{{/if}}>{{ .name }}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</footer>

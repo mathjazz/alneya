@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="18" fill="#2b382e"/><g transform="translate(5.5 1) scale(0.88)" fill="#d9bd86">  <g fill="none" stroke="#d9bd86" stroke-width="1.5" stroke-linecap="round">
+    <!-- outer ring, open at 2 o'clock -->
+    <path d="M73.14 20.42 A36 36 0 1 0 85.42 54.44"/>
+    <!-- inner crescent -->
+    <path d="M55.14 13.87 A22.97 22.97 0 0 0 36.85 53.22"/>
+    <!-- upper lash line, running out past the eye -->
+    <path d="M12.5 58.9 C24 49.5, 46 48.5, 68 68.2"/>
+    <!-- lower lid -->
+    <path d="M36.9 53.2 Q52 72.5 68 68.2"/>
+  </g>
+  <g fill="#d9bd86">
+    <!-- iris -->
+    <path d="M37.4 51.6 Q49 52.8 58.1 62.4 A12.81 12.81 0 0 1 37.4 51.6 Z"/>
+    <!-- sparkle -->
+    <path d="M10.7 73.3 Q12 82.7 18.3 84.6 Q12 86.5 10.7 95.9 Q9.4 86.5 3.1 84.6 Q9.4 82.7 10.7 73.3 Z"/>
+  </g>
+</g></svg>

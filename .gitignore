@@ -1,0 +1,16 @@
+# Built output — GitHub Actions rebuilds it on every push.
+# The glob also covers the side-by-side theme previews (dist-sage/, dist-green/…).
+dist/
+dist-*/
+
+# Raw studio originals, 16 MB. The versions the site actually uses are
+# resized into src/assets/img/. Delete this line if you want them versioned.
+photos/
+
+.DS_Store
+node_modules/
+*.log
+
+# Local tooling and scratch
+.claude/
+chatgpt old website.jpg

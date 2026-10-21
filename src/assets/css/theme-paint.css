@@ -1,0 +1,155 @@
+/* =========================================================================
+   Alneya — painted structure
+   Companion to theme-dark.css, for palettes whose signature colour is a
+   mid-tone rather than a near-black. The header, hero, Unblock Method
+   section, testimonials and footer all take the paint colour, and the text
+   on them is DARK — white would not clear WCAG AA on a mid-tone.
+
+   Every colour comes from the palette's --deep-*, --band-ink, --band-ink-soft
+   and --band-accent tokens, so this composes with any paint palette.
+   ========================================================================= */
+
+/* ------------------------------------------------------- painted header */
+
+.site-header {
+  /* background-color as well as the gradient: Safari tints its toolbar from
+     the page's solid colour, and a bare gradient leaves that transparent */
+  background-color: var(--deep-800);
+  background-image: linear-gradient(160deg, var(--deep-800), var(--deep-900));
+  backdrop-filter: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 14%, transparent);
+}
+.site-header.is-stuck {
+  background-color: var(--deep-900);
+  box-shadow: 0 8px 30px color-mix(in srgb, var(--band-ink) 22%, transparent);
+}
+.brand, .brand__mark, .brand__sub { color: var(--band-ink); }
+.site-nav__list a { color: var(--band-ink); }
+.site-nav__list a:hover,
+.site-nav__list a[aria-current="page"] { color: var(--band-accent); }
+.site-nav__list a[aria-current="page"] { border-bottom-color: var(--band-accent); }
+.lang-switch a { color: var(--band-ink-soft); }
+.lang-switch a:hover, .lang-switch a[aria-current="true"] { color: var(--band-accent); }
+.lang-switch li + li::before { color: color-mix(in srgb, var(--band-ink) 35%, transparent); }
+.nav-toggle { border-color: color-mix(in srgb, var(--band-ink) 30%, transparent); }
+.nav-toggle__bars i { background: var(--band-ink); }
+
+@media (max-width: 61.99em) {
+  .site-nav {
+    background: var(--deep-800);
+    border-left-color: color-mix(in srgb, var(--band-ink) 14%, transparent);
+  }
+  .site-nav__list a { border-bottom-color: color-mix(in srgb, var(--band-ink) 14%, transparent); }
+  body.nav-open::after { background: color-mix(in srgb, var(--band-ink) 45%, transparent); }
+}
+
+/* -------------------------------------------------------- painted bands */
+
+.hero, .section--sage, .section--deep {
+  background:
+    radial-gradient(120% 80% at 80% 0%, color-mix(in srgb, #fff 12%, transparent), transparent 60%),
+    linear-gradient(160deg, var(--deep-700), var(--deep-800));
+  color: var(--band-ink);
+}
+.section--sage::after, .section--deep::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: var(--stars); opacity: .7;
+}
+.section--sage > *, .section--deep > * { position: relative; z-index: 1; }
+
+.hero .h1, .hero .h2,
+.section--sage .h2, .section--sage .h3,
+.section--deep .h1, .section--deep .h2, .section--deep .h3 { color: var(--band-ink); }
+.hero .lede, .hero p,
+.section--sage .lede, .section--sage p,
+.section--deep .lede, .section--deep p { color: var(--band-ink-soft); }
+.hero .eyebrow, .section--sage .eyebrow, .section--deep .eyebrow,
+.hero .h4, .section--sage .h4, .section--deep .h4 { color: var(--band-accent); }
+.hero .link-arrow, .section--sage .link-arrow, .section--deep .link-arrow { color: var(--band-accent); }
+.hero .ornament__glyph, .section--sage .ornament__glyph, .section--deep .ornament__glyph { fill: var(--band-accent); }
+.hero .ornament__rule, .section--sage .ornament__rule, .section--deep .ornament__rule {
+  background: linear-gradient(90deg, transparent, var(--band-accent));
+}
+.hero .ornament__rule:last-child, .section--sage .ornament__rule:last-child, .section--deep .ornament__rule:last-child {
+  background: linear-gradient(90deg, var(--band-accent), transparent);
+}
+.hero .aura::before, .section--sage .aura::before, .section--deep .aura::before { opacity: .14; }
+
+.sig__name { color: var(--band-ink); }
+.sig__role { color: var(--band-accent); }
+
+.hero .btn--outline {
+  --btn-fg: var(--band-ink);
+  --btn-bd: color-mix(in srgb, var(--band-ink) 42%, transparent);
+}
+.hero .btn--outline:hover {
+  --btn-bg: color-mix(in srgb, var(--band-ink) 10%, transparent);
+  --btn-bd: var(--band-ink);
+}
+.section--deep .btn--ghost-light {
+  --btn-fg: var(--band-ink);
+  --btn-bd: color-mix(in srgb, var(--band-ink) 42%, transparent);
+}
+.section--deep .btn--ghost-light:hover {
+  --btn-bg: color-mix(in srgb, var(--band-ink) 10%, transparent);
+  --btn-bd: var(--band-ink);
+}
+
+/* the four-step method on the painted band */
+.section--sage .method__disc {
+  border-color: color-mix(in srgb, var(--band-ink) 28%, transparent);
+  background: color-mix(in srgb, #fff 16%, transparent);
+  color: var(--band-accent);
+  box-shadow: none;
+}
+.section--sage .method__name { color: var(--band-ink); }
+.section--sage .method__label { color: var(--band-accent); }
+.section--sage .method__text { color: var(--band-ink-soft); }
+.section--sage .method__close { color: var(--band-ink); }
+.section--sage .method__step + .method__step::before {
+  border-top-color: color-mix(in srgb, var(--band-ink) 45%, transparent);
+  border-right-color: color-mix(in srgb, var(--band-ink) 45%, transparent);
+}
+
+/* testimonial cards read as a lighter inset, not a darker one */
+.section--deep .quote-card {
+  background: color-mix(in srgb, #fff 20%, transparent);
+  border-color: color-mix(in srgb, var(--band-ink) 16%, transparent);
+}
+.section--deep .quote-card blockquote p { color: var(--band-ink); }
+.section--deep .quote-card .icon--quote { color: var(--band-accent); opacity: .55; }
+.quote-card__who { color: var(--band-accent); }
+.quote-card__role { color: var(--band-ink-soft); }
+
+/* the booking panel in the contact aside is a painted surface too */
+.panel--gold {
+  background: linear-gradient(160deg, var(--deep-700), var(--deep-800));
+  color: var(--band-ink-soft);
+  border-color: color-mix(in srgb, var(--band-ink) 18%, transparent);
+}
+.panel--gold .h4 { color: var(--band-ink); }
+.panel--gold .social a { color: var(--band-ink-soft); border-color: color-mix(in srgb, var(--band-ink) 28%, transparent); }
+.panel--gold .social a:hover { color: var(--band-accent); border-color: var(--band-accent); }
+
+/* --deep-700 is the paint here, so it disappears against its own light tint */
+.course__status--soon { color: var(--ink); }
+
+/* ------------------------------------------------------- painted footer */
+
+.site-footer {
+  background: linear-gradient(160deg, var(--deep-700), var(--deep-800));
+  color: var(--band-ink);
+}
+.site-footer::before { background: var(--stars); opacity: .55; }
+.site-footer .brand, .site-footer .brand__mark, .site-footer .brand__sub { color: var(--band-ink); }
+.site-footer__tagline { color: var(--band-ink-soft); }
+.site-footer__title { color: var(--band-accent); }
+.site-footer__col a { color: var(--band-ink-soft); }
+.site-footer__col a:hover { color: var(--band-ink); }
+.site-footer__bar { border-top-color: color-mix(in srgb, var(--band-ink) 18%, transparent); }
+.site-footer__bar p, .lang-switch--footer a { color: var(--band-ink-soft); }
+.lang-switch--footer a:hover, .lang-switch--footer a[aria-current="true"] { color: var(--band-ink); }
+.lang-switch--footer li + li::before { color: color-mix(in srgb, var(--band-ink) 35%, transparent); }
+.site-footer .social a:hover { color: var(--band-accent); border-color: var(--band-accent); }
+
+/* the hero photo fades into a mid-tone here, so the mask needs no change */

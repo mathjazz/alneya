@@ -1,0 +1,139 @@
+<section class="section hero hero--slim">
+  <div class="wrap hero--slim__inner">
+    <p class="eyebrow">{{ services.hero.eyebrow }}</p>
+    <h1 class="h1">{{ services.hero.title }}</h1>
+    {{> ornament}}
+    <p class="lede">{{ services.hero.lede }}</p>
+  </div>
+</section>
+
+<!-- ============================================================ start here -->
+<section class="section section--ivory startpath">
+  <div class="wrap">
+    <h2 class="h2 h2--center">{{ services.path.title }}</h2>
+    {{> ornament}}
+    <p class="lede lede--center">{{ services.path.lede }}</p>
+    <ol class="startpath__steps">
+      {{#each services.path.steps}}<li>
+        <span class="startpath__num">{{ @number }}</span>
+        <h3 class="h4">{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </li>
+      {{/each}}
+    </ol>
+    <div class="startpath__uncover">
+      <h3 class="h4">{{ services.path.uncoverTitle }}</h3>
+      <ul class="glyph-list">
+        {{#each services.path.uncover}}<li>{{ .value }}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== services -->
+<section class="section section--shell service-list">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">{{ services.list.eyebrow }}</p>
+    <h2 class="h2 h2--center">{{ services.list.title }}</h2>
+    {{> ornament}}
+
+    {{#each services.list.items}}<article class="service" id="{{ .id }}">
+      <div class="service__head">
+        <span class="service__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-{{ .icon }}"/></svg></span>
+        <div>
+          <p class="service__kicker">{{ .kicker }}</p>
+          <h3 class="service__title">{{ .title }}</h3>
+        </div>
+      </div>
+
+      <div class="service__body">
+        <div class="service__main">
+          <p class="service__lede">{{ .lede }}</p>
+          <h4 class="service__sub">{{ .whoTitle }}</h4>
+          <p>{{ .who }}</p>
+          <h4 class="service__sub">{{ .getTitle }}</h4>
+          <ul class="tick-list">
+            {{#each .includes}}<li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>{{ .value }}</li>
+            {{/each}}
+          </ul>
+          {{#if .courses}}<h4 class="service__sub">{{ .coursesTitle }}</h4>
+          <div class="service__courses">
+            {{#each .courses}}<div class="course">
+              <div class="course__head">
+                <h5 class="course__title">{{ .title }}</h5>
+                <span class="course__status{{#if .soon}} course__status--soon{{/if}}">{{ .status }}</span>
+              </div>
+              <p>{{ .text }}{{#if .price}} <span class="course__price">{{ .price }}</span>{{/if}}</p>
+              {{#if .href}}<a class="link-arrow" href="{{ .href }}" target="_blank" rel="noopener">{{ .linkLabel }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>{{/if}}
+            </div>
+            {{/each}}
+          </div>
+          {{/if}}
+        </div>
+
+        <aside class="service__aside">
+          <dl class="service__facts">
+            {{#each .facts}}<div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+            {{/each}}
+          </dl>
+          <a class="btn btn--gold btn--block" href="{{ .href }}">{{ .cta }}</a>
+          <p class="service__note">{{ .note }}</p>
+        </aside>
+      </div>
+    </article>
+    {{/each}}
+  </div>
+</section>
+
+<!-- =============================================================== pillars -->
+<section class="section section--ivory pillars pillars--detail">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">{{ services.pillars.eyebrow }}</p>
+    <h2 class="h2 h2--center">{{ services.pillars.title }}</h2>
+    {{> ornament}}
+    <p class="lede lede--center">{{ services.pillars.lede }}</p>
+    <ul class="pillars__grid">
+      {{#each home.pillars.items}}<li class="pillar-card" id="{{ .target }}">
+        <span class="pillar-card__num">{{ @number }}</span>
+        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-{{ .icon }}"/></svg>
+        <h3 class="pillar-card__title">{{ .title }}</h3>
+        <p class="pillar-card__lines">{{{ .lines }}}</p>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--gold" href="{{ links.booking }}">{{ services.pillars.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </p>
+  </div>
+</section>
+
+<!-- =================================================================== faq -->
+<section class="section section--deep faq">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--center">{{ services.faq.eyebrow }}</p>
+    <h2 class="h2 h2--center">{{ services.faq.title }}</h2>
+    {{> ornament}}
+    <div class="faq__list">
+      {{#each services.faq.items}}<details class="faq__item">
+        <summary>{{ .q }}</summary>
+        <div class="faq__answer"><p>{{{ .a }}}</p></div>
+      </details>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="section section--lilac cta-band">
+  <div class="wrap wrap--narrow">
+    <h2 class="h2 h2--center">{{ services.cta.title }}</h2>
+    {{> ornament}}
+    <p class="lede lede--center">{{ services.cta.lede }}</p>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--gold" href="{{ links.booking }}">{{ services.cta.primary }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--outline" href="{{ @nav.contact.url }}">{{ services.cta.secondary }}</a>
+    </p>
+  </div>
+</section>
+
+{{> newsletter}}

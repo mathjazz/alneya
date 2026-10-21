@@ -1,0 +1,152 @@
+<!-- ============================================================ hero hook -->
+<section class="section hero">
+  <div class="hero__media">
+    <img src="{{ @assets }}/img/alneya-hero.jpg" alt="{{ home.hero.imageAlt }}" width="1080" height="1350" fetchpriority="high">
+  </div>
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <h1 class="h1 hero__title">{{ home.hero.title }}</h1>
+      <p class="btn-row btn-row--hero">
+        <a class="btn btn--gold" href="{{ links.booking }}">{{ home.hero.ctaPrimary }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+      <p class="lede">{{ home.hero.lede }}</p>
+      <p class="sig">
+        <span class="sig__name">{{ site.founder }}</span>
+        <span class="sig__role">{{ site.role }} &middot; {{ site.methodLine }}</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+{{> press}}
+
+<!-- ============================================= the problem, and the turn -->
+<section class="section section--shell pain" id="is-this-you">
+  <div class="wrap">
+    <div class="aura">
+      <h2 class="h2 h2--center">{{ home.pain.lede }}</h2>
+      {{> ornament}}
+    </div>
+
+    <ul class="pain__list">
+      {{#each home.pain.items}}<li>{{ .value }}</li>
+      {{/each}}
+    </ul>
+
+    <p class="pain__turn">{{ home.pain.reason }}</p>
+    <p class="pain__explain">{{ home.pain.explain }}</p>
+
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--gold" href="#how-i-work">{{ home.pain.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================= approach -->
+<section class="section section--ivory split split--compact" id="how-i-work">
+  <div class="wrap split__grid">
+    <div class="split__copy">
+      <h2 class="h2">
+        <span>{{ home.approach.title1 }}</span>
+        <em>{{ home.approach.title2 }}</em>
+      </h2>
+      <p>{{ home.approach.body }}</p>
+      <p>{{ home.approach.free }}</p>
+    </div>
+    <figure class="split__media split__media--framed">
+      <img src="{{ @assets }}/img/alneya-approach.jpg" alt="{{ home.approach.imageAlt }}" width="1080" height="1350" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<!-- ==================================================== the unblock method -->
+<section class="section section--sage method" id="unblock-method">
+  <div class="wrap">
+    <div class="aura">
+      <p class="eyebrow eyebrow--center">{{ home.method.eyebrow }}</p>
+      <h2 class="h2 h2--center">{{ home.method.title }}</h2>
+      {{> ornament}}
+      <p class="lede lede--center">{{ home.method.lede }}</p>
+    </div>
+    <ol class="method__steps">
+      {{#each home.method.steps}}<li class="method__step">
+        <span class="method__disc"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-{{ .icon }}"/></svg></span>
+        <h3 class="method__name">{{ .name }}</h3>
+        <p class="method__label">{{ .label }}</p>
+        <p class="method__text">{{ .text }}</p>
+      </li>
+      {{/each}}
+    </ol>
+    <p class="method__close">{{ home.method.close }}</p>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--gold" href="{{ links.booking }}">{{ home.method.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================= services -->
+<section class="section section--shell offers">
+  <div class="wrap">
+    <div class="aura">
+      <p class="eyebrow eyebrow--center">{{ home.offers.eyebrow }}</p>
+      <h2 class="h2 h2--center">{{ home.offers.title }}</h2>
+      {{> ornament}}
+      <p class="lede lede--center">{{ home.offers.lede }}</p>
+    </div>
+    <ul class="offers__grid">
+      {{#each home.offers.items}}<li class="offer-card">
+        <div class="offer-card__body">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-{{ .icon }}"/></svg>
+          <p class="offer-card__kicker">{{ .kicker }}</p>
+          <h3 class="offer-card__title">{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          <a class="link-arrow" href="{{ @nav.services.url }}#{{ .target }}">{{ .cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--outline" href="{{ @nav.services.url }}">{{ home.offers.cta }}</a>
+    </p>
+  </div>
+</section>
+
+<!-- ================================================================ story -->
+<section class="section section--ivory story">
+  <div class="wrap story__grid">
+    <figure class="story__media">
+      <img src="{{ @assets }}/img/alneya-story.jpg" alt="{{ home.story.imageAlt }}" width="1080" height="1350" loading="lazy">
+    </figure>
+    <div class="story__copy">
+      <p class="eyebrow">{{ home.story.eyebrow }}</p>
+      <h2 class="h2">{{ home.story.title }}</h2>
+      {{#each home.story.paragraphs}}<p>{{ .value }}</p>
+      {{/each}}
+      <p class="btn-row">
+        <a class="btn btn--gold" href="{{ @nav.about.url }}">{{ home.story.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= testimonials -->
+<section class="section section--deep quotes">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">{{ quotes.eyebrow }}</p>
+    <h2 class="h2 h2--center">{{ quotes.title }}</h2>
+    {{> ornament}}
+    <ul class="quotes__grid">
+      {{#each quotes.featured}}<li class="quote-card">
+        <svg class="icon icon--quote" aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote><p>{{ .quote }}</p></blockquote>
+        <p class="quote-card__who">{{ .who }}{{#if .role}}<span class="quote-card__role">{{ .role }}</span>{{/if}}</p>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--ghost-light" href="{{ @nav.experiences.url }}">{{ quotes.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </p>
+  </div>
+</section>
+
+{{> newsletter}}

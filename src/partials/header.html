@@ -1,0 +1,35 @@
+<header class="site-header" data-header>
+  <div class="site-header__inner wrap">
+    <a class="brand" href="{{ @nav.home.url }}" aria-label="{{ site.name }} — {{ site.tagline }}">
+      <span class="brand__mark">{{> logo-mark}}</span>
+      <span class="brand__text">
+        <span class="brand__name">{{ site.name }}</span>
+        <span class="brand__sub">{{ site.subtitle }}</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="u-visually-hidden">{{ a11y.toggleMenu }}</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="{{ a11y.primaryNav }}">
+      <ul class="site-nav__list">
+        <li><a href="{{ @nav.home.url }}"{{#if @nav.home.active}} aria-current="page"{{/if}}>{{ nav.home }}</a></li>
+        <li><a href="{{ @nav.services.url }}"{{#if @nav.services.active}} aria-current="page"{{/if}}>{{ nav.services }}</a></li>
+        <li><a href="{{ @nav.library.url }}"{{#if @nav.library.active}} aria-current="page"{{/if}}>{{ nav.library }}</a></li>
+        <li><a href="{{ @nav.experiences.url }}"{{#if @nav.experiences.active}} aria-current="page"{{/if}}>{{ nav.experiences }}</a></li>
+        <li><a href="{{ @nav.about.url }}"{{#if @nav.about.active}} aria-current="page"{{/if}}>{{ nav.about }}</a></li>
+        <li><a href="{{ @nav.contact.url }}"{{#if @nav.contact.active}} aria-current="page"{{/if}}>{{ nav.contact }}</a></li>
+      </ul>
+
+      <div class="site-nav__aside">
+        <ul class="lang-switch" aria-label="{{ a11y.language }}">
+          {{#each @alternates}}<li><a href="{{ .url }}" lang="{{ .lang }}" hreflang="{{ .lang }}"{{#if .current}} aria-current="true"{{/if}}>{{ .lang }}</a></li>
+          {{/each}}
+        </ul>
+        <a class="btn btn--gold btn--sm" href="{{ links.booking }}">{{ nav.cta }}</a>
+      </div>
+    </nav>
+  </div>
+</header>

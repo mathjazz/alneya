@@ -1,0 +1,47 @@
+<section class="section hero hero--slim">
+  <div class="wrap hero--slim__inner">
+    <p class="eyebrow">{{ library.hero.eyebrow }}</p>
+    <h1 class="h1">{{ library.hero.title }}</h1>
+    {{> ornament}}
+    <p class="lede">{{ library.hero.lede }}</p>
+  </div>
+</section>
+
+<section class="section section--ivory library">
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="{{ library.filterLabel }}">
+      <button class="filter is-active" type="button" data-filter="all">{{ library.filters.all }}</button>
+      {{#each library.categories}}<button class="filter" type="button" data-filter="{{ .id }}">{{ .label }}</button>
+      {{/each}}
+    </div>
+
+    <ul class="library__grid" data-library>
+      {{#each library.items}}<li class="entry" data-category="{{ .category }}">
+        <a class="entry__link" href="{{ .href }}"{{#if .external}} target="_blank" rel="noopener"{{/if}}>
+          {{#if .image}}<span class="entry__cover"><img src="{{ @assets }}/img/{{ .image }}" alt="{{ .title }}" width="640" height="830" loading="lazy"></span>{{/if}}
+          <span class="entry__top">
+            <svg class="icon icon--lg" aria-hidden="true"><use href="#i-{{ .icon }}"/></svg>
+            <span class="entry__kind">{{ .kind }}</span>
+          </span>
+          <span class="entry__title">{{ .title }}</span>
+          <span class="entry__text">{{ .text }}</span>
+          <span class="entry__meta">{{ .meta }}</span>
+          <span class="link-arrow">{{ .cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+
+    <p class="library__empty" data-library-empty hidden>{{ library.empty }}</p>
+
+    <div class="library__archive">
+      <h2 class="h3">{{ library.archive.title }}</h2>
+      <p>{{ library.archive.text }}</p>
+      <p class="btn-row">
+        <a class="btn btn--outline" href="{{ links.articleLibrary }}" target="_blank" rel="noopener">{{ library.archive.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
+  </div>
+</section>
+
+{{> newsletter}}

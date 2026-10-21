@@ -1,0 +1,119 @@
+/* =========================================================================
+   Alneya — dark structure
+   Turns the header, the hero and the Unblock Method section dark, joining the
+   one deep band each page already has. Palette-agnostic: every colour comes
+   from the --deep-*, --gold-* and ground tokens, so it composes with any
+   palette file (green, sage, …) loaded before it.
+   ========================================================================= */
+
+/* The header, hero, Unblock Method section, the one deep band and the footer
+   all share a single recipe, so the dark surfaces read as one material:
+     linear-gradient(160deg, --deep-800, --deep-900)
+   with an optional --deep-700 radial lift. */
+
+/* ----------------------------------------------------------- dark header */
+
+.site-header {
+  /* background-color as well as the gradient: Safari tints its toolbar from
+     the page's solid colour, and a bare gradient leaves that transparent */
+  background-color: var(--deep-800);
+  background-image: linear-gradient(160deg, var(--deep-800), var(--deep-900));
+  backdrop-filter: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--gold-300) 18%, transparent);
+}
+.site-header.is-stuck {
+  background-color: color-mix(in srgb, var(--deep-900) 95%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .25);
+}
+.brand { color: var(--ivory); }
+.brand__mark { color: var(--gold-300); }
+.brand__sub { color: var(--gold-300); }
+.site-nav__list a { color: var(--shell); }
+.site-nav__list a:hover,
+.site-nav__list a[aria-current="page"] { color: var(--gold-300); }
+.lang-switch a { color: var(--deep-300); }
+.lang-switch a:hover,
+.lang-switch a[aria-current="true"] { color: var(--gold-300); }
+.lang-switch li + li::before { color: color-mix(in srgb, var(--deep-300) 45%, transparent); }
+.nav-toggle { border-color: color-mix(in srgb, var(--gold-300) 35%, transparent); }
+.nav-toggle__bars i { background: var(--ivory); }
+
+@media (max-width: 61.99em) {
+  .site-nav {
+    background: var(--deep-800);
+    border-left-color: color-mix(in srgb, var(--gold-300) 18%, transparent);
+    box-shadow: -20px 0 50px rgba(0, 0, 0, .3);
+  }
+  .site-nav__list a { border-bottom-color: color-mix(in srgb, var(--deep-300) 18%, transparent); }
+  body.nav-open::after { background: rgba(12, 16, 13, .55); }
+}
+
+/* ------------------------------------------------------- the dark bands
+   .hero and .section--sage join .section--deep in going dark, which is what
+   gave the first variant its rhythm. site.css already styles .section--deep's
+   descendants, so these rules repeat that treatment for the other two. */
+
+.hero {
+  background:
+    radial-gradient(120% 80% at 80% 0%, color-mix(in srgb, var(--deep-700) 70%, transparent), transparent 60%),
+    linear-gradient(160deg, var(--deep-800), var(--deep-900));
+  color: var(--shell);
+}
+.hero::before { opacity: .65; }
+.section--sage {
+  background:
+    radial-gradient(120% 80% at 80% 0%, color-mix(in srgb, var(--deep-700) 70%, transparent), transparent 60%),
+    linear-gradient(160deg, var(--deep-800), var(--deep-900));
+  color: var(--shell);
+}
+.section--sage::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: var(--stars); opacity: .7;
+}
+.section--sage > * { position: relative; z-index: 1; }
+
+.section--deep { color: var(--shell); }
+
+.hero .h1, .hero .h2,
+.section--sage .h2, .section--sage .h3 { color: #fff; }
+.hero .h1 strong { color: var(--gold-300); }
+.hero .lede, .hero p,
+.section--sage .lede, .section--sage p { color: var(--deep-300); }
+.hero .eyebrow, .section--sage .eyebrow,
+.hero .h4, .section--sage .h4 { color: var(--gold-300); }
+.hero .ornament__glyph, .section--sage .ornament__glyph { fill: var(--gold-300); }
+.hero .ornament__rule, .section--sage .ornament__rule { background: linear-gradient(90deg, transparent, var(--gold-300)); }
+.hero .ornament__rule:last-child, .section--sage .ornament__rule:last-child { background: linear-gradient(90deg, var(--gold-300), transparent); }
+.hero .link-arrow, .section--sage .link-arrow { color: var(--gold-300); }
+
+.sig__name { color: #fff; }
+.sig__role { color: var(--gold-300); }
+
+/* the outline button needs the light treatment on a dark ground */
+.hero .btn--outline {
+  --btn-fg: var(--shell);
+  --btn-bd: color-mix(in srgb, var(--shell) 45%, transparent);
+}
+.hero .btn--outline:hover {
+  --btn-bg: color-mix(in srgb, var(--shell) 12%, transparent);
+  --btn-fg: #fff;
+  --btn-bd: var(--shell);
+}
+
+/* the four-step method sits on the dark band in this theme */
+.section--sage .method__disc {
+  border-color: color-mix(in srgb, var(--gold-300) 45%, transparent);
+  background: color-mix(in srgb, var(--gold-300) 8%, transparent);
+  color: var(--gold-300);
+  box-shadow: none;
+}
+.section--sage .method__label { color: var(--gold-300); }
+.section--sage .method__text { color: var(--deep-300); }
+.section--sage .method__close { color: var(--gold-300); }
+.section--sage .method__step + .method__step::before {
+  border-top-color: var(--gold-400);
+  border-right-color: var(--gold-400);
+}
+.section--sage .aura::before { opacity: .22; }
+

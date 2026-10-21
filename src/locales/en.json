@@ -1,0 +1,1328 @@
+{
+  "meta": {
+    "locale": "en",
+    "name": "English",
+    "ogLocale": "en_GB"
+  },
+  "slugs": {
+    "home": "",
+    "about": "about",
+    "services": "work-with-me",
+    "library": "library",
+    "contact": "contact",
+    "experiences": "client-stories"
+  },
+  "site": {
+    "name": "Alneya",
+    "subtitle": "Unblock your life",
+    "founder": "Alneja Gašpar Horvat",
+    "role": "Soul Decoder & Healer",
+    "tagline": "Soul Decoder & Healer. Creator of the Unblock Method™ — see, decode and heal the hidden blocks holding you back.",
+    "email": "alneja@baby-spell.com",
+    "methodLine": "Creator of the Unblock Method™"
+  },
+  "links": {
+    "booking": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+    "shop": "https://baby-spell.com/shop/",
+    "newsletterAction": "#TODO-newsletter-endpoint",
+    "contactAction": "#TODO-contact-form-endpoint",
+    "instagram": "https://www.instagram.com/alneja.horvat/",
+    "facebook": "https://www.facebook.com/profile.php?id=100054259130271",
+    "linkedin": "https://www.linkedin.com/in/alneja-ga%C5%A1par-horvat-8523a9388/",
+    "articleLibrary": "https://baby-spell.com/article-library/",
+    "_todo": "Live: booking (Calendly), shop (baby-spell.com) and the email address. Still placeholders: links.newsletterAction and links.contactAction — both forms need a hosted endpoint (Formspree, Basin, MailerLite) before they can send."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Work with me",
+    "library": "Library",
+    "contact": "Contact",
+    "cta": "Book a session",
+    "experiences": "Client stories"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "toggleMenu": "Open and close the menu",
+    "primaryNav": "Primary",
+    "language": "Language",
+    "socialLinks": "Social links"
+  },
+  "forms": {
+    "name": "Your name",
+    "email": "Email address",
+    "topic": "What is this about?",
+    "message": "Tell me what's going on",
+    "send": "Send message"
+  },
+  "pages": {
+    "home": {
+      "title": "Alneya — Soul Decoder & Healer | The Unblock Method™",
+      "description": "See, decode and heal the hidden blocks behind your symptoms — in love, health, fertility, family, abundance and purpose. Soul Mapping™ and the Unblock Method™ with Alneja Gašpar Horvat."
+    },
+    "about": {
+      "title": "About Alneja Gašpar Horvat — Soul Decoder & Healer | Alneya",
+      "description": "The story behind the Unblock Method™: how one question — why is this happening at all? — became a method for finding and healing the root of a repeating pattern."
+    },
+    "services": {
+      "title": "Work with me — Soul Mapping™, readings, retreats | Alneya",
+      "description": "Soul Mapping™, the Unblock Method™, Twin Flame & Relationship Readings, Angel Babies Reading™, mentorship, retreats, the unBLOCKED Life Academy and membership."
+    },
+    "library": {
+      "title": "Library — articles, podcasts and interviews | Alneya",
+      "description": "Articles, podcast episodes, interviews and magazine features on healing hidden blocks in love, health, fertility, family, abundance and purpose."
+    },
+    "contact": {
+      "title": "Contact | Alneya",
+      "description": "Questions before you book? Write to Alneja — replies usually within two working days, in English, German, Hungarian, Croatian or Slovenian."
+    },
+    "notFound": {
+      "title": "Page not found | Alneya",
+      "description": "This page has moved or never existed."
+    },
+    "experiences": {
+      "title": "Client stories — what shifts afterwards | Alneya",
+      "description": "In their own words: doctors, parents and partners on what changed after working with Alneja Gašpar Horvat."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Are you ready to create a life you're actually excited to wake up to?",
+      "ctaPrimary": "Book your Soul Mapping™ session",
+      "lede": "Together, we'll uncover what's really keeping you stuck — and help you release the blocks standing between you and the life you truly desire.",
+      "imageAlt": "Alneja Gašpar Horvat, Soul Decoder and Healer"
+    },
+    "approach": {
+      "title1": "I don't treat symptoms.",
+      "title2": "I help you see & heal the hidden reasons behind them.",
+      "body": "Some people see problems. I see patterns — the invisible threads connecting your relationships, your health, your fears, your childhood, your ancestry, your purpose and your body. Once you can see the thread, you can finally pull it.",
+      "imageAlt": "Alneja Gašpar Horvat",
+      "free": "And free you of the patterns that are keeping you stuck in love, life, work, health or purpose."
+    },
+    "method": {
+      "eyebrow": "A four-step path",
+      "title": "The Unblock Method™",
+      "lede": "Diagnosis first, healing second. We never guess. We look, we understand, we release — and then we build the life that was waiting underneath.",
+      "steps": [
+        {
+          "icon": "third-eye",
+          "name": "See",
+          "label": "Soul Mapping™",
+          "text": "Intuitive diagnostics. We find the hidden blocks and discover why your life keeps repeating the same pattern."
+        },
+        {
+          "icon": "spiral",
+          "name": "Understand",
+          "label": "Holistic decoding",
+          "text": "We trace each block back to its emotional, ancestral and subconscious root — and name it out loud."
+        },
+        {
+          "icon": "lotus",
+          "name": "Heal",
+          "label": "The Unblock Method™",
+          "text": "A guided session that releases what was never yours to carry in the first place."
+        },
+        {
+          "icon": "butterfly",
+          "name": "Create",
+          "label": "The unBLOCKED life",
+          "text": "Love. Health. Abundance. Purpose. Family. Inner peace — lived, not hoped for."
+        }
+      ],
+      "close": "Stop surviving. Start living.",
+      "cta": "Book your Soul Mapping™ session"
+    },
+    "pillars": {
+      "eyebrow": "Where are you feeling stuck?",
+      "title": "Six places a block will show itself",
+      "lede": "Most people arrive holding one of these. Nearly everyone leaves having healed more than they came for.",
+      "items": [
+        {
+          "icon": "sacred-heart",
+          "target": "unblock-love",
+          "title": "Unblock Love",
+          "cta": "Explore",
+          "lines": "Imagine never wondering again if you're enough.<br>Imagine relationships that feel peaceful instead of exhausting.<br>Imagine attracting love without abandoning yourself.<br><em>Love changes when you heal the hidden wounds that shaped the way you give and receive it.</em>"
+        },
+        {
+          "icon": "tree-of-life",
+          "target": "unblock-family",
+          "title": "Unblock Family",
+          "cta": "Explore",
+          "lines": "Heal generational trauma.<br>Break unconscious family patterns.<br><em>Become the parent your children actually need — not the one your wounds created.</em>"
+        },
+        {
+          "icon": "seed",
+          "target": "unblock-fertility",
+          "title": "Unblock Fertility",
+          "cta": "Explore",
+          "lines": "Sometimes the body is waiting for emotional safety.<br>Healing fertility isn't about blame.<br><em>It's about creating the internal conditions where life can flourish.</em>"
+        },
+        {
+          "icon": "chakras",
+          "target": "unblock-body",
+          "title": "Unblock Your Body",
+          "cta": "Explore",
+          "lines": "Your symptoms aren't your enemy.<br>They're your body's language.<br><em>Let's understand what it has been trying to say.</em>"
+        },
+        {
+          "icon": "sun-rays",
+          "target": "unblock-abundance",
+          "title": "Unblock Abundance",
+          "cta": "Explore",
+          "lines": "Money follows safety.<br>Success follows alignment.<br><em>Receive more by releasing what tells your nervous system it isn't safe to have more.</em>"
+        },
+        {
+          "icon": "north-star",
+          "target": "unblock-purpose",
+          "title": "Unblock Your Purpose",
+          "cta": "Explore",
+          "lines": "Stop asking, &ldquo;What should I do?&rdquo;<br>Start asking, &ldquo;Who was I before fear taught me otherwise?&rdquo;<br><em>Purpose isn't something you choose. It's something you stop hiding from.</em>"
+        }
+      ]
+    },
+    "offers": {
+      "eyebrow": "Work with me",
+      "title": "Ways we can work together",
+      "lede": "Start where it hurts most. Every path begins with seeing clearly.",
+      "cta": "See everything, with prices",
+      "items": [
+        {
+          "icon": "third-eye",
+          "target": "soul-mapping",
+          "title": "Soul Mapping™",
+          "kicker": "Intuitive diagnostics",
+          "text": "A deep reading of your field to locate the hidden blocks behind your symptoms. This is where everyone begins.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "lotus",
+          "target": "unblock-method",
+          "title": "The Unblock Method™",
+          "kicker": "Healing programme",
+          "text": "The session where we release what Soul Mapping found — at the root, not at the surface.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "infinity",
+          "target": "twin-flame",
+          "title": "Twin Flame & Relationship Reading",
+          "kicker": "Oracle card reading",
+          "text": "Clarity on the connection that keeps you awake at night: what it is, what it mirrors, and what it is asking of you.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "seed",
+          "target": "angel-babies",
+          "title": "Angel Babies Reading™",
+          "kicker": "Fertility reading",
+          "text": "A tender, intuitive reading for the babies who came, the ones who left, and the one still waiting.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "north-star",
+          "target": "mentorship",
+          "title": "Mentorship",
+          "kicker": "One-to-one, over months",
+          "text": "For the deep rebuilds. We work through every layer, in order, with me beside you the whole way.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "mountain-moon",
+          "target": "retreats",
+          "title": "Retreats",
+          "kicker": "In person, small groups",
+          "text": "Several days away from your life, so the shift has room to actually land in your body.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "book-light",
+          "target": "academy",
+          "title": "The unBLOCKED Life Academy",
+          "kicker": "Self-paced programme",
+          "text": "The method taught in full, so you can read your own patterns and unblock them yourself.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "circle-people",
+          "target": "membership",
+          "title": "Membership",
+          "kicker": "Monthly community",
+          "text": "Live calls, group healings and a room full of people doing the same brave work.",
+          "cta": "Explore"
+        }
+      ]
+    },
+    "story": {
+      "eyebrow": "My story",
+      "title": "I wasn't always this woman.",
+      "paragraphs": [
+        "Thirteen years ago my life looked perfect from the outside — but inside, I was falling apart. My body was breaking down. My life felt unbearable. I was disconnected from myself, trapped in patterns I couldn't understand, drowning in a job I hated — and I had been told I would probably never become a mother.",
+        "Then I chose to burn my old life down. I healed. I became a mother — twice. I found my purpose. And I discovered how to see the hidden roots beneath the patterns that keep us stuck.",
+        "My own breakdown became the doorway to my life's work. Today I help others uncover what lies beneath — so they can stop repeating what hurts, reconnect with who they are, and create the life they came here to live."
+      ],
+      "cta": "Read my full story",
+      "imageAlt": "Alneja Gašpar Horvat"
+    },
+    "pain": {
+      "lede": "Are you…",
+      "items": [
+        "Losing yourself in a relationship just to keep it alive?",
+        "Dreading Mondays because your work is draining the life out of you?",
+        "Feeling lost in a life that looks fine — but feels completely empty?",
+        "Going from one struggle to the next while your body keeps paying the price?"
+      ],
+      "reason": "There is a reason you keep ending up here.",
+      "explain": "Together, we'll uncover the hidden blocks keeping you stuck, break free from what's holding you back and create a life you are actually excited to wake up to.",
+      "cta": "Let's get started"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "My name is Alneja and I am here to interpret the language of your soul.",
+      "lede": "I help you see, decode and heal the hidden blocks holding you back — so you can stop recreating the same pain and start living the life you deserve and desire.",
+      "cta": "Book a session with me",
+      "imageAlt": "Alneja Gašpar Horvat"
+    },
+    "story": {
+      "title": "How the Unblock Method™ was born",
+      "paragraphs": [
+        "For years I did everything you are supposed to do. I went to doctors. I read the books. I tried the therapies and the practices and the protocols. Each one helped a little, and none of them explained the thing that kept happening: the same pattern, coming back in a new costume.",
+        "A different relationship, the same ending. A different job, the same exhaustion. A different diagnosis, the same underlying feeling that something in me was quietly working against me.",
+        "The turning point wasn't a technique. It was a question. I stopped asking <em>“How do I fix this?”</em> and started asking <em>“Why is this happening in the first place?”</em>",
+        "That question changed the direction of my whole life. It took me into timeline healing, ancestral work, shadow work, inner-child healing and subconscious transformation — and eventually into the work I do now, which is simply this: I look at what is actually there, I name it, and together we release it.",
+        "I called it the Unblock Method™ because that is honestly what it does. It does not manage symptoms. It finds the block, follows it to its root, and lets it go."
+      ]
+    },
+    "turning": {
+      "eyebrow": "How I work",
+      "title": "Diagnosis first. Always.",
+      "listTitle": "What that means in practice:",
+      "imageAlt": "Alneja Gašpar Horvat",
+      "paragraphs": [
+        "Most healing work starts with a solution and hopes it fits. I start with a diagnosis. Before we change anything, we find out what is actually there — which block, from which layer, carried since when, and for whom.",
+        "Some of what we find belongs to you. A surprising amount of it never did. Inherited loyalty, an old family contract, a decision made by a frightened seven-year-old who is still, somewhere in your nervous system, making decisions on your behalf.",
+        "My job is to make the invisible visible, and then to help you put down what was never yours to carry."
+      ],
+      "items": [
+        "We look before we act — no guessing, no generic protocols",
+        "Your symptoms are read as information, never as failure",
+        "Nothing is forced; we work at the speed your system allows",
+        "You leave each session knowing exactly what we found and why",
+        "Sessions are online, one-to-one, in any of five languages",
+        "Everything you share stays between us"
+      ]
+    },
+    "values": {
+      "eyebrow": "What I believe",
+      "title": "Four things I hold to",
+      "items": [
+        {
+          "icon": "third-eye",
+          "title": "Nothing is random",
+          "text": "Every repeating pattern has a root. If it keeps happening, there is a reason — and the reason can be found."
+        },
+        {
+          "icon": "chakras",
+          "title": "Symptoms are language",
+          "text": "Your body is not sabotaging you. It is telling you something in the only vocabulary it has."
+        },
+        {
+          "icon": "tree-of-life",
+          "title": "Not all of it is yours",
+          "text": "A great deal of what weighs on you was handed to you. You are allowed to hand it back."
+        },
+        {
+          "icon": "sparkle",
+          "title": "You are not broken",
+          "text": "You were never broken. You were blocked — and a block is something that can be released."
+        }
+      ]
+    },
+    "credentials": {
+      "eyebrow": "Background",
+      "title": "Training, practice & press",
+      "note": "Selected articles, podcast appearances and magazine cover features are collected in the Library.",
+      "items": [
+        "Executive Contributor and Special Guest Writer for Brainz Magazine, with published articles and featured cover stories",
+        "Creator of the Unblock Method™ and Soul Mapping™",
+        "Creator of the Angel Babies Reading™",
+        "Certified Life Coach and Certified Regression Therapist",
+        "Archetypal Analyst, Meditation Teacher and Yoga Teacher",
+        "Grief and Loss Counsellor, supporting healing through loss, life transitions and emotional transformation",
+        "Over a decade of experience supporting women through personal transformation, relationships, family dynamics, fertility journeys and major life transitions",
+        "Specialising in timeline healing, ancestral patterns and intergenerational healing, shadow work, inner-child healing and subconscious transformation",
+        "Intuitive and oracle-based readings and guidance",
+        "Working internationally, online, in English, German, Hungarian, Croatian and Slovenian"
+      ]
+    },
+    "cta": {
+      "title": "Ready to see what is actually there?",
+      "lede": "Start with a Soul Mapping™ session. We look first — and then you decide what you want to do with what we find.",
+      "primary": "Book a Soul Mapping™ session",
+      "secondary": "See all the ways to work with me"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Work with me",
+      "title": "Find the block. Follow it to the root. Let it go.",
+      "lede": "Every offering below does one of three things: it helps you see clearly, it helps you release what you found, or it helps you keep the change. Start wherever it hurts most."
+    },
+    "path": {
+      "title": "How this usually goes",
+      "lede": "You do not need to know which service you need. You only need to know where it hurts.",
+      "steps": [
+        {
+          "title": "We look",
+          "text": "A Soul Mapping™ session, where we find the hidden blocks behind the symptom you came with. Almost everyone starts here."
+        },
+        {
+          "title": "We release",
+          "text": "An Unblock Method™ session, where we heal what the mapping found — at the root, not at the surface."
+        },
+        {
+          "title": "You keep it",
+          "text": "Mentorship, the Academy, a retreat or the membership, depending on how much support the rebuild needs."
+        }
+      ],
+      "uncoverTitle": "What we uncover together:",
+      "uncover": [
+        "Subconscious beliefs",
+        "Childhood wounds",
+        "Ancestral patterns",
+        "Emotional trauma",
+        "Timeline imprints",
+        "Inherited loyalties",
+        "Energetic blocks",
+        "The story your body is telling"
+      ]
+    },
+    "list": {
+      "eyebrow": "Services",
+      "title": "Everything I offer",
+      "items": [
+        {
+          "id": "soul-mapping",
+          "icon": "third-eye",
+          "kicker": "Intuitive diagnostics",
+          "title": "Soul Mapping™",
+          "lede": "I use your physical symptoms and your real life — the challenges, the repeats, the things that will not budge — to find out why you are blocked. Then I show you the root cause sitting underneath, and take you through a transformational healing process.",
+          "whoTitle": "Who it's for",
+          "who": "Anyone who is stuck, blocked or repeating painful lessons in life, love, purpose, success, health, fertility or intimacy, and has run out of explanations for it.",
+          "getTitle": "What you get",
+          "includes": [
+            "A full map of the blocks active in your field right now",
+            "Your symptoms read as information: what each one is pointing at",
+            "The root of each block — emotional, ancestral, subconscious or energetic",
+            "Plain-language explanation of how each one shows up in daily life",
+            "A clear recommendation for what to release first",
+            "A recording of the session to come back to"
+          ],
+          "facts": [
+            {
+              "label": "Format",
+              "value": "Online, one-to-one"
+            },
+            {
+              "label": "Length",
+              "value": "TBC"
+            },
+            {
+              "label": "Investment",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Book Soul Mapping™",
+          "note": "Book this first if you are not sure where to start."
+        },
+        {
+          "id": "unblock-method",
+          "icon": "lotus",
+          "kicker": "Healing programme",
+          "title": "The Unblock Method™",
+          "lede": "A form of timeline healing that takes you where you cannot go on your own — to places you would never think to look, to people you have no idea are affecting your current problems, and to situations you do not remember: the prenatal period, past lives, the ancestral matrix.",
+          "whoTitle": "Who it's for",
+          "who": "Anyone ready to release what is holding them back in love, fertility, family, health, abundance or life purpose — at the source rather than the surface.",
+          "getTitle": "What you get",
+          "includes": [
+            "Guided timeline healing to the origin of the block",
+            "Work in the prenatal period, past lives and the ancestral matrix as needed",
+            "Release of inherited loyalties and decisions made by a much younger you",
+            "Integration guidance for the days and weeks afterwards",
+            "Practices to keep your nervous system steady while things move",
+            "A recording of the session"
+          ],
+          "facts": [
+            {
+              "label": "Format",
+              "value": "Online, one-to-one"
+            },
+            {
+              "label": "Length",
+              "value": "TBC"
+            },
+            {
+              "label": "Investment",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Book an Unblock session",
+          "note": "Best booked after a Soul Mapping™ session."
+        },
+        {
+          "id": "twin-flame",
+          "icon": "infinity",
+          "kicker": "Oracle card reading",
+          "title": "Twin Flame & Relationship Reading",
+          "lede": "A reading for the connection you cannot think your way out of. What it is, what it is mirroring back to you, and what it is actually asking you to heal.",
+          "whoTitle": "Who it's for",
+          "who": "Anyone caught in a connection that feels fated and exhausting in equal measure — twin flame, karmic, or simply a relationship you cannot make sense of.",
+          "getTitle": "What you get",
+          "includes": [
+            "An oracle reading on the connection and its purpose",
+            "The pattern underneath the attraction",
+            "What belongs to you in the dynamic, and what belongs to them",
+            "Honest guidance on the next right step",
+            "A recording of the reading"
+          ],
+          "facts": [
+            {
+              "label": "Format",
+              "value": "Online, one-to-one"
+            },
+            {
+              "label": "Length",
+              "value": "TBC"
+            },
+            {
+              "label": "Investment",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Book a reading",
+          "note": "Can be booked on its own."
+        },
+        {
+          "id": "angel-babies",
+          "icon": "seed",
+          "kicker": "Fertility reading",
+          "title": "Angel Babies Reading™",
+          "lede": "A powerful intuitive reading that identifies the hidden subconscious, emotional and energetic fertility blocks preventing you from conceiving — the ones that do not show up on any test.",
+          "whoTitle": "Who it's for",
+          "who": "Anyone who has tried the protocols, seen the doctors, done the inner work, invested in IVF — and still is not pregnant, or cannot hold a pregnancy. If you feel you are running out of options, this looks deeper.",
+          "getTitle": "What you get",
+          "includes": [
+            "The hidden reasons behind fertility issues, miscarriages, failed IVF cycles or inability to conceive",
+            "The content and terms of your soul's conception contract, and what in it is blocking conception",
+            "A check of your mother archetype potential",
+            "How and why you, your partner and the chosen baby soul may be limiting the process",
+            "A fertility and pregnancy programme built around your own story",
+            "Solutions for clearing each block, so the path is open for your baby's soul"
+          ],
+          "facts": [
+            {
+              "label": "Format",
+              "value": "Online, one-to-one"
+            },
+            {
+              "label": "Length",
+              "value": "90 minutes"
+            },
+            {
+              "label": "Investment",
+              "value": "€220"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Book a reading",
+          "note": "Held with great care. Take your time deciding."
+        },
+        {
+          "id": "mentorship",
+          "icon": "north-star",
+          "kicker": "One-to-one, over months",
+          "title": "Mentorship",
+          "lede": "For those who want more than their own healing. You find your purpose and you learn my techniques — the Unblock Method™, Soul Mapping™, intuitive reading, Angel Babies Reading™ — so you can carry these tools forward yourself.",
+          "whoTitle": "Who it's for",
+          "who": "Anyone called to do this work with others: to help more people create a family, find love, or find the life they are excited to wake up to.",
+          "getTitle": "What you get",
+          "includes": [
+            "Regular one-to-one sessions across several months",
+            "Training in the Unblock Method™ and Soul Mapping™",
+            "Training in intuitive reading and the Angel Babies Reading™",
+            "Your own healing worked through alongside the training",
+            "Support between sessions when something surfaces",
+            "Recordings of everything"
+          ],
+          "facts": [
+            {
+              "label": "Format",
+              "value": "Online, one-to-one"
+            },
+            {
+              "label": "Length",
+              "value": "TBC"
+            },
+            {
+              "label": "Investment",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Apply for mentorship",
+          "note": "Limited places. We speak first to check the fit."
+        },
+        {
+          "id": "retreats",
+          "icon": "mountain-moon",
+          "kicker": "In person, Vila Vilma",
+          "title": "Unlock Your Fertility — VIP retreat",
+          "lede": "A private, fully personalised fertility retreat for couples or solo journeys at Vila Vilma, a hundred-year-old cottage above the Lendava vineyards. Three to seven days to uncover and clear the emotional, subconscious and energetic blocks affecting conception — naturally, or alongside IVF.",
+          "whoTitle": "Who it's for",
+          "who": "Couples and individuals who have tried natural and medical routes without success, who feel the process has put distance in their relationship, and who sense something deeper is in the way. Fertility is not a one-person job.",
+          "getTitle": "What you get",
+          "includes": [
+            "Fertility diagnostics and root-block analysis for both partners",
+            "Clearing of emotional, mental and energetic patterns",
+            "Regression therapy and deep stress-release (STRESS OUT method)",
+            "Healing of relationship dynamics affecting conception",
+            "Clearing of inherited fertility patterns through the ancestral line (7-day)",
+            "Healing of birth trauma, loss and miscarriage grief (7-day)",
+            "Angel Babies Reading™ for energetic blocks and conception alignment (7-day)",
+            "A personalised fertility meditation package to take home",
+            "Accommodation at Vila Vilma, a private nature sanctuary"
+          ],
+          "facts": [
+            {
+              "label": "Length",
+              "value": "3 or 7 days"
+            },
+            {
+              "label": "Solo",
+              "value": "€2,400 / €4,000"
+            },
+            {
+              "label": "Couple",
+              "value": "€2,800 / €6,000"
+            },
+            {
+              "label": "Two friends",
+              "value": "€1,400 / €3,000 pp"
+            }
+          ],
+          "href": "mailto:alneja@baby-spell.com?subject=Unlock%20Your%20Fertility%20retreat",
+          "cta": "Ask about dates",
+          "note": "Limited capacity, private booking. Payment in instalments available."
+        },
+        {
+          "id": "academy",
+          "icon": "book-light",
+          "kicker": "Self-paced programme",
+          "title": "The unBLOCKED Life Academy",
+          "lede": "Workshops and online classes you take at your own pace, to unblock abundance, fertility, love and purpose. One programme is open now; the rest follow.",
+          "whoTitle": "Who it's for",
+          "who": "Anyone who wants to understand the mechanics, work in their own time, and stop needing someone else to interpret their life for them.",
+          "getTitle": "How it works",
+          "includes": [
+            "Self-paced video classes and workshops",
+            "Workbooks and guided audio",
+            "Lifetime access to anything you enrol in",
+            "New programmes released through the year"
+          ],
+          "facts": [
+            {
+              "label": "Format",
+              "value": "Online, self-paced"
+            },
+            {
+              "label": "Access",
+              "value": "Lifetime"
+            },
+            {
+              "label": "From",
+              "value": "€444"
+            }
+          ],
+          "href": "https://baby-spell.com/shop/",
+          "cta": "Browse the shop",
+          "note": "More fertility workshops and programmes are listed in the shop.",
+          "coursesTitle": "Programmes",
+          "courses": [
+            {
+              "title": "Unlock Your Fertility",
+              "status": "Open now",
+              "text": "The full fertility programme — the same work as the retreat, taken at your own pace. Group or VIP one-to-one.",
+              "price": "Group €2,200 · VIP €4,400",
+              "href": "https://baby-spell.com/product/unlock-your-fertility/",
+              "linkLabel": "Enrol now"
+            },
+            {
+              "title": "Intuitive Parenting & Sacred Family Activation",
+              "status": "Open now",
+              "text": "A 12-part course to heal inherited patterns, reconnect with your intuition and build more conscious family relationships — whether you are already a parent or preparing to become one.",
+              "price": "€444",
+              "href": "https://baby-spell.com/shop/",
+              "linkLabel": "Enrol now"
+            },
+            {
+              "title": "Ancestral Healing",
+              "status": "Opening soon",
+              "soon": true,
+              "text": "Heal generational trauma and break the unconscious family patterns you never agreed to carry."
+            },
+            {
+              "title": "Love, Not Drama",
+              "status": "Opening soon",
+              "soon": true,
+              "text": "Leave the cycle of love drama behind and learn what a peaceful relationship actually feels like."
+            },
+            {
+              "title": "Healing Your Relationship Blocks at the Root",
+              "status": "Opening soon",
+              "soon": true,
+              "text": "Heal the hidden wounds that shaped the way you give and receive love."
+            },
+            {
+              "title": "Unblock Your Body",
+              "status": "Opening soon",
+              "soon": true,
+              "text": "Learn to read your symptoms as your body's language, and answer what it has been trying to say."
+            },
+            {
+              "title": "Unblock Abundance",
+              "status": "Opening soon",
+              "soon": true,
+              "text": "Money follows safety. Release what tells your nervous system it isn't safe to have more."
+            },
+            {
+              "title": "Unblock Your Purpose",
+              "status": "Opening soon",
+              "soon": true,
+              "text": "Stop asking what you should do, and find out who you were before fear taught you otherwise."
+            }
+          ]
+        },
+        {
+          "id": "membership",
+          "icon": "circle-people",
+          "kicker": "Monthly community",
+          "title": "Membership",
+          "lede": "Live calls, group healings, and a room full of people doing the same brave work. The cheapest way to stay close to the method month after month.",
+          "whoTitle": "Who it's for",
+          "who": "Anyone who has done a session or two and wants to keep going without booking one-to-one every month.",
+          "getTitle": "What you get",
+          "includes": [
+            "Monthly live call with me",
+            "Group healing and release sessions",
+            "A members-only library of recordings",
+            "First access to retreats and new programmes",
+            "Cancel any time"
+          ],
+          "facts": [
+            {
+              "label": "Format",
+              "value": "Online, monthly"
+            },
+            {
+              "label": "Commitment",
+              "value": "Month to month"
+            },
+            {
+              "label": "Investment",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://baby-spell.com/shop/",
+          "cta": "Become a member",
+          "note": "Doors open on the first of each month."
+        }
+      ],
+      "_todo": "Soul Mapping, the Unblock Method and the Twin Flame reading still show TBC for length and price. Everything else now has real figures."
+    },
+    "pillars": {
+      "eyebrow": "The six pillars",
+      "title": "What we work on",
+      "lede": "Whichever service you choose, the work lands in one of these six places. Usually it starts in one and quietly repairs the others.",
+      "cta": "Book a Soul Mapping™ session"
+    },
+    "faq": {
+      "eyebrow": "Before you book",
+      "title": "Honest answers",
+      "items": [
+        {
+          "q": "I don't know which service I need.",
+          "a": "Then book Soul Mapping™. It exists precisely so that you don't have to diagnose yourself before you arrive. We look first, and then you decide."
+        },
+        {
+          "q": "Do I have to believe in any of this for it to work?",
+          "a": "No. You need to be honest, and you need to be willing to look at what comes up. Belief is optional; willingness is not."
+        },
+        {
+          "q": "Is this therapy?",
+          "a": "No. This is intuitive and energetic healing work, and it does not replace medical or psychological care. If you are in treatment, keep going — this work sits alongside it, not instead of it."
+        },
+        {
+          "q": "What if something painful surfaces?",
+          "a": "That happens, and it is held. We work at the pace your nervous system allows, and you leave every session with integration guidance rather than an open wound."
+        },
+        {
+          "q": "Which languages do you work in?",
+          "a": "English, German, Hungarian, Croatian and Slovenian."
+        },
+        {
+          "q": "How do sessions happen?",
+          "a": "Online, one-to-one, by video call. You receive a recording afterwards so you can return to it when the details blur."
+        },
+        {
+          "q": "What is your cancellation policy?",
+          "a": "I offer a free introductory call before you commit, so we can make sure my approach, the work we'll do together, and your needs are a good match. Once you choose to work with me, all payments are non-refundable. I am fully committed to giving you my best, and the time, expertise, years of experience, training and knowledge I bring to our work are part of the value you are investing in. For this reason I encourage you to use the free call to ask questions, get a feel for my approach, and make sure this is the right support for you before booking."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start where it hurts most.",
+      "lede": "You do not need to have it figured out before you arrive. That is the whole point of looking together.",
+      "primary": "Book a Soul Mapping™ session",
+      "secondary": "Ask me a question first"
+    }
+  },
+  "library": {
+    "hero": {
+      "eyebrow": "Library",
+      "title": "Read, listen, look closer.",
+      "lede": "Articles, podcast conversations, interviews and magazine features — everything I have written or said about finding the root of a pattern."
+    },
+    "filterLabel": "Filter the library",
+    "filters": {
+      "all": "Everything"
+    },
+    "empty": "Nothing here yet in this category — try another one.",
+    "categories": [
+      {
+        "id": "article",
+        "label": "Articles"
+      },
+      {
+        "id": "interview",
+        "label": "Interviews"
+      },
+      {
+        "id": "podcast",
+        "label": "Podcasts"
+      },
+      {
+        "id": "cover",
+        "label": "Cover features"
+      }
+    ],
+    "items": [
+      {
+        "category": "article",
+        "icon": "book-light",
+        "kind": "Article",
+        "title": "Visibility Begins at Birth",
+        "text": "Helping humans become visible — from their first imprint to their greatest expression.",
+        "meta": "The Female CEO",
+        "cta": "Read",
+        "href": "https://baby-spell.com/the-female-ceo-visibility-begins-at-birth-helping-humans-become-visible-from-their-first-imprint-to-their-greatest-expression/",
+        "external": true
+      },
+      {
+        "category": "article",
+        "icon": "book-light",
+        "kind": "Article",
+        "title": "Why Women Experience Their Most Powerful Identity Shifts Around the Age of 40",
+        "text": "On the midlife reckoning nobody prepares you for, and why it is an opening rather than a loss.",
+        "meta": "Brainz Magazine",
+        "cta": "Read",
+        "href": "https://baby-spell.com/brainz-why-women-experience-their-most-powerful-identity-shifts-around-the-age-of-40/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Interview",
+        "title": "The Woman Who Decodes What Others Cannot See",
+        "text": "On soul decoding, hidden blocks, and reading the patterns beneath a life that looks fine.",
+        "meta": "Emprelle",
+        "cta": "Read",
+        "href": "https://baby-spell.com/emperelle-interview-the-woman-who-decodes-what-others-cannot-see/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Interview",
+        "title": "Helping Women Make Life's Most Defining Transitions",
+        "text": "Fertility, identity and the transitions that remake a woman from the inside out.",
+        "meta": "HuffMag",
+        "cta": "Read",
+        "href": "https://baby-spell.com/huffmag-interview-helping-women-make-lifes-most-defining-transitions/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Interview",
+        "title": "Guiding Women Through Life's Most Transformative Journeys",
+        "text": "The work behind the Unblock Method™, and why diagnosis has to come first.",
+        "meta": "UAE Times",
+        "cta": "Read",
+        "href": "https://baby-spell.com/uae-times-interview-guiding-women-through-lifes-most-transformative-journeys/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Interview",
+        "title": "Finally Saying What Women Have Felt for Years",
+        "text": "A long conversation about the things women carry quietly, and what happens when they put them down.",
+        "meta": "Brainz Magazine",
+        "cta": "Read",
+        "href": "https://baby-spell.com/brainz-inteview-alneja-gaspar-horvat-finally-saying-what-women-have-felt-for-years/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Live interview",
+        "title": "IG Live with Viviana Castaneda",
+        "text": "An unscripted conversation on healing, intuition and the roots of repeating patterns.",
+        "meta": "Instagram Live",
+        "cta": "Watch",
+        "href": "https://baby-spell.com/ig-lives-with-viviana-castaneda-2/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podcast",
+        "title": "Why Fertility Is More Emotional Than Physical",
+        "text": "What the body is waiting for, and why emotional safety so often comes before conception.",
+        "meta": "Brainz Podcast",
+        "cta": "Listen",
+        "href": "https://baby-spell.com/podcast-brainz-dec-2025-why-fertility-is-more-emotional-than-physical-brainz-podcast/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podcast",
+        "title": "Healing Fertility & Life Blocks — Ep 141",
+        "text": "A deep dive into the hidden blocks behind fertility, health and the life you cannot seem to start.",
+        "meta": "The Zest to Zen",
+        "cta": "Listen",
+        "href": "https://baby-spell.com/podcast-the-zest-to-zen-healing-fertility-life-blocks-alneja-gaspar-horvat-ep-141/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podcast",
+        "title": "In Conversation with Alneja Gašpar",
+        "text": "Holistic therapy, transformational mentoring and the question that changed everything.",
+        "meta": "The Live Wabi Sabi",
+        "cta": "Listen",
+        "href": "https://baby-spell.com/podcast-the-live-wabi-sabi-livewabisabi-in-conversation-with-alneja-gaspar-holistic-therapist-transformational-mentor/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podcast",
+        "title": "What Women Are Outgrowing",
+        "text": "A 2026 shift in power, softness and self-trust.",
+        "meta": "Dream Big with Amy",
+        "cta": "Listen",
+        "href": "https://baby-spell.com/podcast-dream-big-with-amy-what-women-are-outgrowing-a-2026-shift-in-power-softness-self-trust/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podcast",
+        "title": "The Who of Us Podcast",
+        "text": "On identity, inherited patterns, and who you were before fear taught you otherwise.",
+        "meta": "The Who of Us",
+        "cta": "Listen",
+        "href": "https://baby-spell.com/podcast-the-who-of-us-podcast/",
+        "external": true
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Cover feature",
+        "title": "Brainz Magazine",
+        "text": "Executive Contributor, with published articles and featured cover stories.",
+        "meta": "Brainz Magazine",
+        "cta": "Read the feature",
+        "href": "https://baby-spell.com/brainz-inteview-alneja-gaspar-horvat-finally-saying-what-women-have-felt-for-years/",
+        "external": true,
+        "image": "cover-brainz.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Cover feature",
+        "title": "Emprelle",
+        "text": "The Woman Who Decodes What Others Cannot See.",
+        "meta": "Emprelle",
+        "cta": "Read the feature",
+        "href": "https://baby-spell.com/emperelle-interview-the-woman-who-decodes-what-others-cannot-see/",
+        "external": true,
+        "image": "cover-emprelle.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Cover feature",
+        "title": "UAE Times",
+        "text": "Guiding Women Through Life's Most Transformative Journeys.",
+        "meta": "UAE Times",
+        "cta": "Read the feature",
+        "href": "https://baby-spell.com/uae-times-interview-guiding-women-through-lifes-most-transformative-journeys/",
+        "external": true,
+        "image": "cover-uae-times.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Cover feature",
+        "title": "HuffMag",
+        "text": "Helping Women Make Life's Most Defining Transitions.",
+        "meta": "HuffMag",
+        "cta": "Read the feature",
+        "href": "https://baby-spell.com/huffmag-interview-helping-women-make-lifes-most-defining-transitions/",
+        "external": true,
+        "image": "cover-huffmag.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Cover feature",
+        "title": "CEO Journal",
+        "text": "Cover feature on the work behind the Unblock Method™.",
+        "meta": "CEO Journal",
+        "cta": "Read the feature",
+        "href": "https://baby-spell.com/article-library/",
+        "external": true,
+        "image": "cover-ceo-journal.jpg"
+      }
+    ],
+    "archive": {
+      "title": "Looking for the older writing?",
+      "text": "Years of articles on fertility, conscious parenting, relationships and emotional healing still live on the original site.",
+      "cta": "Open the article archive"
+    },
+    "_todo": "The CEO Journal entry links to the article library because no direct URL was supplied."
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Ask me anything before you book.",
+      "lede": "If you are not sure whether this is for you, write to me. I would rather you arrive certain than hopeful."
+    },
+    "form": {
+      "title": "Send a message",
+      "lede": "Tell me roughly what is going on. You do not need to explain it perfectly.",
+      "consent": "I'm happy for Alneja to store this message in order to reply to me.",
+      "topics": [
+        {
+          "value": "soul-mapping",
+          "label": "Soul Mapping™ / the Unblock Method™"
+        },
+        {
+          "value": "readings",
+          "label": "Twin Flame or Angel Babies reading"
+        },
+        {
+          "value": "mentorship",
+          "label": "Mentorship or retreats"
+        },
+        {
+          "value": "academy",
+          "label": "Academy or membership"
+        },
+        {
+          "value": "press",
+          "label": "Press, podcast or collaboration"
+        },
+        {
+          "value": "other",
+          "label": "Something else"
+        }
+      ]
+    },
+    "direct": {
+      "title": "Directly",
+      "response": "Replies usually within two working days",
+      "languages": "English, German, Hungarian, Croatian and Slovenian"
+    },
+    "book": {
+      "title": "Already know what you need?",
+      "text": "Skip the message and go straight to the calendar.",
+      "cta": "Book a session"
+    },
+    "faq": {
+      "title": "Quick answers",
+      "items": [
+        {
+          "q": "How soon can I get a session?",
+          "a": "Availability changes month to month. The calendar always shows the true picture."
+        },
+        {
+          "q": "Do you work with men as well as women?",
+          "a": "Yes. I work with both women and men who are open to sharing, willing to open up, and ready to receive support and help. You don't need to have everything figured out — you simply need to be willing to look within and take the first step."
+        },
+        {
+          "q": "Can I book on behalf of someone else?",
+          "a": "Sessions require the person's own consent, willingness and presence, so I don't recommend booking a session for someone who hasn't expressed an interest in the work. However, you can purchase a gift card for someone, provided you have their prior consent or know that they are genuinely open to personal and spiritual growth and to receiving this kind of support. Ultimately, the person receiving the gift gets to decide whether and when they want to use it."
+        },
+        {
+          "q": "Is everything confidential?",
+          "a": "Absolutely. The content of our sessions, therapy and the work we do together is strictly confidential and will never leave the room. I will never repeat, share, quote or use anything you tell me. The only exception is a testimonial you have voluntarily chosen to provide, which may be shared with your consent. You can also choose to have your testimonial published anonymously, without your name or any identifying information."
+        }
+      ]
+    }
+  },
+  "press": {
+    "title": "As seen in",
+    "_todo": "The outlet names render as styled text, not official logos. To use real artwork, drop a file into src/assets/img/ and add \"logo\": \"logo-brainz.svg\" to that outlet. The CEO Journal slide links to the article archive because no direct URL was supplied; its headline is taken from the cover itself.",
+    "outlets": [
+      {
+        "name": "Brainz Magazine",
+        "style": "serif-bold"
+      },
+      {
+        "name": "CEO Journal",
+        "style": "sans-bold"
+      },
+      {
+        "name": "UAE Times",
+        "style": "serif-wide"
+      },
+      {
+        "name": "Female CEO",
+        "style": "sans"
+      },
+      {
+        "name": "Emprelle",
+        "style": "serif"
+      },
+      {
+        "name": "Billboard Lifestyle",
+        "style": "sans-bold"
+      },
+      {
+        "name": "HuffMag",
+        "style": "sans-italic"
+      }
+    ],
+    "features": [
+      {
+        "outlet": "Brainz Magazine",
+        "file": "cover-brainz.jpg",
+        "eyebrow": "Cover story · Brainz Magazine",
+        "title": "Finally saying what women have felt for years",
+        "text": "A long conversation about the things women carry quietly — the patterns, the exhaustion, the sense that something is off even when life looks fine — and what happens when they finally put them down.",
+        "cta": "Read the interview",
+        "href": "https://baby-spell.com/brainz-inteview-alneja-gaspar-horvat-finally-saying-what-women-have-felt-for-years/",
+        "first": true
+      },
+      {
+        "outlet": "Emprelle",
+        "file": "cover-emprelle.jpg",
+        "eyebrow": "Cover story · Emprelle",
+        "title": "The woman who decodes what others cannot see",
+        "text": "On soul decoding, hidden blocks, and reading the patterns beneath a life that looks perfectly fine from the outside.",
+        "cta": "Read the interview",
+        "href": "https://baby-spell.com/emperelle-interview-the-woman-who-decodes-what-others-cannot-see/"
+      },
+      {
+        "outlet": "UAE Times",
+        "file": "cover-uae-times.jpg",
+        "eyebrow": "Cover story · UAE Times",
+        "title": "Guiding women through life's most transformative journeys",
+        "text": "The work behind the Unblock Method™ — and why diagnosis always has to come before healing.",
+        "cta": "Read the interview",
+        "href": "https://baby-spell.com/uae-times-interview-guiding-women-through-lifes-most-transformative-journeys/"
+      },
+      {
+        "outlet": "HuffMag",
+        "file": "cover-huffmag.jpg",
+        "eyebrow": "Cover story · HuffMag",
+        "title": "Helping women make life's most defining transitions",
+        "text": "Fertility, identity and the transitions that remake a woman from the inside out.",
+        "cta": "Read the interview",
+        "href": "https://baby-spell.com/huffmag-interview-helping-women-make-lifes-most-defining-transitions/"
+      },
+      {
+        "outlet": "CEO Journal",
+        "file": "cover-ceo-journal.jpg",
+        "eyebrow": "Cover story · CEO Journal",
+        "title": "Blending wisdom, healing and leadership",
+        "text": "How women step into alignment and purpose — and what changes in a business when its founder stops working against herself.",
+        "cta": "See the feature",
+        "href": "https://baby-spell.com/article-library/"
+      }
+    ],
+    "total": 5,
+    "carouselLabel": "Cover stories",
+    "prevLabel": "Previous cover story",
+    "nextLabel": "Next cover story",
+    "libraryText": "Every article, interview, cover story and podcast conversation is collected",
+    "libraryLink": "in the library"
+  },
+  "newsletter": {
+    "eyebrow": "Free guide",
+    "title": "7 hidden blocks that may be keeping you stuck",
+    "lede": "A short, plain-spoken guide to the patterns I see most often — and the first question worth asking about each one. Plus letters from me, a few times a month.",
+    "submit": "Send me the guide",
+    "privacy": "No spam, ever. One click to unsubscribe.",
+    "perks": [
+      "The seven blocks, named plainly",
+      "How each one shows up in ordinary daily life",
+      "One honest question to start with",
+      "New readings, retreats and openings announced here first"
+    ]
+  },
+  "footer": {
+    "tagline": "See the unseen.<br>Heal the root.<br>Release the block.<br>Become who you were always meant to be.",
+    "exploreTitle": "Explore",
+    "workTitle": "Work with me",
+    "contactTitle": "Get in touch",
+    "contactLink": "Send a message",
+    "rights": "All rights reserved.",
+    "workLinks": [
+      {
+        "id": "soul-mapping",
+        "label": "Soul Mapping™"
+      },
+      {
+        "id": "unblock-method",
+        "label": "The Unblock Method™"
+      },
+      {
+        "id": "twin-flame",
+        "label": "Twin Flame & Relationship Reading"
+      },
+      {
+        "id": "angel-babies",
+        "label": "Angel Babies Reading™"
+      },
+      {
+        "id": "academy",
+        "label": "The unBLOCKED Life Academy"
+      },
+      {
+        "id": "membership",
+        "label": "Membership"
+      }
+    ]
+  },
+  "notFound": {
+    "title": "This page has wandered off.",
+    "lede": "The link may be old, or the page may have moved. Everything is still reachable from the home page.",
+    "cta": "Back to the home page"
+  },
+  "quotes": {
+    "eyebrow": "From my clients",
+    "title": "What shifts afterwards",
+    "cta": "Read all client stories",
+    "_todo": "These are real quotes supplied by Alneja. Confirm each person is happy to be named publicly before launch.",
+    "featured": [
+      {
+        "quote": "I had already invested years in personal growth, attended workshops and courses, and worked extensively on myself. Yet I had reached a plateau I could not move beyond on my own. Working with Alneja gave me deeply personalised guidance and a clear path forward. I have progressed faster than I ever expected.",
+        "who": "Valentina, MD",
+        "role": "Specialist in Paediatrics"
+      },
+      {
+        "quote": "I feel calmer, more connected to myself and, most importantly, I understand myself and my patterns better. I notice a real difference in my everyday life. Alneja creates a safe, honest and compassionate space, and she never gives up when there are no easy answers.",
+        "who": "Andrej",
+        "role": ""
+      },
+      {
+        "quote": "I joined the course because I wanted to break out of repeating patterns and finally create change. Through the course and my own commitment, I changed my environment and finally met a partner with whom I feel accepted and loved.",
+        "who": "Tamara",
+        "role": "DNA Through the Ancestral Line"
+      }
+    ],
+    "all": [
+      {
+        "quote": "I had already invested years in personal growth, attended workshops and courses, and worked extensively on myself. Yet I had reached a plateau I could not move beyond on my own. Working with Alneja gave me deeply personalised guidance and a clear path forward. I have progressed faster than I ever expected.",
+        "who": "Valentina, MD",
+        "role": "Specialist in Paediatrics"
+      },
+      {
+        "quote": "I feel calmer, more connected to myself and, most importantly, I understand myself and my patterns better. I notice a real difference in my everyday life. Alneja creates a safe, honest and compassionate space, and she never gives up when there are no easy answers.",
+        "who": "Andrej",
+        "role": ""
+      },
+      {
+        "quote": "I joined the course because I wanted to break out of repeating patterns and finally create change. Through the course and my own commitment, I changed my environment and finally met a partner with whom I feel accepted and loved.",
+        "who": "Tamara",
+        "role": "DNA Through the Ancestral Line"
+      },
+      {
+        "quote": "It is invaluable to have someone with whom you can openly explore your deepest, most hidden and painful experiences. Working with Alneja has helped me look at life from a different perspective — one that is healing, supportive and liberating. Her meditations are particularly beautiful and freeing.",
+        "who": "Urban",
+        "role": ""
+      },
+      {
+        "quote": "Ten years of trying. Eleven embryo transfers. Nothing worked until we did Alneja's programme.",
+        "who": "Eva & Grega",
+        "role": "Fertility programme"
+      },
+      {
+        "quote": "After four years of treatments, I got pregnant naturally during Alneja's programme. I almost gave up.",
+        "who": "Viktoria T.",
+        "role": "Fertility programme"
+      },
+      {
+        "quote": "I didn't just get pregnant — I healed my relationship, found myself again, and became the woman I always wanted to be.",
+        "who": "Monika",
+        "role": "Fertility programme"
+      },
+      {
+        "quote": "As a man, I was sceptical. But after working with Alneja, I gained a sense of calm I hadn't felt in years.",
+        "who": "Blaž",
+        "role": ""
+      },
+      {
+        "quote": "Without you, we wouldn't have everything we have today. I am deeply grateful for you and for the work you do.",
+        "who": "Nina",
+        "role": ""
+      },
+      {
+        "quote": "What you have done for me, my family and now our baby — I could thank you every month and still never express how grateful I am for everything you have helped us with.",
+        "who": "Renata",
+        "role": ""
+      }
+    ]
+  },
+  "experiences": {
+    "hero": {
+      "eyebrow": "Client stories",
+      "title": "In their own words.",
+      "lede": "Doctors, parents, partners and sceptics — what changed for them once we found the root."
+    },
+    "note": "Shared with permission. Some clients asked for only a first name.",
+    "cta": {
+      "title": "Your story could start here.",
+      "lede": "Every one of these began with a single session where we simply looked at what was actually there.",
+      "primary": "Book a Soul Mapping™ session",
+      "secondary": "Ask me a question first"
+    }
+  },
+  "mantra": [
+    "See the unseen.",
+    "Heal the root.",
+    "Release the block.",
+    "Become who you were always meant to be."
+  ]
+}

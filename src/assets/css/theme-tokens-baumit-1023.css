@@ -1,0 +1,66 @@
+/* =========================================================================
+   Alneya — Baumit Life 1023 (olive green)
+   The paint colour #8b977c is the DARKEST colour on the page: it fills the hero,
+   the Unblock Method band, the testimonials and the footer. The main
+   navigation sits one shade deeper so the header reads as its own surface.
+
+   Because the paint is a mid-tone, text on those bands is dark, not light —
+   white only reaches ~2.7:1 here. Pair this palette with theme-paint.css
+   (not theme-dark.css), which inverts the band text accordingly.
+   ========================================================================= */
+
+:root {
+  /* light grounds — everything between the painted bands */
+  --ivory:     #ffffff;
+  --shell:     #f5f6f3;
+  --blush:     #f7f8f6;
+  --lilac:     #f0f1ee;
+  --lilac-200: #dee1da;
+  --lilac-300: #c7cdc0;
+  --sage:      #f2f4f1;
+  --sage-200:  #e3e6e0;
+
+  --line:      #e2e5de;
+  --line-soft: #eef0ec;
+
+  /* antique gold, held back so it supports the paint rather than fighting it */
+  --gold-700: #7b5e28;
+  --gold-600: #82652e;
+  --gold-500: #b2975c;
+  --gold-400: #cfbc90;
+  --gold-300: #e7dab8;
+  --gold-100: #f6efde;
+
+  /* the paint and its two deeper shades */
+  --deep-700: #8b977c;          /* the paint itself — hero, Method, quotes, footer */
+  --deep-800: #808d70;          /* navigation, one shade deeper */
+  --deep-900: #788469;          /* darkest point: header gradient end, stuck header */
+  --deep-500: #a4ae98;
+  --deep-300: #d7dbd1;
+  --deep-200: #ebede8;
+
+  --moss-700: #8b977c;
+  --moss-500: #a4ae98;
+
+  /* ink for the light sections */
+  --ink:       #1f221b;
+  --ink-soft:  #3e4436;
+  --ink-faint: #4b5241;
+
+  /* ink for the painted bands — solved against #788469, the darkest stop,
+     so every one of them clears WCAG AA wherever the paint appears */
+  --band-ink:      #0c1007;
+  --band-ink-soft: #12160d;
+  --band-accent:   #1a1407;
+
+  --shadow-sm: 0 1px 2px rgba(26, 32, 24, .05), 0 8px 24px rgba(26, 32, 24, .06);
+  --shadow-md: 0 2px 6px rgba(26, 32, 24, .06), 0 22px 50px rgba(26, 32, 24, .10);
+  --shadow-gold: 0 16px 42px rgba(146, 118, 60, .18);
+
+  /* the bands are mid-tone, so the star field is dark rather than gold */
+  --stars: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='%23000000'%3E%3Ccircle cx='26' cy='48' r='1.5' opacity='.12'/%3E%3Ccircle cx='128' cy='22' r='1' opacity='.09'/%3E%3Ccircle cx='214' cy='70' r='1.6' opacity='.11'/%3E%3Ccircle cx='276' cy='150' r='1' opacity='.08'/%3E%3Ccircle cx='60' cy='168' r='1.2' opacity='.10'/%3E%3Ccircle cx='172' cy='198' r='1.5' opacity='.09'/%3E%3Ccircle cx='96' cy='262' r='1' opacity='.10'/%3E%3Ccircle cx='242' cy='286' r='1.3' opacity='.08'/%3E%3Ccircle cx='8' cy='232' r='1' opacity='.08'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* the hero is painted by theme-paint.css, so only the light washes live here */
+.section--blush { background: linear-gradient(170deg, var(--blush), var(--shell)); }
+.section--lilac { background: linear-gradient(165deg, var(--lilac), var(--blush) 76%); }

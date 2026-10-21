@@ -1,0 +1,12 @@
+<section class="section hero hero--slim">
+  <div class="wrap hero--slim__inner">
+    <p class="eyebrow">404</p>
+    <h1 class="h1">{{ notFound.title }}</h1>
+    {{> ornament}}
+    <p class="lede">{{ notFound.lede }}</p>
+    <p class="btn-row">
+      <a class="btn btn--gold" href="{{ @nav.home.url }}">{{ notFound.cta }}</a>
+      <a class="btn btn--ghost-light" href="{{ @nav.services.url }}">{{ nav.services }}</a>
+    </p>
+  </div>
+</section>

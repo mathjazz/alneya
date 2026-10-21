@@ -1,0 +1,1326 @@
+{
+  "meta": {
+    "locale": "sl",
+    "name": "Slovenščina",
+    "ogLocale": "sl_SI"
+  },
+  "slugs": {
+    "home": "",
+    "about": "o-meni",
+    "services": "sodelujva",
+    "library": "knjiznica",
+    "contact": "kontakt",
+    "experiences": "zgodbe-strank"
+  },
+  "site": {
+    "name": "Alneya",
+    "subtitle": "Odblokiraj svoje življenje",
+    "founder": "Alneja Gašpar Horvat",
+    "role": "Razbiralka duše in zdravilka",
+    "tagline": "Razbiralka duše in zdravilka. Avtorica metode Unblock Method™ — poglej, razberi in ozdravi skrite blokade, ki te zadržujejo.",
+    "email": "alneja@baby-spell.com",
+    "methodLine": "avtorica metode Unblock Method™"
+  },
+  "links": {
+    "booking": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+    "shop": "https://baby-spell.com/shop/",
+    "newsletterAction": "#TODO-newsletter-endpoint",
+    "contactAction": "#TODO-contact-form-endpoint",
+    "instagram": "https://www.instagram.com/alneja.horvat/",
+    "facebook": "https://www.facebook.com/profile.php?id=100054259130271",
+    "linkedin": "https://www.linkedin.com/in/alneja-ga%C5%A1par-horvat-8523a9388/",
+    "articleLibrary": "https://baby-spell.com/article-library/",
+    "_todo": "Live: booking (Calendly), shop (baby-spell.com) and the email address. Still placeholders: links.newsletterAction and links.contactAction — both forms need a hosted endpoint (Formspree, Basin, MailerLite) before they can send."
+  },
+  "nav": {
+    "home": "Domov",
+    "about": "O meni",
+    "services": "Sodelujva",
+    "library": "Knjižnica",
+    "contact": "Kontakt",
+    "cta": "Rezerviraj termin",
+    "experiences": "Zgodbe strank"
+  },
+  "a11y": {
+    "skipToContent": "Skoči na vsebino",
+    "toggleMenu": "Odpri in zapri meni",
+    "primaryNav": "Glavni meni",
+    "language": "Jezik",
+    "socialLinks": "Družbena omrežja"
+  },
+  "forms": {
+    "name": "Tvoje ime",
+    "email": "E-naslov",
+    "topic": "O čem gre?",
+    "message": "Napiši mi, kaj se dogaja",
+    "send": "Pošlji sporočilo"
+  },
+  "pages": {
+    "home": {
+      "title": "Alneya — razbiralka duše in zdravilka | Unblock Method™",
+      "description": "Poglej, razberi in ozdravi skrite blokade za svojimi simptomi — v ljubezni, zdravju, plodnosti, družini, obilju in poslanstvu. Soul Mapping™ in Unblock Method™ z Alnejo Gašpar Horvat."
+    },
+    "about": {
+      "title": "O meni — Alneja Gašpar Horvat | Alneya",
+      "description": "Zgodba za metodo Unblock Method™: kako je eno samo vprašanje — zakaj se to sploh dogaja? — preraslo v metodo za iskanje in zdravljenje korenine ponavljajočega se vzorca."
+    },
+    "services": {
+      "title": "Sodelujva — Soul Mapping™, branja, retreati | Alneya",
+      "description": "Soul Mapping™, Unblock Method™, branje za dvojni plamen in odnose, Angel Babies Reading™, mentorstvo, retreati, akademija unBLOCKED Life in članstvo."
+    },
+    "library": {
+      "title": "Knjižnica — članki, podkasti in intervjuji | Alneya",
+      "description": "Članki, epizode podkastov, intervjuji in revijalne objave o zdravljenju skritih blokad v ljubezni, zdravju, plodnosti, družini, obilju in poslanstvu."
+    },
+    "contact": {
+      "title": "Kontakt | Alneya",
+      "description": "Imaš vprašanje pred rezervacijo? Piši Alneji — odgovor običajno v dveh delovnih dneh, v angleščini, nemščini, madžarščini, hrvaščini ali slovenščini."
+    },
+    "notFound": {
+      "title": "Strani ni mogoče najti | Alneya",
+      "description": "Ta stran se je preselila ali pa nikoli ni obstajala."
+    },
+    "experiences": {
+      "title": "Zgodbe strank — kaj se premakne | Alneya",
+      "description": "Z njihovimi besedami: zdravnice, starši in partnerji o tem, kaj se je spremenilo po delu z Alnejo Gašpar Horvat."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Si pripravljena ustvariti življenje, ki se ga boš zares veselila vsako jutro?",
+      "ctaPrimary": "Rezerviraj seanso Soul Mapping™",
+      "lede": "Skupaj bova odkrili, kaj te v resnici drži na mestu — in sprostili blokade, ki stojijo med tabo in življenjem, ki si ga resnično želiš.",
+      "imageAlt": "Alneja Gašpar Horvat, razbiralka duše in zdravilka"
+    },
+    "approach": {
+      "title1": "Ne zdravim simptomov.",
+      "title2": "Pomagam ti videti in ozdraviti skrite razloge zanje.",
+      "body": "Nekateri vidijo težave. Jaz vidim vzorce — nevidne niti, ki povezujejo tvoje odnose, zdravje, strahove, otroštvo, prednike, poslanstvo in telo. Ko nit enkrat zagledaš, jo lahko končno potegneš.",
+      "imageAlt": "Portret Alneje Gašpar Horvat",
+      "free": "In te osvobodim vzorcev, ki te držijo na mestu v ljubezni, življenju, delu, zdravju ali poslanstvu."
+    },
+    "method": {
+      "eyebrow": "Pot v štirih korakih",
+      "title": "Unblock Method™",
+      "lede": "Najprej diagnoza, šele nato zdravljenje. Nikoli ne ugibava. Pogledava, razumeva, sprostiva — in potem zgradiva življenje, ki je ves čas čakalo spodaj.",
+      "steps": [
+        {
+          "icon": "third-eye",
+          "name": "Vidiš",
+          "label": "Soul Mapping™",
+          "text": "Intuitivna diagnostika. Poiščeva skrite blokade in odkrijeva, zakaj se tvoje življenje vedno znova vrti v istem vzorcu."
+        },
+        {
+          "icon": "spiral",
+          "name": "Razumeš",
+          "label": "Celostno razbiranje",
+          "text": "Vsako blokado izslediva do njene čustvene, prednikovske in podzavestne korenine — in jo poimenujeva na glas."
+        },
+        {
+          "icon": "lotus",
+          "name": "Ozdraviš",
+          "label": "Unblock Method™",
+          "text": "Vodena seansa, ki sprosti tisto, česar ti nikoli ne bi bilo treba nositi."
+        },
+        {
+          "icon": "butterfly",
+          "name": "Ustvariš",
+          "label": "Življenje unBLOCKED",
+          "text": "Ljubezen. Zdravje. Obilje. Poslanstvo. Družina. Notranji mir — živet, ne le upan."
+        }
+      ],
+      "close": "Nehaj životariti. Začni živeti.",
+      "cta": "Rezerviraj seanso Soul Mapping™"
+    },
+    "pillars": {
+      "eyebrow": "Kje si obtičala?",
+      "title": "Šest mest, kjer se blokada pokaže",
+      "lede": "Večina pride z enim od teh. Skoraj vsaka odide ozdravljena na več področjih, kot je pričakovala.",
+      "items": [
+        {
+          "icon": "sacred-heart",
+          "target": "unblock-love",
+          "title": "Odblokiraj ljubezen",
+          "cta": "Poglej",
+          "lines": "Predstavljaj si, da se nikoli več ne bi spraševala, ali si dovolj.<br>Predstavljaj si odnose, ki so mirni namesto izčrpavajoči.<br>Predstavljaj si, da privlačiš ljubezen, ne da bi zapustila sebe.<br><em>Ljubezen se spremeni, ko ozdraviš skrite rane, ki so oblikovale način, kako ljubezen daješ in sprejemaš.</em>"
+        },
+        {
+          "icon": "tree-of-life",
+          "target": "unblock-family",
+          "title": "Odblokiraj družino",
+          "cta": "Poglej",
+          "lines": "Ozdravi medgeneracijsko travmo.<br>Prekini nezavedne družinske vzorce.<br><em>Postani starš, ki ga tvoji otroci v resnici potrebujejo — ne tisti, ki so ga ustvarile tvoje rane.</em>"
+        },
+        {
+          "icon": "seed",
+          "target": "unblock-fertility",
+          "title": "Odblokiraj plodnost",
+          "cta": "Poglej",
+          "lines": "Včasih telo čaka na čustveno varnost.<br>Zdravljenje plodnosti ni iskanje krivca.<br><em>Gre za ustvarjanje notranjih pogojev, v katerih lahko življenje vzklije.</em>"
+        },
+        {
+          "icon": "chakras",
+          "target": "unblock-body",
+          "title": "Odblokiraj telo",
+          "cta": "Poglej",
+          "lines": "Tvoji simptomi niso tvoj sovražnik.<br>So jezik tvojega telesa.<br><em>Poglejva, kaj ti že ves čas poskuša povedati.</em>"
+        },
+        {
+          "icon": "sun-rays",
+          "target": "unblock-abundance",
+          "title": "Odblokiraj obilje",
+          "cta": "Poglej",
+          "lines": "Denar sledi varnosti.<br>Uspeh sledi uglašenosti.<br><em>Prejemaj več tako, da sprostiš tisto, kar tvojemu živčnemu sistemu govori, da ni varno imeti več.</em>"
+        },
+        {
+          "icon": "north-star",
+          "target": "unblock-purpose",
+          "title": "Odblokiraj poslanstvo",
+          "cta": "Poglej",
+          "lines": "Nehaj se spraševati: &bdquo;Kaj naj počnem?&ldquo;<br>Začni se spraševati: &bdquo;Kdo sem bila, preden me je strah naučil drugače?&ldquo;<br><em>Poslanstva ne izbereš. Poslanstvo je tisto, pred čemer se nehaš skrivati.</em>"
+        }
+      ]
+    },
+    "offers": {
+      "eyebrow": "Sodelujva",
+      "title": "Načini, kako lahko sodelujeva",
+      "lede": "Začni tam, kjer najbolj boli. Vsaka pot se začne z jasnim pogledom.",
+      "cta": "Poglej vse, s cenami",
+      "items": [
+        {
+          "icon": "third-eye",
+          "target": "soul-mapping",
+          "title": "Soul Mapping™",
+          "kicker": "Intuitivna diagnostika",
+          "text": "Poglobljeno branje tvojega polja, ki poišče skrite blokade za tvojimi simptomi. Tu začnejo vse.",
+          "cta": "Poglej"
+        },
+        {
+          "icon": "lotus",
+          "target": "unblock-method",
+          "title": "Unblock Method™",
+          "kicker": "Program zdravljenja",
+          "text": "Seansa, na kateri sprostiva to, kar je našel Soul Mapping — pri korenini, ne na površju.",
+          "cta": "Poglej"
+        },
+        {
+          "icon": "infinity",
+          "target": "twin-flame",
+          "title": "Branje za dvojni plamen in odnose",
+          "kicker": "Branje z angelskimi kartami",
+          "text": "Jasnost o povezavi, ki te drži budno: kaj je, kaj ti zrcali in kaj od tebe pravzaprav zahteva.",
+          "cta": "Poglej"
+        },
+        {
+          "icon": "seed",
+          "target": "angel-babies",
+          "title": "Angel Babies Reading™",
+          "kicker": "Branje za plodnost",
+          "text": "Nežno intuitivno branje za otroke, ki so prišli, tiste, ki so odšli, in tistega, ki še čaka.",
+          "cta": "Poglej"
+        },
+        {
+          "icon": "north-star",
+          "target": "mentorship",
+          "title": "Mentorstvo",
+          "kicker": "Ena na ena, več mesecev",
+          "text": "Za globoke prenove. Skozi vsako plast greva po vrsti, jaz pa sem ob tebi vso pot.",
+          "cta": "Poglej"
+        },
+        {
+          "icon": "mountain-moon",
+          "target": "retreats",
+          "title": "Retreati",
+          "kicker": "V živo, v majhnih skupinah",
+          "text": "Nekaj dni stran od vsakdana, da ima premik kam pristati — v telo, ne samo v glavo.",
+          "cta": "Poglej"
+        },
+        {
+          "icon": "book-light",
+          "target": "academy",
+          "title": "Akademija unBLOCKED Life",
+          "kicker": "Program v lastnem ritmu",
+          "text": "Celotna metoda, naučena do konca, da lahko svoje vzorce prebereš in odblokiraš sama.",
+          "cta": "Poglej"
+        },
+        {
+          "icon": "circle-people",
+          "target": "membership",
+          "title": "Članstvo",
+          "kicker": "Mesečna skupnost",
+          "text": "Klici v živo, skupinska zdravljenja in soba, polna ljudi, ki delajo isto pogumno delo.",
+          "cta": "Poglej"
+        }
+      ]
+    },
+    "story": {
+      "eyebrow": "Moja zgodba",
+      "title": "Nisem bila od nekdaj ta ženska.",
+      "paragraphs": [
+        "Pred trinajstimi leti je moje življenje od zunaj izgledalo popolno — znotraj pa sem razpadala. Moje telo je odpovedovalo. Življenje se mi je zdelo neznosno. Bila sem odrezana od sebe, ujeta v vzorce, ki jih nisem razumela, utapljala sem se v službi, ki sem jo sovražila — in povedali so mi, da najverjetneje nikoli ne bom postala mama.",
+        "Potem sem se odločila, da svoje staro življenje zažgem do tal. Ozdravela sem. Postala sem mama — dvakrat. Našla sem svoje poslanstvo. In odkrila, kako videti skrite korenine pod vzorci, ki nas držijo na mestu.",
+        "Moj zlom je postal vrata v delo mojega življenja. Danes pomagam drugim odkriti, kaj leži pod površjem — da nehajo ponavljati tisto, kar boli, se znova povežejo s sabo in ustvarijo življenje, zaradi katerega so prišli sem."
+      ],
+      "cta": "Preberi mojo celotno zgodbo",
+      "imageAlt": "Alneja Gašpar Horvat"
+    },
+    "pain": {
+      "lede": "Ali …",
+      "items": [
+        "Se v odnosu izgubljaš samo zato, da ga ohraniš pri življenju?",
+        "Se bojiš ponedeljkov, ker ti delo jemlje življenje?",
+        "Si izgubljena v življenju, ki je na videz v redu — znotraj pa povsem prazno?",
+        "Greš iz ene stiske v drugo, ceno pa vedno plača tvoje telo?"
+      ],
+      "reason": "Obstaja razlog, zakaj vedno znova pristaneš tukaj.",
+      "explain": "Skupaj bova odkrili skrite blokade, ki te držijo na mestu, se osvobodili tega, kar te zavira, in ustvarili življenje, ki se ga boš zares veselila.",
+      "cta": "Začniva"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "O meni",
+      "title": "Ime mi je Alneja in tu sem, da prevedem jezik tvoje duše.",
+      "lede": "Pomagam ti videti, razbrati in ozdraviti skrite blokade, ki te zadržujejo — da nehaš znova ustvarjati isto bolečino in začneš živeti življenje, ki si ga zaslužiš in želiš.",
+      "cta": "Rezerviraj termin pri meni",
+      "imageAlt": "Alneja Gašpar Horvat"
+    },
+    "story": {
+      "title": "Kako je nastala metoda Unblock Method™",
+      "paragraphs": [
+        "Leta sem počela vse tisto, kar naj bi človek počel. Hodila sem k zdravnikom. Brala knjige. Poskusila terapije, prakse in protokole. Vsak je malo pomagal, nobeden pa ni pojasnil tistega, kar se je dogajalo naprej: isti vzorec, ki se je vračal v novi preobleki.",
+        "Drug odnos, isti konec. Druga služba, ista izčrpanost. Druga diagnoza, isti temeljni občutek, da nekaj v meni tiho dela proti meni.",
+        "Prelomnica ni bila tehnika. Bilo je vprašanje. Nehala sem se spraševati <em>„Kako to popravim?“</em> in začela spraševati <em>„Zakaj se to sploh dogaja?“</em>",
+        "To vprašanje je spremenilo smer mojega celotnega življenja. Peljalo me je v zdravljenje časovnic, delo s predniki, delo s senco, zdravljenje notranjega otroka in podzavestno transformacijo — in na koncu v delo, ki ga opravljam danes. To delo je preprosto tole: pogledam, kaj je v resnici tam, to poimenujem, in skupaj to izpustiva.",
+        "Poimenovala sem jo Unblock Method™, ker točno to počne. Ne obvladuje simptomov. Najde blokado, ji sledi do korenine in jo izpusti."
+      ]
+    },
+    "turning": {
+      "eyebrow": "Kako delam",
+      "title": "Najprej diagnoza. Vedno.",
+      "listTitle": "Kaj to pomeni v praksi:",
+      "imageAlt": "Alneja Gašpar Horvat",
+      "paragraphs": [
+        "Večina dela na sebi se začne z rešitvijo in upa, da bo ustrezala. Jaz začnem z diagnozo. Preden karkoli spreminjava, ugotoviva, kaj je v resnici tam — katera blokada, iz katere plasti, nošena od kdaj in za koga.",
+        "Nekaj tega, kar najdeva, je tvojega. Presenetljivo veliko tega ni bilo nikoli. Podedovana zvestoba, stara družinska pogodba, odločitev prestrašene sedemletnice, ki nekje v tvojem živčnem sistemu še vedno odloča namesto tebe.",
+        "Moje delo je, da nevidno postane vidno — in da ti pomagam odložiti tisto, česar ti nikoli ne bi bilo treba nositi."
+      ],
+      "items": [
+        "Najprej pogledava, šele nato ukrepava — brez ugibanja in splošnih protokolov",
+        "Tvoje simptome berem kot informacijo, nikoli kot neuspeh",
+        "Nič ni na silo; delava s hitrostjo, ki jo tvoj sistem dopušča",
+        "Z vsake seanse odideš z jasnim vedenjem, kaj sva našli in zakaj",
+        "Seanse potekajo prek spleta, ena na ena, v petih jezikih",
+        "Vse, kar deliš, ostane med nama"
+      ]
+    },
+    "values": {
+      "eyebrow": "V kaj verjamem",
+      "title": "Štiri stvari, ki se jih držim",
+      "items": [
+        {
+          "icon": "third-eye",
+          "title": "Nič ni naključje",
+          "text": "Vsak ponavljajoč se vzorec ima korenino. Če se nekaj vedno znova dogaja, obstaja razlog — in razlog je mogoče najti."
+        },
+        {
+          "icon": "chakras",
+          "title": "Simptomi so jezik",
+          "text": "Tvoje telo te ne sabotira. Nekaj ti govori v edinem besedišču, ki ga ima."
+        },
+        {
+          "icon": "tree-of-life",
+          "title": "Ni vse tvoje",
+          "text": "Zelo veliko tega, kar te teži, ti je bilo izročeno. Smeš vrniti."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Nisi zlomljena",
+          "text": "Nikoli nisi bila zlomljena. Bila si blokirana — blokado pa je mogoče sprostiti."
+        }
+      ]
+    },
+    "credentials": {
+      "eyebrow": "Ozadje",
+      "title": "Izobrazba, praksa in mediji",
+      "note": "Izbrani članki, gostovanja v podkastih in naslovnice revij so zbrani v Knjižnici.",
+      "items": [
+        "Executive Contributor in gostujoča avtorica revije Brainz Magazine, z objavljenimi članki in naslovnicami",
+        "Avtorica metod Unblock Method™ in Soul Mapping™",
+        "Avtorica branja Angel Babies Reading™",
+        "Certificirana life coachinja in certificirana regresoterapevtka",
+        "Arhetipska analitičarka, učiteljica meditacije in učiteljica joge",
+        "Svetovalka za žalovanje in izgubo, s podporo pri zdravljenju izgube, življenjskih prehodov in čustvene preobrazbe",
+        "Več kot desetletje izkušenj pri spremljanju žensk skozi osebno preobrazbo, odnose, družinske dinamike, poti do zanositve in velike življenjske prehode",
+        "Specializirana za zdravljenje časovnic, vzorce prednikov in medgeneracijsko zdravljenje, delo s senco, zdravljenje notranjega otroka in podzavestno transformacijo",
+        "Intuitivna branja in branja z angelskimi kartami ter vodenje",
+        "Mednarodno delo prek spleta, v angleščini, nemščini, madžarščini, hrvaščini in slovenščini"
+      ]
+    },
+    "cta": {
+      "title": "Si pripravljena videti, kaj je v resnici tam?",
+      "lede": "Začni s seanso Soul Mapping™. Najprej pogledava — nato pa se sama odločiš, kaj boš s tem naredila.",
+      "primary": "Rezerviraj seanso Soul Mapping™",
+      "secondary": "Poglej vse načine sodelovanja"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Sodelujva",
+      "title": "Najdi blokado. Sledi ji do korenine. Izpusti jo.",
+      "lede": "Vsaka ponudba spodaj počne eno od treh stvari: pomaga ti jasno videti, pomaga ti sprostiti to, kar si našla, ali pomaga, da sprememba obstane. Začni tam, kjer najbolj boli."
+    },
+    "path": {
+      "title": "Kako to običajno poteka",
+      "lede": "Ni ti treba vedeti, katero storitev potrebuješ. Vedeti moraš le, kje boli.",
+      "steps": [
+        {
+          "title": "Pogledava",
+          "text": "Seansa Soul Mapping™, na kateri poiščeva skrite blokade za simptomom, s katerim si prišla. Skoraj vse začnejo tu."
+        },
+        {
+          "title": "Sprostiva",
+          "text": "Seansa Unblock Method™, na kateri ozdraviva to, kar je našlo mapiranje — pri korenini, ne na površju."
+        },
+        {
+          "title": "Obdržiš",
+          "text": "Mentorstvo, akademija, retreat ali članstvo — odvisno od tega, koliko podpore prenova potrebuje."
+        }
+      ],
+      "uncoverTitle": "Kaj razkrijeva skupaj:",
+      "uncover": [
+        "podzavestna prepričanja",
+        "rane iz otroštva",
+        "vzorce prednikov",
+        "čustvene travme",
+        "odtise iz preteklih obdobij",
+        "podedovane zvestobe",
+        "energijske blokade",
+        "zgodbo, ki jo pripoveduje tvoje telo"
+      ]
+    },
+    "list": {
+      "eyebrow": "Storitve",
+      "title": "Vse, kar ponujam",
+      "_todo": "Vpiši vse cene, trajanja in povezave za rezervacijo. Poišči '#TODO-' in 'TBC' v zgrajeni strani.",
+      "items": [
+        {
+          "id": "soul-mapping",
+          "icon": "third-eye",
+          "kicker": "Intuitivna diagnostika",
+          "title": "Soul Mapping™",
+          "lede": "Tvoje telesne simptome in tvoje resnično življenje — izzive, ponavljanja, stvari, ki se ne premaknejo — uporabim, da ugotovim, zakaj si blokirana. Nato ti pokažem korenino, ki leži spodaj, in te popeljem skozi preobrazbeni proces zdravljenja.",
+          "whoTitle": "Za koga je",
+          "who": "Za vsakogar, ki je obtičal, blokiran ali ponavlja boleče lekcije v življenju, ljubezni, poslanstvu, uspehu, zdravju, plodnosti ali intimnosti — in mu je zmanjkalo razlag.",
+          "getTitle": "Kaj dobiš",
+          "includes": [
+            "Celoten zemljevid blokad, ki so trenutno aktivne v tvojem polju",
+            "Tvoje simptome preberem kot informacijo: na kaj vsak od njih kaže",
+            "Korenino vsake blokade — čustveno, prednikovsko, podzavestno ali energijsko",
+            "Razlago v razumljivem jeziku, kako se vsaka kaže v vsakdanu",
+            "Jasno priporočilo, kaj sprostiti najprej",
+            "Posnetek seanse, h kateremu se lahko vrneš"
+          ],
+          "facts": [
+            {
+              "label": "Oblika",
+              "value": "Prek spleta, ena na ena"
+            },
+            {
+              "label": "Trajanje",
+              "value": "TBC"
+            },
+            {
+              "label": "Naložba",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Rezerviraj Soul Mapping™",
+          "note": "Rezerviraj to prvo, če nisi prepričana, kje začeti."
+        },
+        {
+          "id": "unblock-method",
+          "icon": "lotus",
+          "kicker": "Program zdravljenja",
+          "title": "Unblock Method™",
+          "lede": "Oblika zdravljenja časovnic, ki te popelje tja, kamor sama ne moreš — na mesta, kamor ne bi nikoli pomislila pogledati, k ljudem, za katere sploh ne veš, da vplivajo na tvoje današnje težave, in v situacije, ki se jih ne spomniš: predporodno obdobje, pretekla življenja, matrico prednikov.",
+          "whoTitle": "Za koga je",
+          "who": "Za vsakogar, ki je pripravljen sprostiti to, kar ga zadržuje v ljubezni, plodnosti, družini, zdravju, obilju ali življenjskem poslanstvu — pri izvoru in ne na površju.",
+          "getTitle": "Kaj dobiš",
+          "includes": [
+            "Vodeno zdravljenje časovnic do izvora blokade",
+            "Delo v predporodnem obdobju, preteklih življenjih in matrici prednikov, kolikor je potrebno",
+            "Sproščanje podedovanih zvestob in odločitev, ki jih je sprejela veliko mlajša ti",
+            "Napotke za integracijo v dneh in tednih po seansi",
+            "Prakse, da ostane tvoj živčni sistem miren, medtem ko se stvari premikajo",
+            "Posnetek seanse"
+          ],
+          "facts": [
+            {
+              "label": "Oblika",
+              "value": "Prek spleta, ena na ena"
+            },
+            {
+              "label": "Trajanje",
+              "value": "TBC"
+            },
+            {
+              "label": "Naložba",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Rezerviraj seanso",
+          "note": "Najbolje po opravljeni seansi Soul Mapping™."
+        },
+        {
+          "id": "twin-flame",
+          "icon": "infinity",
+          "kicker": "Branje z angelskimi kartami",
+          "title": "Branje za dvojni plamen in odnose",
+          "lede": "Branje za povezavo, iz katere se ne moreš premisliti. Kaj je, kaj ti zrcali nazaj in kaj od tebe v resnici zahteva, da ozdraviš.",
+          "whoTitle": "Za koga je",
+          "who": "Za vsakogar, ki je ujet v povezavo, ki je hkrati usodna in izčrpavajoča — dvojni plamen, karmična vez ali preprosto odnos, ki mu ne najdeš smisla.",
+          "getTitle": "Kaj dobiš",
+          "includes": [
+            "Branje o povezavi in njenem namenu",
+            "Vzorec, ki se skriva pod privlačnostjo",
+            "Kaj v tej dinamiki pripada tebi in kaj njemu oziroma njej",
+            "Iskren napotek za naslednji pravi korak",
+            "Posnetek branja"
+          ],
+          "facts": [
+            {
+              "label": "Oblika",
+              "value": "Prek spleta, ena na ena"
+            },
+            {
+              "label": "Trajanje",
+              "value": "TBC"
+            },
+            {
+              "label": "Naložba",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Rezerviraj branje",
+          "note": "Lahko ga rezerviraš samostojno."
+        },
+        {
+          "id": "angel-babies",
+          "icon": "seed",
+          "kicker": "Branje za plodnost",
+          "title": "Angel Babies Reading™",
+          "lede": "Močno intuitivno branje, ki prepozna skrite podzavestne, čustvene in energijske blokade plodnosti, zaradi katerih ne moreš zanositi — tiste, ki jih ne pokaže noben izvid.",
+          "whoTitle": "Za koga je",
+          "who": "Za vsakogar, ki je preizkusil protokole, obiskal zdravnike, opravil notranje delo, vložil v postopke OBMP — in še vedno ni noseč ali nosečnosti ne uspe obdržati. Če se ti zdi, da ti zmanjkuje možnosti, to branje pogleda globlje.",
+          "getTitle": "Kaj dobiš",
+          "includes": [
+            "Skrite razloge za težave s plodnostjo, splave, neuspešne postopke OBMP ali nezmožnost zanositve",
+            "Vsebino in pogoje pogodbe o spočetju tvoje duše in to, kaj v njej blokira spočetje",
+            "Pregled potenciala tvojega materinskega arhetipa",
+            "Kako in zakaj ti, tvoj partner in izbrana duša otroka morda omejujete ta proces",
+            "Program plodnosti in nosečnosti, zasnovan po tvoji lastni zgodbi",
+            "Rešitve za odpravo vsake blokade, da je pot za dušo tvojega otroka odprta"
+          ],
+          "facts": [
+            {
+              "label": "Oblika",
+              "value": "Prek spleta, ena na ena"
+            },
+            {
+              "label": "Trajanje",
+              "value": "90 minut"
+            },
+            {
+              "label": "Naložba",
+              "value": "220 €"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Rezerviraj branje",
+          "note": "Vodeno z veliko skrbnostjo. Vzemi si čas za odločitev."
+        },
+        {
+          "id": "mentorship",
+          "icon": "north-star",
+          "kicker": "Ena na ena, več mesecev",
+          "title": "Mentorstvo",
+          "lede": "Za tiste, ki si želijo več kot le lastno zdravljenje. Najdeš svoje poslanstvo in se naučiš mojih tehnik — Unblock Method™, Soul Mapping™, intuitivnega branja in Angel Babies Reading™ — da lahko ta orodja neseš naprej sama.",
+          "whoTitle": "Za koga je",
+          "who": "Za vsakogar, ki čuti poklicanost delati to delo z drugimi: pomagati več ljudem ustvariti družino, najti ljubezen ali življenje, ki se ga veselijo vsako jutro.",
+          "getTitle": "Kaj dobiš",
+          "includes": [
+            "Redne seanse ena na ena skozi več mesecev",
+            "Usposabljanje za Unblock Method™ in Soul Mapping™",
+            "Usposabljanje za intuitivno branje in Angel Babies Reading™",
+            "Tvoje lastno zdravljenje, ki poteka vzporedno z usposabljanjem",
+            "Podporo med seansami, kadar kaj pride na površje",
+            "Posnetke vsega"
+          ],
+          "facts": [
+            {
+              "label": "Oblika",
+              "value": "Prek spleta, ena na ena"
+            },
+            {
+              "label": "Trajanje",
+              "value": "TBC"
+            },
+            {
+              "label": "Naložba",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://calendly.com/alneja-gaspar-horvat/svetovanje",
+          "cta": "Prijavi se na mentorstvo",
+          "note": "Omejeno število mest. Najprej se pogovoriva, ali se ujameva."
+        },
+        {
+          "id": "retreats",
+          "icon": "mountain-moon",
+          "kicker": "V živo, Vila Vilma",
+          "title": "Unlock Your Fertility — VIP retreat",
+          "lede": "Zasebni, povsem prilagojeni retreat za plodnost za pare ali posameznice v Vili Vilmi, sto let stari hiški nad lendavskimi goricami. Od treh do sedmih dni za odkrivanje in sproščanje čustvenih, podzavestnih in energijskih blokad, ki vplivajo na spočetje — po naravni poti ali ob postopkih OBMP.",
+          "whoTitle": "Za koga je",
+          "who": "Za pare in posameznice, ki so poskusili naravne in medicinske poti brez uspeha, ki čutijo, da je proces v odnos prinesel razdaljo, in slutijo, da je na poti nekaj globljega. Plodnost ni delo enega samega človeka.",
+          "getTitle": "Kaj dobiš",
+          "includes": [
+            "Diagnostiko plodnosti in analizo korenskih blokad za oba partnerja",
+            "Čiščenje čustvenih, mentalnih in energijskih vzorcev",
+            "Regresoterapijo in globoko sproščanje stresa (metoda STRESS OUT)",
+            "Zdravljenje dinamik v odnosu, ki vplivajo na spočetje",
+            "Čiščenje podedovanih vzorcev plodnosti po liniji prednikov (7-dnevni)",
+            "Zdravljenje porodne travme, izgube in žalovanja po splavu (7-dnevni)",
+            "Angel Babies Reading™ za energijske blokade in uglasitev s spočetjem (7-dnevni)",
+            "Osebni paket meditacij za plodnost, ki ga odneseš domov",
+            "Nastanitev v Vili Vilmi, zasebnem zatočišču sredi narave"
+          ],
+          "facts": [
+            {
+              "label": "Trajanje",
+              "value": "3 ali 7 dni"
+            },
+            {
+              "label": "Sama",
+              "value": "2.400 € / 4.000 €"
+            },
+            {
+              "label": "Par",
+              "value": "2.800 € / 6.000 €"
+            },
+            {
+              "label": "Dve prijateljici",
+              "value": "1.400 € / 3.000 € na osebo"
+            }
+          ],
+          "href": "mailto:alneja@baby-spell.com?subject=Retreat%20Unlock%20Your%20Fertility",
+          "cta": "Povprašaj po terminih",
+          "note": "Omejeno število mest, zasebna rezervacija. Možno plačilo na obroke."
+        },
+        {
+          "id": "academy",
+          "icon": "book-light",
+          "kicker": "Program v lastnem ritmu",
+          "title": "Akademija unBLOCKED Life",
+          "lede": "Delavnice in spletni tečaji, ki jih opraviš v svojem ritmu, za odblokiranje obilja, plodnosti, ljubezni in poslanstva. En program je odprt že zdaj, drugi sledijo.",
+          "whoTitle": "Za koga je",
+          "who": "Za vsakogar, ki želi razumeti mehaniko, delati v svojem času in nehati potrebovati nekoga drugega, da mu razlaga njegovo življenje.",
+          "getTitle": "Kako poteka",
+          "includes": [
+            "Video predavanja in delavnice v lastnem ritmu",
+            "Delovne zvezke in vodene posnetke",
+            "Dosmrtni dostop do vsega, v kar se vpišeš",
+            "Nove programe skozi vse leto"
+          ],
+          "facts": [
+            {
+              "label": "Oblika",
+              "value": "Prek spleta, v lastnem ritmu"
+            },
+            {
+              "label": "Dostop",
+              "value": "Dosmrtni"
+            },
+            {
+              "label": "Od",
+              "value": "444 €"
+            }
+          ],
+          "href": "https://baby-spell.com/shop/",
+          "cta": "Oglej si trgovino",
+          "note": "Več delavnic in programov za plodnost najdeš v trgovini.",
+          "coursesTitle": "Programi",
+          "courses": [
+            {
+              "title": "Unlock Your Fertility",
+              "status": "Odprto",
+              "text": "Celoten program za plodnost — isto delo kot na retreatu, le v tvojem ritmu. Skupinsko ali VIP ena na ena.",
+              "price": "Skupinsko 2.200 € · VIP 4.400 €",
+              "href": "https://baby-spell.com/product/unlock-your-fertility/",
+              "linkLabel": "Vpiši se"
+            },
+            {
+              "title": "Intuitivno starševstvo in aktivacija svete družine",
+              "status": "Odprto",
+              "text": "Tečaj v 12 delih za zdravljenje podedovanih vzorcev, ponovno povezavo z intuicijo in bolj zavestne družinske odnose — ne glede na to, ali si že starš ali se na to šele pripravljaš.",
+              "price": "444 €",
+              "href": "https://baby-spell.com/shop/",
+              "linkLabel": "Vpiši se"
+            },
+            {
+              "title": "Zdravljenje prednikov",
+              "status": "Kmalu",
+              "soon": true,
+              "text": "Ozdravi medgeneracijsko travmo in prekini nezavedne družinske vzorce, na katere nikoli nisi pristala."
+            },
+            {
+              "title": "Ljubezen brez drame",
+              "status": "Kmalu",
+              "soon": true,
+              "text": "Pusti za sabo krog ljubezenske drame in spoznaj, kako se v resnici počuti miren odnos."
+            },
+            {
+              "title": "Zdravljenje blokad v odnosih pri korenini",
+              "status": "Kmalu",
+              "soon": true,
+              "text": "Ozdravi skrite rane, ki so oblikovale način, kako ljubezen daješ in sprejemaš."
+            },
+            {
+              "title": "Odblokiraj telo",
+              "status": "Kmalu",
+              "soon": true,
+              "text": "Nauči se brati svoje simptome kot jezik telesa in odgovori na to, kar ti že ves čas poskuša povedati."
+            },
+            {
+              "title": "Odblokiraj obilje",
+              "status": "Kmalu",
+              "soon": true,
+              "text": "Denar sledi varnosti. Sprosti tisto, kar tvojemu živčnemu sistemu govori, da ni varno imeti več."
+            },
+            {
+              "title": "Odblokiraj poslanstvo",
+              "status": "Kmalu",
+              "soon": true,
+              "text": "Nehaj se spraševati, kaj naj počneš, in odkrij, kdo si bila, preden te je strah naučil drugače."
+            }
+          ]
+        },
+        {
+          "id": "membership",
+          "icon": "circle-people",
+          "kicker": "Mesečna skupnost",
+          "title": "Članstvo",
+          "lede": "Klici v živo, skupinska zdravljenja in soba, polna ljudi, ki delajo isto pogumno delo. Najcenejši način, da ostaneš blizu metodi iz meseca v mesec.",
+          "whoTitle": "Za koga je",
+          "who": "Za vsakogar, ki je opravil seanso ali dve in želi nadaljevati, ne da bi vsak mesec rezerviral individualni termin.",
+          "getTitle": "Kaj dobiš",
+          "includes": [
+            "Mesečni klic v živo z mano",
+            "Skupinska zdravljenja in sproščanja",
+            "Knjižnico posnetkov samo za člane",
+            "Prednostni dostop do retreatov in novih programov",
+            "Odpoved kadar koli"
+          ],
+          "facts": [
+            {
+              "label": "Oblika",
+              "value": "Prek spleta, mesečno"
+            },
+            {
+              "label": "Zaveza",
+              "value": "Iz meseca v mesec"
+            },
+            {
+              "label": "Naložba",
+              "value": "TBC"
+            }
+          ],
+          "href": "https://baby-spell.com/shop/",
+          "cta": "Postani članica",
+          "note": "Vrata se odprejo prvega v mesecu."
+        }
+      ]
+    },
+    "pillars": {
+      "eyebrow": "Šest stebrov",
+      "title": "Na čem delava",
+      "lede": "Ne glede na to, katero storitev izbereš, delo pristane na enem od teh šestih mest. Običajno se začne na enem in tiho popravi še ostale.",
+      "cta": "Rezerviraj seanso Soul Mapping™"
+    },
+    "faq": {
+      "eyebrow": "Preden rezerviraš",
+      "title": "Iskreni odgovori",
+      "items": [
+        {
+          "q": "Ne vem, katero storitev potrebujem.",
+          "a": "Potem rezerviraj Soul Mapping™. Obstaja prav zato, da se ti ni treba sama diagnosticirati, preden prideš. Najprej pogledava, potem se odločiš."
+        },
+        {
+          "q": "Ali moram v to verjeti, da deluje?",
+          "a": "Ne. Biti moraš iskrena in pripravljena pogledati, kar pride na površje. Verovanje ni obvezno; pripravljenost je."
+        },
+        {
+          "q": "Je to terapija?",
+          "a": "Ne. To je intuitivno in energijsko zdravilno delo, ki ne nadomešča zdravniške ali psihološke oskrbe. Če si v obravnavi, nadaljuj — to delo stoji ob njej, ne namesto nje."
+        },
+        {
+          "q": "Kaj, če pride na površje kaj bolečega?",
+          "a": "To se zgodi in za to je poskrbljeno. Delava s hitrostjo, ki jo tvoj živčni sistem dopušča, in z vsake seanse odideš z napotki za integracijo, ne z odprto rano."
+        },
+        {
+          "q": "V katerih jezikih delaš?",
+          "a": "V angleščini, nemščini, madžarščini, hrvaščini in slovenščini."
+        },
+        {
+          "q": "Kako potekajo seanse?",
+          "a": "Prek spleta, ena na ena, prek videoklica. Po seansi prejmeš posnetek, da se lahko vrneš, ko se podrobnosti zabrišejo."
+        },
+        {
+          "q": "Kakšna so pravila odpovedi?",
+          "a": "Pred odločitvijo ponujam brezplačen uvodni klic, da skupaj preveriva, ali se moj pristop, delo, ki ga bova opravili, in tvoje potrebe ujemajo. Ko se odločiš za sodelovanje, so vsa plačila nepovratna. V delo se vložim v celoti, čas, strokovnost, leta izkušenj, izobraževanja in znanje, ki jih prinašam, pa so del vrednosti, v katero vlagaš. Zato ti svetujem, da brezplačni klic izkoristiš za vprašanja, da začutiš moj pristop in se prepričaš, da je to prava podpora zate, preden rezerviraš."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Začni tam, kjer najbolj boli.",
+      "lede": "Ni ti treba imeti vsega razčiščenega, preden prideš. Prav zato pogledava skupaj.",
+      "primary": "Rezerviraj seanso Soul Mapping™",
+      "secondary": "Najprej mi zastavi vprašanje"
+    }
+  },
+  "library": {
+    "hero": {
+      "eyebrow": "Knjižnica",
+      "title": "Preberi, poslušaj, poglej globlje.",
+      "lede": "Članki, pogovori v podkastih, intervjuji in revijalne objave — vse, kar sem napisala ali povedala o iskanju korenine vzorca."
+    },
+    "filterLabel": "Filtriraj knjižnico",
+    "filters": {
+      "all": "Vse"
+    },
+    "empty": "V tej kategoriji še ni nič — poskusi drugo.",
+    "categories": [
+      {
+        "id": "article",
+        "label": "Članki"
+      },
+      {
+        "id": "interview",
+        "label": "Intervjuji"
+      },
+      {
+        "id": "podcast",
+        "label": "Podkasti"
+      },
+      {
+        "id": "cover",
+        "label": "Naslovnice"
+      }
+    ],
+    "items": [
+      {
+        "category": "article",
+        "icon": "book-light",
+        "kind": "Članek",
+        "title": "Vidnost se začne ob rojstvu",
+        "text": "Kako ljudem pomagati postati vidni — od prvega odtisa do njihovega največjega izraza.",
+        "meta": "The Female CEO",
+        "cta": "Preberi",
+        "href": "https://baby-spell.com/the-female-ceo-visibility-begins-at-birth-helping-humans-become-visible-from-their-first-imprint-to-their-greatest-expression/",
+        "external": true
+      },
+      {
+        "category": "article",
+        "icon": "book-light",
+        "kind": "Članek",
+        "title": "Zakaj ženske najmočnejše premike identitete doživijo okoli štiridesetega leta",
+        "text": "O obračunu sredi življenja, na katerega te nihče ne pripravi, in zakaj je to odprtje in ne izguba.",
+        "meta": "Brainz Magazine",
+        "cta": "Preberi",
+        "href": "https://baby-spell.com/brainz-why-women-experience-their-most-powerful-identity-shifts-around-the-age-of-40/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Intervju",
+        "title": "Ženska, ki razbere, česar drugi ne vidijo",
+        "text": "O razbiranju duše, skritih blokadah in branju vzorcev pod življenjem, ki je na videz v redu.",
+        "meta": "Emprelle",
+        "cta": "Preberi",
+        "href": "https://baby-spell.com/emperelle-interview-the-woman-who-decodes-what-others-cannot-see/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Intervju",
+        "title": "Pomoč ženskam pri najbolj odločilnih življenjskih prehodih",
+        "text": "Plodnost, identiteta in prehodi, ki žensko preoblikujejo od znotraj.",
+        "meta": "HuffMag",
+        "cta": "Preberi",
+        "href": "https://baby-spell.com/huffmag-interview-helping-women-make-lifes-most-defining-transitions/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Intervju",
+        "title": "Vodenje žensk skozi najbolj preobrazbena potovanja",
+        "text": "Delo za metodo Unblock Method™ in zakaj mora diagnoza priti prva.",
+        "meta": "UAE Times",
+        "cta": "Preberi",
+        "href": "https://baby-spell.com/uae-times-interview-guiding-women-through-lifes-most-transformative-journeys/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Intervju",
+        "title": "Končno povedano, kar ženske čutimo že leta",
+        "text": "Dolg pogovor o tem, kar ženske tiho nosimo, in o tem, kaj se zgodi, ko to odložimo.",
+        "meta": "Brainz Magazine",
+        "cta": "Preberi",
+        "href": "https://baby-spell.com/brainz-inteview-alneja-gaspar-horvat-finally-saying-what-women-have-felt-for-years/",
+        "external": true
+      },
+      {
+        "category": "interview",
+        "icon": "cards",
+        "kind": "Intervju v živo",
+        "title": "IG Live z Viviano Castaneda",
+        "text": "Nescenariziran pogovor o zdravljenju, intuiciji in koreninah ponavljajočih se vzorcev.",
+        "meta": "Instagram Live",
+        "cta": "Poglej",
+        "href": "https://baby-spell.com/ig-lives-with-viviana-castaneda-2/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podkast",
+        "title": "Zakaj je plodnost bolj čustvena kot fizična",
+        "text": "Na kaj telo čaka in zakaj čustvena varnost tako pogosto pride pred spočetjem.",
+        "meta": "Brainz Podcast",
+        "cta": "Poslušaj",
+        "href": "https://baby-spell.com/podcast-brainz-dec-2025-why-fertility-is-more-emotional-than-physical-brainz-podcast/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podkast",
+        "title": "Zdravljenje blokad plodnosti in življenja — ep. 141",
+        "text": "Poglobljen pogovor o skritih blokadah plodnosti, zdravja in življenja, ki se nikakor ne začne.",
+        "meta": "The Zest to Zen",
+        "cta": "Poslušaj",
+        "href": "https://baby-spell.com/podcast-the-zest-to-zen-healing-fertility-life-blocks-alneja-gaspar-horvat-ep-141/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podkast",
+        "title": "V pogovoru z Alnejo Gašpar",
+        "text": "Holistična terapija, preobrazbeno mentorstvo in vprašanje, ki je spremenilo vse.",
+        "meta": "The Live Wabi Sabi",
+        "cta": "Poslušaj",
+        "href": "https://baby-spell.com/podcast-the-live-wabi-sabi-livewabisabi-in-conversation-with-alneja-gaspar-holistic-therapist-transformational-mentor/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podkast",
+        "title": "Kaj ženske prerašamo",
+        "text": "Premik v moči, mehkobi in zaupanju vase v letu 2026.",
+        "meta": "Dream Big with Amy",
+        "cta": "Poslušaj",
+        "href": "https://baby-spell.com/podcast-dream-big-with-amy-what-women-are-outgrowing-a-2026-shift-in-power-softness-self-trust/",
+        "external": true
+      },
+      {
+        "category": "podcast",
+        "icon": "mic",
+        "kind": "Podkast",
+        "title": "The Who of Us Podcast",
+        "text": "O identiteti, podedovanih vzorcih in tem, kdo si bila, preden te je strah naučil drugače.",
+        "meta": "The Who of Us",
+        "cta": "Poslušaj",
+        "href": "https://baby-spell.com/podcast-the-who-of-us-podcast/",
+        "external": true
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Naslovnica",
+        "title": "Brainz Magazine",
+        "text": "Executive Contributor, z objavljenimi članki in naslovnicami.",
+        "meta": "Brainz Magazine",
+        "cta": "Preberi objavo",
+        "href": "https://baby-spell.com/brainz-inteview-alneja-gaspar-horvat-finally-saying-what-women-have-felt-for-years/",
+        "external": true,
+        "image": "cover-brainz.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Naslovnica",
+        "title": "Emprelle",
+        "text": "Ženska, ki razbere, česar drugi ne vidijo.",
+        "meta": "Emprelle",
+        "cta": "Preberi objavo",
+        "href": "https://baby-spell.com/emperelle-interview-the-woman-who-decodes-what-others-cannot-see/",
+        "external": true,
+        "image": "cover-emprelle.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Naslovnica",
+        "title": "UAE Times",
+        "text": "Vodenje žensk skozi najbolj preobrazbena potovanja.",
+        "meta": "UAE Times",
+        "cta": "Preberi objavo",
+        "href": "https://baby-spell.com/uae-times-interview-guiding-women-through-lifes-most-transformative-journeys/",
+        "external": true,
+        "image": "cover-uae-times.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Naslovnica",
+        "title": "HuffMag",
+        "text": "Pomoč ženskam pri najbolj odločilnih življenjskih prehodih.",
+        "meta": "HuffMag",
+        "cta": "Preberi objavo",
+        "href": "https://baby-spell.com/huffmag-interview-helping-women-make-lifes-most-defining-transitions/",
+        "external": true,
+        "image": "cover-huffmag.jpg"
+      },
+      {
+        "category": "cover",
+        "icon": "sparkle",
+        "kind": "Naslovnica",
+        "title": "CEO Journal",
+        "text": "Naslovnica o delu za metodo Unblock Method™.",
+        "meta": "CEO Journal",
+        "cta": "Preberi objavo",
+        "href": "https://baby-spell.com/article-library/",
+        "external": true,
+        "image": "cover-ceo-journal.jpg"
+      }
+    ],
+    "archive": {
+      "title": "Iščeš starejše zapise?",
+      "text": "Leta člankov o plodnosti, zavestnem starševstvu, odnosih in čustvenem zdravljenju še vedno živijo na izvirni strani.",
+      "cta": "Odpri arhiv člankov"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Vprašaj me karkoli, preden rezerviraš.",
+      "lede": "Če nisi prepričana, ali je to zate, mi piši. Raje imam, da prideš prepričana kot upajoča."
+    },
+    "form": {
+      "title": "Pošlji sporočilo",
+      "lede": "Napiši mi približno, kaj se dogaja. Ni treba, da razložiš popolno.",
+      "consent": "Strinjam se, da Alneja shrani to sporočilo, da mi lahko odgovori.",
+      "topics": [
+        {
+          "value": "soul-mapping",
+          "label": "Soul Mapping™ / Unblock Method™"
+        },
+        {
+          "value": "readings",
+          "label": "Branje za dvojni plamen ali Angel Babies"
+        },
+        {
+          "value": "mentorship",
+          "label": "Mentorstvo ali retreati"
+        },
+        {
+          "value": "academy",
+          "label": "Akademija ali članstvo"
+        },
+        {
+          "value": "press",
+          "label": "Mediji, podkast ali sodelovanje"
+        },
+        {
+          "value": "other",
+          "label": "Nekaj drugega"
+        }
+      ]
+    },
+    "direct": {
+      "title": "Neposredno",
+      "response": "Odgovor običajno v dveh delovnih dneh",
+      "languages": "angleščina, nemščina, madžarščina, hrvaščina in slovenščina"
+    },
+    "book": {
+      "title": "Že veš, kaj potrebuješ?",
+      "text": "Preskoči sporočilo in pojdi naravnost na koledar.",
+      "cta": "Rezerviraj termin"
+    },
+    "faq": {
+      "title": "Hitri odgovori",
+      "items": [
+        {
+          "q": "Kako hitro lahko dobim termin?",
+          "a": "Razpoložljivost se spreminja iz meseca v mesec. Koledar vedno kaže dejansko stanje."
+        },
+        {
+          "q": "Delaš tudi z moškimi?",
+          "a": "Da. Delam z ženskami in moškimi, ki so se pripravljeni odpreti, deliti in sprejeti podporo ter pomoč. Ni treba, da imaš vse razčiščeno — potrebna je le pripravljenost pogledati vase in narediti prvi korak."
+        },
+        {
+          "q": "Ali lahko rezerviram za nekoga drugega?",
+          "a": "Seanse zahtevajo privolitev, pripravljenost in prisotnost same osebe, zato ne priporočam rezervacije za nekoga, ki zanimanja za to delo ni izrazil. Lahko pa nekomu kupiš darilni bon, če imaš njegovo predhodno privolitev ali veš, da je resnično odprt za osebno in duhovno rast ter za tovrstno podporo. Oseba, ki darilo prejme, se na koncu sama odloči, ali in kdaj ga bo izkoristila."
+        },
+        {
+          "q": "Je vse zaupno?",
+          "a": "Absolutno. Vsebina najinih seans, terapije in dela, ki ga opraviva, je strogo zaupna in nikoli ne zapusti prostora. Nikoli ne bom ponovila, delila, citirala ali uporabila ničesar, kar mi poveš. Edina izjema je pričevanje, ki ga prostovoljno daš sama in ki se lahko objavi z tvojim soglasjem. Lahko se tudi odločiš, da je tvoje pričevanje objavljeno anonimno, brez imena ali podatkov, po katerih bi te bilo mogoče prepoznati."
+        }
+      ]
+    }
+  },
+  "press": {
+    "title": "Objavljeno v",
+    "_todo": "The CEO Journal slide links to the article archive because no direct URL was supplied; its headline is taken from the cover itself.",
+    "outlets": [
+      {
+        "name": "Brainz Magazine",
+        "style": "serif-bold"
+      },
+      {
+        "name": "CEO Journal",
+        "style": "sans-bold"
+      },
+      {
+        "name": "UAE Times",
+        "style": "serif-wide"
+      },
+      {
+        "name": "Female CEO",
+        "style": "sans"
+      },
+      {
+        "name": "Emprelle",
+        "style": "serif"
+      },
+      {
+        "name": "Billboard Lifestyle",
+        "style": "sans-bold"
+      },
+      {
+        "name": "HuffMag",
+        "style": "sans-italic"
+      }
+    ],
+    "features": [
+      {
+        "outlet": "Brainz Magazine",
+        "file": "cover-brainz.jpg",
+        "eyebrow": "Naslovnica · Brainz Magazine",
+        "title": "Končno povedano, kar ženske čutimo že leta",
+        "text": "Dolg pogovor o tem, kar ženske tiho nosimo — o vzorcih, izčrpanosti in občutku, da nekaj ni v redu, tudi ko je življenje na videz v redu — in o tem, kaj se zgodi, ko to končno odložimo.",
+        "cta": "Preberi intervju",
+        "href": "https://baby-spell.com/brainz-inteview-alneja-gaspar-horvat-finally-saying-what-women-have-felt-for-years/",
+        "first": true
+      },
+      {
+        "outlet": "Emprelle",
+        "file": "cover-emprelle.jpg",
+        "eyebrow": "Naslovnica · Emprelle",
+        "title": "Ženska, ki razbere, česar drugi ne vidijo",
+        "text": "O razbiranju duše, skritih blokadah in branju vzorcev pod življenjem, ki je od zunaj videti povsem v redu.",
+        "cta": "Preberi intervju",
+        "href": "https://baby-spell.com/emperelle-interview-the-woman-who-decodes-what-others-cannot-see/"
+      },
+      {
+        "outlet": "UAE Times",
+        "file": "cover-uae-times.jpg",
+        "eyebrow": "Naslovnica · UAE Times",
+        "title": "Vodenje žensk skozi najbolj preobrazbena potovanja",
+        "text": "Delo za metodo Unblock Method™ — in zakaj mora diagnoza vedno priti pred zdravljenjem.",
+        "cta": "Preberi intervju",
+        "href": "https://baby-spell.com/uae-times-interview-guiding-women-through-lifes-most-transformative-journeys/"
+      },
+      {
+        "outlet": "HuffMag",
+        "file": "cover-huffmag.jpg",
+        "eyebrow": "Naslovnica · HuffMag",
+        "title": "Pomoč ženskam pri najbolj odločilnih življenjskih prehodih",
+        "text": "Plodnost, identiteta in prehodi, ki žensko preoblikujejo od znotraj.",
+        "cta": "Preberi intervju",
+        "href": "https://baby-spell.com/huffmag-interview-helping-women-make-lifes-most-defining-transitions/"
+      },
+      {
+        "outlet": "CEO Journal",
+        "file": "cover-ceo-journal.jpg",
+        "eyebrow": "Naslovnica · CEO Journal",
+        "title": "Modrost, zdravljenje in vodenje",
+        "text": "Kako ženske stopijo v uglašenost in poslanstvo — in kaj se v poslu spremeni, ko njegova ustanoviteljica neha delati proti sebi.",
+        "cta": "Oglej si objavo",
+        "href": "https://baby-spell.com/article-library/"
+      }
+    ],
+    "total": 5,
+    "carouselLabel": "Naslovnice",
+    "prevLabel": "Prejšnja naslovnica",
+    "nextLabel": "Naslednja naslovnica",
+    "libraryText": "Vsi članki, intervjuji, naslovnice in pogovori v podkastih so zbrani",
+    "libraryLink": "v knjižnici"
+  },
+  "newsletter": {
+    "eyebrow": "Brezplačni vodnik",
+    "title": "7 skritih blokad, ki te morda držijo na mestu",
+    "lede": "Kratek, preprosto napisan vodnik po vzorcih, ki jih vidim najpogosteje — in prvo vprašanje, ki se ga splača zastaviti pri vsakem. Poleg tega nekajkrat na mesec pismo od mene.",
+    "submit": "Pošlji mi vodnik",
+    "privacy": "Nikoli nezaželene pošte. Odjava z enim klikom.",
+    "perks": [
+      "Sedem blokad, poimenovanih naravnost",
+      "Kako se vsaka kaže v čisto vsakdanjem življenju",
+      "Eno iskreno vprašanje za začetek",
+      "Nova branja, retreati in prosti termini najprej tukaj"
+    ]
+  },
+  "footer": {
+    "tagline": "Poglej nevidno.<br>Ozdravi korenino.<br>Sprosti blokado.<br>Postani to, kar si od nekdaj bila.",
+    "exploreTitle": "Razišči",
+    "workTitle": "Sodelujva",
+    "contactTitle": "Stopi v stik",
+    "contactLink": "Pošlji sporočilo",
+    "rights": "Vse pravice pridržane.",
+    "workLinks": [
+      {
+        "id": "soul-mapping",
+        "label": "Soul Mapping™"
+      },
+      {
+        "id": "unblock-method",
+        "label": "Unblock Method™"
+      },
+      {
+        "id": "twin-flame",
+        "label": "Branje za dvojni plamen in odnose"
+      },
+      {
+        "id": "angel-babies",
+        "label": "Angel Babies Reading™"
+      },
+      {
+        "id": "academy",
+        "label": "Akademija unBLOCKED Life"
+      },
+      {
+        "id": "membership",
+        "label": "Članstvo"
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Ta stran se je izgubila.",
+    "lede": "Povezava je morda stara ali pa se je stran preselila. Vse je še vedno dosegljivo z domače strani.",
+    "cta": "Nazaj na domačo stran"
+  },
+  "quotes": {
+    "eyebrow": "Besede mojih strank",
+    "title": "Kaj se premakne",
+    "cta": "Preberi vse zgodbe strank",
+    "featured": [
+      {
+        "quote": "V osebno rast sem vložila že leta, hodila na delavnice in tečaje ter veliko delala na sebi. Kljub temu sem obtičala na točki, s katere se sama nisem mogla premakniti. Delo z Alnejo mi je dalo globoko osebno vodenje in jasno pot naprej. Napredovala sem hitreje, kot sem pričakovala.",
+        "who": "Valentina, dr. med.",
+        "role": "specialistka pediatrije"
+      },
+      {
+        "quote": "Počutim se mirnejšega, bolj povezanega s seboj in — kar je najpomembneje — bolje razumem sebe in svoje vzorce. Razliko opazim v vsakdanjem življenju. Alneja ustvari varen, iskren in sočuten prostor in ne odneha, tudi ko lahkih odgovorov ni.",
+        "who": "Andrej",
+        "role": ""
+      },
+      {
+        "quote": "Na tečaj sem se prijavila, ker sem se želela rešiti ponavljajočih se vzorcev in končno ustvariti spremembo. S tečajem in lastno zavezanostjo procesu sem spremenila okolje in končno spoznala partnerja, ob katerem se počutim sprejeto in ljubljeno.",
+        "who": "Tamara",
+        "role": "DNK po liniji prednikov"
+      }
+    ],
+    "all": [
+      {
+        "quote": "V osebno rast sem vložila že leta, hodila na delavnice in tečaje ter veliko delala na sebi. Kljub temu sem obtičala na točki, s katere se sama nisem mogla premakniti. Delo z Alnejo mi je dalo globoko osebno vodenje in jasno pot naprej. Napredovala sem hitreje, kot sem pričakovala.",
+        "who": "Valentina, dr. med.",
+        "role": "specialistka pediatrije"
+      },
+      {
+        "quote": "Počutim se mirnejšega, bolj povezanega s seboj in — kar je najpomembneje — bolje razumem sebe in svoje vzorce. Razliko opazim v vsakdanjem življenju. Alneja ustvari varen, iskren in sočuten prostor in ne odneha, tudi ko lahkih odgovorov ni.",
+        "who": "Andrej",
+        "role": ""
+      },
+      {
+        "quote": "Na tečaj sem se prijavila, ker sem se želela rešiti ponavljajočih se vzorcev in končno ustvariti spremembo. S tečajem in lastno zavezanostjo procesu sem spremenila okolje in končno spoznala partnerja, ob katerem se počutim sprejeto in ljubljeno.",
+        "who": "Tamara",
+        "role": "DNK po liniji prednikov"
+      },
+      {
+        "quote": "Neprecenljivo je imeti nekoga, s komer lahko odkrito raziskuješ svoje najgloblje, najbolj skrite in boleče izkušnje. Delo z Alnejo mi je pomagalo na življenje pogledati z druge perspektive — zdravilne, podporne in osvobajajoče. Njene meditacije so še posebej lepe in osvobajajoče.",
+        "who": "Urban",
+        "role": ""
+      },
+      {
+        "quote": "Deset let poskusov. Enajst prenosov zarodkov. Nič ni delovalo, dokler nisva šla skozi Alnejin program.",
+        "who": "Eva in Grega",
+        "role": "program za plodnost"
+      },
+      {
+        "quote": "Po štirih letih zdravljenj sem med Alnejinim programom zanosila po naravni poti. Skoraj sem že obupala.",
+        "who": "Viktoria T.",
+        "role": "program za plodnost"
+      },
+      {
+        "quote": "Nisem samo zanosila — ozdravila sem svoj odnos, znova našla sebe in postala ženska, kakršna sem si od nekdaj želela biti.",
+        "who": "Monika",
+        "role": "program za plodnost"
+      },
+      {
+        "quote": "Kot moški sem bil skeptičen. Po delu z Alnejo pa sem dobil mir, kakršnega nisem občutil že leta.",
+        "who": "Blaž",
+        "role": ""
+      },
+      {
+        "quote": "Brez tebe ne bi imeli vsega, kar imamo danes. Neizmerno sem hvaležna zate in za delo, ki ga opravljaš.",
+        "who": "Nina",
+        "role": ""
+      },
+      {
+        "quote": "Kar si naredila zame, za mojo družino in zdaj za najinega otroka — lahko bi se ti zahvaljevala vsak mesec in še vedno ne bi izrazila, kako hvaležna sem za vse.",
+        "who": "Renata",
+        "role": ""
+      }
+    ]
+  },
+  "experiences": {
+    "hero": {
+      "eyebrow": "Zgodbe strank",
+      "title": "Z njihovimi besedami.",
+      "lede": "Zdravnice, starši, partnerji in skeptiki — kaj se je zanje spremenilo, ko smo našli korenino."
+    },
+    "note": "Objavljeno z dovoljenjem. Nekatere stranke so želele biti navedene samo z imenom.",
+    "cta": {
+      "title": "Tudi tvoja zgodba se lahko začne tukaj.",
+      "lede": "Vsaka od teh se je začela z eno samo seanso, na kateri smo preprosto pogledali, kaj je v resnici tam.",
+      "primary": "Rezerviraj seanso Soul Mapping™",
+      "secondary": "Najprej mi zastavi vprašanje"
+    }
+  },
+  "mantra": [
+    "Poglej nevidno.",
+    "Ozdravi korenino.",
+    "Sprosti blokado.",
+    "Postani to, kar si od nekdaj bila."
+  ]
+}

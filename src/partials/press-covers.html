@@ -1,0 +1,38 @@
+<section class="section section--white press" id="featured-in">
+  <div class="wrap">
+    <div class="press-carousel" data-press aria-roledescription="carousel" aria-label="{{ press.carouselLabel }}">
+      <div class="press-carousel__slides" aria-live="polite">
+        {{#each press.features}}<article class="press-slide{{#if .first}} is-current{{/if}}" data-press-slide
+                 aria-roledescription="slide" aria-label="{{ .outlet }}">
+          <a class="press__cover" href="{{ .href }}" target="_blank" rel="noopener" aria-label="{{ .title }} — {{ .outlet }}">
+            <img src="{{ @assets }}/img/{{ .file }}" alt="" width="640" height="830" loading="lazy">
+          </a>
+
+          <div class="press__copy">
+            <p class="eyebrow">{{ .eyebrow }}</p>
+            <h2 class="press__headline">{{ .title }}</h2>
+            <p>{{ .text }}</p>
+
+            <div class="press-slide__foot">
+              <a class="link-arrow" href="{{ .href }}" target="_blank" rel="noopener">{{ .cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <div class="press-nav">
+                <button class="press-nav__btn" type="button" data-press-prev aria-label="{{ press.prevLabel }}">
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </button>
+                <span class="press-nav__count" data-press-count>1 / {{ press.total }}</span>
+                <button class="press-nav__btn" type="button" data-press-next aria-label="{{ press.nextLabel }}">
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <p class="press__library">
+              {{ press.libraryText }} <a href="{{ @nav.library.url }}">{{ press.libraryLink }}</a>.
+            </p>
+          </div>
+        </article>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
