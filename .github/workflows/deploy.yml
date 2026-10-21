@@ -35,7 +35,7 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://alneya.com' }}
           BASE_URL: ${{ vars.BASE_URL || '/' }}
-          THEME: ${{ vars.THEME || 'light' }}
+          THEME: ${{ vars.THEME || 'baumit-0674' }}
         run: node build.js
 
       - uses: actions/configure-pages@v5

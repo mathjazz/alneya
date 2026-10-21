@@ -275,30 +275,58 @@ show) and the fade-in on scroll. Nothing else changes.
 
 1. Push this repository to GitHub.
 2. **Settings → Pages → Source → GitHub Actions.**
-3. **Settings → Secrets and variables → Actions → Variables**, add:
-   - `SITE_URL` — the final address, e.g. `https://alneya.com`. Used for
-     canonical tags, `hreflang` and the sitemap, so it must be right.
-   - `BASE_URL` — `/` for a custom domain or a `<user>.github.io` repository;
-     `/<repo-name>/` for a project site such as
-     `https://mathjazz.github.io/alneya/`. Getting this wrong is the one thing
-     that breaks every link and image at once.
+3. **Settings → Pages → Custom domain**, enter `alneya.com` and tick
+   **Enforce HTTPS** once the certificate has been issued.
+4. Point DNS at GitHub (see below).
 
-To publish both variants side by side (useful while choosing), build each with
-its own base path and upload them to sibling folders:
+The workflow defaults to `SITE_URL=https://alneya.com`, `BASE_URL=/` and
+`THEME=baumit-0674`, so it needs no configuration. To override any of them
+without editing the file, set a repository variable of the same name under
+**Settings → Secrets and variables → Actions → Variables**:
+
+- `SITE_URL` — the final address. Used for canonical tags, `hreflang`, the
+  sitemap and the generated `CNAME`, so it must be right.
+- `BASE_URL` — `/` for a custom domain or a `<user>.github.io` repository;
+  `/<repo-name>/` for a project site such as
+  `https://mathjazz.github.io/alneya/`. Getting this wrong is the one thing
+  that breaks every link and image at once.
+- `THEME` — any key from the `THEMES` map in `build.js`. Changing this
+  variable and re-running the workflow reskins the live site; no code change.
+
+### DNS for the apex domain
+
+Four `A` records at the zone apex, plus `www` as a `CNAME`:
+
+```
+@      A      185.199.108.153
+@      A      185.199.109.153
+@      A      185.199.110.153
+@      A      185.199.111.153
+www    CNAME  mathjazz.github.io.
+```
+
+IPv6 is optional but harmless — add `AAAA` records for `2606:50c0:8000::153`
+through `2606:50c0:8003::153` if the registrar supports them.
+
+`build.js` writes `dist/CNAME` automatically for apex builds, which is what
+keeps the custom domain from being cleared on redeploy. It deliberately does
+*not* write one when `BASE_URL` is a subpath, so the side-by-side previews
+below cannot hijack the domain.
+
+### Side-by-side theme previews
+
+To publish several themes at once (useful while choosing), build each with its
+own base path and upload them to sibling folders:
 
 ```
 SITE_URL=http://horv.at BASE_URL=/alneya/ npm run build
 SITE_URL=http://horv.at BASE_URL=/alneya-green/ THEME=green OUT_DIR=dist-green node build.js
 ```
 
-For a custom domain, also add a `CNAME` file containing the bare domain to
-`src/assets/` (it will be copied into `dist/assets/`) — or more simply, set the
-custom domain in Settings → Pages and let GitHub manage it.
-
-To build the same way locally:
+To build the live site exactly as Actions does, locally:
 
 ```
-SITE_URL=https://alneya.com BASE_URL=/ npm run build
+SITE_URL=https://alneya.com BASE_URL=/ THEME=baumit-0674 npm run build
 ```
 
 ## Redirects from baby-spell.com
