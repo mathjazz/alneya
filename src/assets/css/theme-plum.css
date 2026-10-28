@@ -1,0 +1,316 @@
+/* =========================================================================
+   Alneya — plum structure
+
+   Four plum bands (header, hero, thread, final) plus the existing dark
+   surfaces, lit from within by two soft radials: mauve high on the right,
+   gold low on the left. Everything between them is mist or white.
+
+   Cormorant is a high-contrast old-style face — it needs to run larger and
+   lighter than Fraunces, so the display scale is reset here rather than in
+   the palette file.
+   ========================================================================= */
+
+/* ------------------------------------------------------------ type scale */
+
+.h1, .h2, .h3, .h4 { font-variation-settings: normal; }
+
+.h1 {
+  /* 66px at 1440, matching the reference */
+  font-size: clamp(2.5rem, 5.4vw, 4.14rem);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.012em;
+}
+.h2 {
+  font-size: clamp(1.95rem, 3.6vw, 3rem);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -.008em;
+}
+.h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); font-weight: 500; line-height: 1.2; }
+.h4 { font-weight: 500; }
+.h1 em, .h2 em { font-style: italic; }
+
+.lede { font-size: 1.12rem; line-height: 1.7; }
+body { font-size: 1.0625rem; line-height: 1.7; }
+
+/* every eyebrow gets the leading rule in this theme */
+.eyebrow { font-size: .74rem; font-weight: 500; letter-spacing: .24em; }
+.eyebrow::before {
+  content: ""; display: inline-block; vertical-align: middle;
+  width: 32px; height: 1px; margin: -2px 1em 0 0;
+  background: currentColor; opacity: .7;
+}
+.eyebrow--center::before { margin-right: 1em; }
+
+/* --------------------------------------------------------------- header */
+
+.site-header {
+  background-color: var(--deep-800);
+  background-image: linear-gradient(170deg, var(--deep-800), var(--deep-900));
+  border-bottom: 1px solid rgba(244, 238, 243, .08);
+  backdrop-filter: none;
+}
+.site-header.is-stuck {
+  background-color: var(--deep-900);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, .34);
+}
+.brand, .brand__mark { color: var(--on-dark); }
+.brand__sub { color: var(--on-dark-soft); }
+.site-nav__list a { color: var(--on-dark-soft); }
+.site-nav__list a:hover,
+.site-nav__list a[aria-current="page"] { color: var(--on-dark); }
+.site-nav__list a[aria-current="page"] { border-bottom-color: var(--gold-400); }
+.lang-switch a { color: var(--on-dark-soft); }
+.lang-switch a:hover, .lang-switch a[aria-current="true"] { color: var(--gold-400); }
+.lang-switch li + li::before { color: rgba(244, 238, 243, .3); }
+.nav-toggle { border-color: rgba(244, 238, 243, .22); }
+.nav-toggle__bars i { background: var(--on-dark); }
+
+@media (max-width: 61.99em) {
+  .site-nav { background: var(--deep-900); border-left-color: rgba(244, 238, 243, .1); }
+  .site-nav__list a { border-bottom-color: rgba(244, 238, 243, .08); }
+  body.nav-open::after { background: rgba(10, 6, 11, .6); }
+}
+
+/* ------------------------------------------- light grounds (set first so
+   the plum bands below can override them by being more specific) --------- */
+
+.section--shell { background: var(--mist); }
+.section--ivory { background: var(--paper); }
+.section--white { background: #fff; }
+
+/* ---------------------------------------------------------- plum bands */
+
+.hero, .thread, .final, .story.section--ivory, .section--deep {
+  position: relative;
+  color: var(--on-dark);
+  background:
+    radial-gradient(52% 62% at 80% 20%, rgba(171, 149, 172, .30), transparent 70%),
+    radial-gradient(44% 54% at 6% 92%, rgba(178, 151, 92, .13), transparent 72%),
+    linear-gradient(168deg, var(--deep-800) 0%, var(--deep-900) 58%, var(--deep-700) 100%);
+}
+.hero { padding-top: clamp(3rem, 7vw, 5.5rem); }
+.thread { padding-block: clamp(6rem, 11vw, 10rem); }
+.final  { padding-block: clamp(7rem, 13vw, 11.5rem); text-align: center; }
+
+.hero > *, .thread > *, .final > *, .story > *, .section--deep > * { position: relative; z-index: 1; }
+.hero .stars, .thread .stars, .final .stars { z-index: 0; opacity: .5; }
+
+.hero .h1, .thread .h2, .final .h2,
+.section--deep .h1, .section--deep .h2, .section--deep .h3,
+.story .h2, .story .h3 { color: var(--on-dark); }
+.hero .lede, .hero p, .thread p, .final p,
+.section--deep .lede, .section--deep p,
+.story .lede, .story p { color: var(--on-dark-soft); }
+.hero .eyebrow, .thread .eyebrow, .final .eyebrow,
+.section--deep .eyebrow, .story .eyebrow,
+.section--deep .h4, .story .h4 { color: var(--gold-400); }
+
+.hero .h1 em, .thread .h2 em, .final .h2 em,
+.section--deep .h2 em, .story .h2 em { color: var(--gold-400); }
+
+.hero .ornament__glyph, .thread .ornament__glyph, .final .ornament__glyph,
+.section--deep .ornament__glyph, .story .ornament__glyph { fill: var(--gold-400); }
+.hero .ornament__rule, .thread .ornament__rule, .final .ornament__rule,
+.section--deep .ornament__rule, .story .ornament__rule {
+  background: linear-gradient(90deg, transparent, var(--gold-500));
+}
+.hero .ornament__rule:last-child, .thread .ornament__rule:last-child, .final .ornament__rule:last-child,
+.section--deep .ornament__rule:last-child, .story .ornament__rule:last-child {
+  background: linear-gradient(90deg, var(--gold-500), transparent);
+}
+
+/* ------------------------------------------------------------------ hero */
+
+.hero__lede { color: var(--on-dark-soft); }
+.hero .link-underline { color: var(--on-dark); border-bottom-color: var(--gold-400); }
+.hero .link-underline:hover { color: var(--gold-300); border-bottom-color: var(--gold-300); }
+
+.hero__photo img {
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .46);
+}
+/* the offset outline frame behind the photo */
+.hero__photo::after {
+  content: ""; position: absolute; inset: 7% -5% -7% 7%;
+  border: 1px solid rgba(211, 192, 149, .4); border-radius: var(--r-lg);
+  z-index: -1; pointer-events: none;
+}
+.hero__art { isolation: isolate; }
+
+.hero__seal { background: var(--deep-900); border-radius: 50%; box-shadow: 0 14px 36px rgba(0, 0, 0, .42); }
+.hero__seal-ring text { fill: var(--gold-400); }
+.hero__seal-mark { color: var(--gold-300); }
+
+.hero__proof-t strong { color: var(--on-dark); }
+.hero__proof-t > span { color: var(--on-dark-soft); }
+.hero__proof:hover .hero__proof-t strong { color: var(--gold-300); }
+
+.hero__quote { background: var(--paper); box-shadow: 0 24px 60px rgba(0, 0, 0, .4); }
+.hero__quote blockquote p { color: var(--ink); font-style: italic; }
+.hero__quote figcaption strong { color: var(--ink); }
+.hero__quote figcaption > span:last-child { color: var(--ink-faint); }
+.hero__quote-av { background: var(--deep-800); color: var(--gold-300); }
+
+.hero__facts { border-top-color: rgba(244, 238, 243, .14); }
+.hero__facts li + li { border-top-color: rgba(244, 238, 243, .14); }
+@media (min-width: 48em) {
+  .hero__facts li + li { border-left-color: rgba(244, 238, 243, .14); border-top: 0; }
+}
+.hero__facts strong { color: var(--gold-300); font-size: 1.7rem; font-weight: 500; line-height: 1; }
+.hero__facts span { color: var(--on-dark-soft); font-size: .82rem; }
+.hero__facts li { padding-inline: clamp(.75rem, 1.8vw, 1.5rem); }
+/* give the headline column the room the reference gives it */
+.hero__grid { grid-template-columns: 1fr; }
+@media (min-width: 60em) { .hero__grid { grid-template-columns: 1.14fr .86fr; } }
+
+/* ------------------------------------------------------------------ pain */
+
+.pain { background: var(--mist); }
+.pain__turn { background: var(--deep-800); color: var(--gold-300); }
+.pain__list li { border-bottom-color: var(--veil); }
+.pain__num { border-color: var(--gold-400); color: var(--gold-700); }
+
+/* ---------------------------------------------------------------- thread */
+
+.thread__title em { color: var(--gold-400); }
+.thread__quote { color: var(--on-dark); }
+.thread__quote em { color: var(--gold-400); }
+.thread__body { color: var(--on-dark-soft); }
+.web__cap { color: var(--on-dark-soft); opacity: .8; }
+.web__wave path { stroke: var(--gold-500); opacity: .5; }
+.web__wave--echo path { stroke: var(--paint); opacity: .34; }
+.web__w { color: var(--on-dark); }
+.web__your { color: var(--gold-400); opacity: .75; }
+
+/* ---------------------------------------------------------------- method */
+
+.method__disc {
+  border-color: rgba(211, 192, 149, .4);
+  background: rgba(255, 255, 255, .05);
+  color: var(--gold-300);
+  box-shadow: none;
+}
+.method__n { color: rgba(211, 192, 149, .55); }
+.method__name { color: var(--on-dark); }
+.method__label { color: var(--gold-400); }
+.method__text { color: var(--on-dark-soft); }
+.method__close { color: var(--on-dark); }
+.method__step + .method__step::before {
+  border-top-color: rgba(244, 238, 243, .3);
+  border-right-color: rgba(244, 238, 243, .3);
+}
+
+/* ------------------------------- the Method and testimonials run light */
+
+.section--sage {
+  background: linear-gradient(170deg, var(--mist), var(--veil) 85%);
+  color: var(--ink);
+}
+.section--sage .h2, .section--sage .h3 { color: var(--ink); }
+.section--sage .lede, .section--sage p { color: var(--ink-soft); }
+.section--sage .eyebrow, .section--sage .h4 { color: var(--gold-700); }
+.section--sage .h2 em { color: var(--gold-700); }
+.section--sage .ornament__glyph { fill: var(--gold-500); }
+
+/* the four steps as pale cards, the way the reference stages them */
+.method__steps { gap: clamp(1rem, 2vw, 1.4rem); }
+.method__step {
+  padding: clamp(1.4rem, 2.4vw, 2rem);
+  background: #fff;
+  border: 1px solid var(--line-soft);
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+}
+.method__step + .method__step::before { content: none; }
+.method__disc {
+  border-color: var(--lilac-200);
+  background: var(--mist);
+  color: var(--gold-700);
+  box-shadow: none;
+}
+/* 3.5:1 on white — it is large decorative type, so AA-large applies */
+.method__n { color: var(--paint-d); }
+.method__name { color: var(--ink); }
+.method__label { color: var(--gold-700); }
+.method__text { color: var(--ink-soft); }
+
+/* testimonials sit on paper here, not on a dark band */
+.quotes.section--deep {
+  background: var(--paper);
+  color: var(--ink);
+}
+.quotes.section--deep::after { content: none; }
+.quotes.section--deep .h2, .quotes.section--deep .h3 { color: var(--ink); }
+.quotes.section--deep .eyebrow { color: var(--gold-700); }
+.quotes.section--deep .lede, .quotes.section--deep p { color: var(--ink-soft); }
+.quotes.section--deep .ornament__glyph { fill: var(--gold-500); }
+.quotes.section--deep .quote-card {
+  background: var(--mist);
+  border-color: var(--veil);
+}
+.quotes.section--deep .quote-card blockquote p { color: var(--ink); }
+.quotes.section--deep .quote-card .icon--quote { color: var(--gold-500); opacity: .7; }
+.quotes.section--deep .quote-card__who { color: var(--gold-700); }
+.quotes.section--deep .quote-card__role { color: var(--ink-faint); }
+.quotes.section--deep .btn--ghost-light { --btn-fg: var(--ink); --btn-bd: var(--lilac-300); }
+.quotes.section--deep .btn--ghost-light:hover { --btn-bg: var(--mist); --btn-bd: var(--ink); }
+
+/* the story band is plum, so its image frame and button invert */
+.story__media img { box-shadow: 0 28px 70px rgba(0, 0, 0, .45); }
+
+/* a white card inside a dark band would otherwise inherit the band's light
+   text; give it the band's own treatment instead */
+.section--deep .value-card {
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(244, 238, 243, .1);
+  box-shadow: none;
+}
+.section--deep .value-card__title { color: var(--on-dark); }
+.section--deep .value-card p { color: var(--on-dark-soft); }
+.section--deep .value-card .icon--lg { color: var(--gold-400); }
+
+/* ------------------------------------------------------- quotes + panels */
+
+.section--deep .quote-card {
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(244, 238, 243, .1);
+}
+.section--deep .quote-card blockquote p { color: var(--on-dark); }
+.section--deep .quote-card .icon--quote { color: var(--gold-400); opacity: .6; }
+.quote-card__who { color: var(--gold-300); }
+.quote-card__role { color: var(--on-dark-soft); }
+
+.section--deep .btn--ghost-light, .final .btn--ghost-light {
+  --btn-fg: var(--on-dark);
+  --btn-bd: rgba(244, 238, 243, .4);
+}
+.section--deep .btn--ghost-light:hover, .final .btn--ghost-light:hover {
+  --btn-bg: rgba(244, 238, 243, .08);
+  --btn-bd: var(--on-dark);
+}
+.hero .btn--outline { --btn-fg: var(--on-dark); --btn-bd: rgba(244, 238, 243, .4); }
+
+.panel--gold {
+  background: linear-gradient(160deg, var(--deep-800), var(--deep-900));
+  color: var(--on-dark-soft);
+  border-color: rgba(244, 238, 243, .12);
+}
+.panel--gold .h4 { color: var(--gold-300); }
+
+/* ---------------------------------------------------------------- footer */
+
+.site-footer {
+  background:
+    radial-gradient(50% 60% at 82% 8%, rgba(171, 149, 172, .22), transparent 70%),
+    linear-gradient(170deg, var(--deep-800), var(--deep-900));
+  color: var(--on-dark-soft);
+}
+.site-footer .brand, .site-footer .brand__mark { color: var(--on-dark); }
+.site-footer .brand__sub, .site-footer__tagline { color: var(--on-dark-soft); }
+.site-footer__title { color: var(--gold-400); }
+.site-footer__col a { color: var(--on-dark-soft); }
+.site-footer__col a:hover { color: var(--on-dark); }
+.site-footer__bar { border-top-color: rgba(244, 238, 243, .12); }
+.site-footer__bar p, .lang-switch--footer a { color: var(--on-dark-soft); }
+.lang-switch--footer a:hover, .lang-switch--footer a[aria-current="true"] { color: var(--gold-300); }

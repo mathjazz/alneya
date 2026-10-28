@@ -971,3 +971,226 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ----------------------------------------------------- client experiences */
 
 .experiences__note { margin-top: 2.4rem; text-align: center; font-size: .85rem; color: var(--ink-faint); }
+
+/* =========================================================================
+   Sections introduced with the plum redesign.
+
+   These are the theme-neutral bones: layout, rhythm and structure that read
+   correctly on a light ground. theme-plum.css restyles them for the dark
+   plum treatment; the other themes inherit what is here.
+   ========================================================================= */
+
+/* a star field any section can opt into */
+.stars {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: var(--stars); background-size: 320px; opacity: .55;
+}
+
+/* eyebrow with a leading rule */
+.eyebrow--rule::before {
+  content: ""; display: inline-block; vertical-align: middle;
+  width: 32px; height: 1px; margin: -2px 1em 0 0;
+  background: currentColor; opacity: .7;
+}
+.eyebrow--center.eyebrow--rule::before { margin-left: 0; }
+
+/* a quiet uppercase link that underlines itself */
+.link-underline {
+  display: inline-flex; align-items: center; gap: .6em;
+  font-size: .78rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--ink); text-decoration: none;
+  padding-bottom: 6px; border-bottom: 1px solid var(--gold-500);
+  transition: color .3s var(--ease), border-color .3s var(--ease);
+}
+.link-underline:hover { color: var(--gold-700); border-color: var(--gold-700); }
+
+/* ------------------------------------------------------------------ hero */
+
+.hero { overflow: hidden; isolation: isolate; }
+.hero__grid {
+  display: grid; gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1fr; align-items: center;
+}
+@media (min-width: 60em) { .hero__grid { grid-template-columns: 1.02fr .98fr; } }
+
+.hero__title { margin: 0 0 1.3rem; }
+.hero__ln { display: block; }
+.hero__title em { font-style: italic; }
+.hero__lede { max-width: 34em; }
+.hero__ctas {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: clamp(1rem, 3vw, 2rem); margin-top: 2rem;
+}
+
+/* the magazine-cover proof strip under the CTAs */
+.hero__proof {
+  display: inline-flex; align-items: center; gap: 1rem;
+  margin-top: clamp(2rem, 5vh, 3.2rem); text-decoration: none; color: inherit;
+}
+.hero__covers { display: inline-flex; flex: none; }
+.hero__covers img {
+  width: 42px; height: 54px; object-fit: cover; border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .22);
+}
+.hero__covers img + img { margin-left: -16px; }
+.hero__proof-t { display: grid; gap: .15rem; }
+.hero__proof-t strong { font-family: var(--font-display); font-weight: 500; font-size: 1.08rem; }
+.hero__proof-t > span { font-size: .85rem; color: var(--ink-soft); }
+.hero__proof:hover .hero__proof-t strong { color: var(--gold-700); }
+
+/* photo, seal and the floating quote */
+.hero__art { position: relative; }
+.hero__photo { position: relative; margin: 0; }
+.hero__photo img {
+  display: block; width: 100%; height: auto;
+  border-radius: var(--r-lg, 26px); object-fit: cover;
+}
+.hero__seal { position: absolute; top: -6%; left: -4%; width: 118px; height: 118px; display: grid; place-items: center; text-decoration: none; }
+.hero__seal-ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: seal-spin 28s linear infinite; }
+.hero__seal-ring text { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; fill: var(--gold-500); font-family: var(--font-body); }
+.hero__seal-mark { width: 38%; display: block; }
+.hero__seal-mark svg { width: 100%; height: auto; }
+@keyframes seal-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .hero__seal-ring { animation: none; } }
+
+.hero__quote {
+  position: absolute; left: -6%; bottom: 7%; width: min(18rem, 72%);
+  margin: 0; padding: 1.1rem 1.25rem;
+  background: #fff; border-radius: 16px; box-shadow: var(--shadow-md);
+}
+.hero__quote blockquote { margin: 0; }
+.hero__quote blockquote p { margin: 0; font-family: var(--font-display); font-size: 1.05rem; line-height: 1.35; color: var(--ink); }
+.hero__quote figcaption { display: flex; align-items: center; gap: .7rem; margin-top: .9rem; }
+.hero__quote figcaption > span:last-child { display: grid; font-size: .8rem; color: var(--ink-soft); }
+.hero__quote figcaption strong { font-size: .85rem; color: var(--ink); }
+.hero__quote-av {
+  display: grid; place-items: center; width: 34px; height: 34px; flex: none;
+  border-radius: 50%; background: var(--deep-800); color: #fff;
+  font-family: var(--font-display); font-size: .95rem;
+}
+
+/* the three facts under the hero */
+.hero__facts {
+  display: grid; gap: 0; margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  border-top: 1px solid var(--line); list-style: none; padding-left: 0;
+}
+@media (min-width: 48em) { .hero__facts { grid-template-columns: repeat(3, 1fr); } }
+.hero__facts li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .8rem;
+  padding: 1.4rem 0;
+}
+@media (min-width: 48em) {
+  .hero__facts li { padding: 1.6rem clamp(1rem, 2.5vw, 2rem); }
+  .hero__facts li + li { border-left: 1px solid var(--line); }
+}
+.hero__facts li + li { border-top: 1px solid var(--line); }
+@media (min-width: 48em) { .hero__facts li + li { border-top: 0; } }
+.hero__facts strong {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem); color: var(--gold-700);
+}
+.hero__facts span { font-size: .9rem; color: var(--ink-soft); }
+
+/* ------------------------------------------------------------------ pain */
+
+.pain__grid { display: grid; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+@media (min-width: 60em) { .pain__grid { grid-template-columns: .85fr 1.15fr; } }
+.pain__title { margin: 0 0 1.4rem; }
+.pain__turn {
+  display: inline-block; margin: 0; padding: 1rem 1.2rem;
+  background: var(--deep-800); color: #fff; border-radius: 14px;
+  font-family: var(--font-display); font-size: 1.05rem; font-style: italic;
+}
+.pain__list { list-style: none; margin: 0; padding: 0; display: grid; }
+.pain__list li {
+  display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center;
+  padding: 1.1rem 0; border-bottom: 1px solid var(--line);
+  font-size: 1.02rem;
+}
+.pain__list li:first-child { padding-top: 0; }
+.pain__num {
+  display: grid; place-items: center; width: 34px; height: 34px; flex: none;
+  border: 1px solid var(--gold-400); border-radius: 50%;
+  font-size: .78rem; color: var(--gold-700);
+}
+.pain__explain { margin-top: 1.8rem; color: var(--ink-soft); }
+
+/* ---------------------------------------------------------------- thread */
+
+/* thread and final are dark bands in every theme. No palette file styles
+   them (they arrived with the plum redesign), so this default sticks unless
+   a structure file overrides it — which is what keeps the older themes
+   coherent now that the homepage carries these sections. */
+.thread, .final {
+  background:
+    radial-gradient(120% 80% at 80% 0%, color-mix(in srgb, var(--deep-700) 70%, transparent), transparent 60%),
+    linear-gradient(160deg, var(--deep-800), var(--deep-900));
+  color: var(--lilac);
+}
+.thread > *, .final > * { position: relative; z-index: 1; }
+.thread .eyebrow, .final .eyebrow { color: var(--gold-300); }
+.thread .lede, .thread p, .final .lede, .final p { color: var(--deep-200); }
+.thread .h2, .final .h2 { color: #fff; }
+.thread .h2 em, .final .h2 em { color: var(--gold-300); }
+.thread .ornament__glyph, .final .ornament__glyph { fill: var(--gold-300); }
+
+.thread { overflow: hidden; }
+.thread__title { margin-bottom: 0; }
+.thread__title span, .thread__title em { display: block; }
+.thread__title em { font-style: italic; color: var(--gold-300); }
+
+.web { position: relative; height: 420px; max-width: 1080px; margin: clamp(2.5rem, 6vw, 4.5rem) auto 0; }
+.web__wave { position: absolute; inset: 0; width: 100%; height: 100%; }
+.web__wave path { fill: none; stroke: var(--gold-500); stroke-width: 1.2; opacity: .55; }
+.web__wave--echo path { stroke: var(--paint, var(--deep-500)); opacity: .3; }
+.web__words { position: absolute; inset: 0; list-style: none; margin: 0; padding: 0; }
+.web__words li {
+  position: absolute; left: calc(6% + var(--i) * 14.6%); transform: translateX(-50%);
+  top: calc(50% + (var(--i) * 0) * 1px);
+  white-space: nowrap;
+}
+.web__words li:nth-child(odd)  { top: 62%; }
+.web__words li:nth-child(even) { top: 24%; }
+.web__w { font-family: var(--font-display); font-size: clamp(.95rem, 1.6vw, 1.22rem); }
+.web__your { opacity: .62; font-style: italic; }
+.web__cap { margin-top: 1.6rem; text-align: center; font-size: .88rem; color: var(--deep-300); }
+
+.thread__foot { display: grid; gap: clamp(1.4rem, 4vw, 3rem); margin-top: clamp(3rem, 7vw, 5rem); }
+@media (min-width: 60em) { .thread__foot { grid-template-columns: 1fr 1fr; align-items: start; } }
+.thread__quote { margin: 0; font-family: var(--font-display); font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.25; }
+.thread__quote em { font-style: italic; color: var(--gold-300); }
+.thread__body { margin: 0; color: var(--deep-200); }
+
+@media (max-width: 47.99em) {
+  .web { height: auto; }
+  .web__wave { display: none; }
+  .web__words { position: static; display: grid; gap: .55rem; text-align: center; }
+  .web__words li { position: static; transform: none; top: auto !important; left: auto; }
+}
+
+/* ---------------------------------------------------- method step numeral */
+
+.method__n {
+  display: block; font-family: var(--font-display); font-size: 2.1rem;
+  line-height: 1; color: var(--gold-600); margin-bottom: .3rem;
+}
+
+/* ------------------------------------------------------------ final call */
+
+.final__in { position: relative; z-index: 1; }
+.final .btn-row { margin-top: 2.2rem; }
+
+/* ---------------------------------------------------------------- small screens
+   The seal and the floating quote are hung outside the photo on desktop;
+   at phone widths there is no margin to hang into, so they come inside. */
+
+@media (max-width: 47.99em) {
+  .hero__seal { left: auto; right: 3%; top: -3%; width: 92px; height: 92px; }
+  .hero__seal-ring text { font-size: 14px; }
+  .hero__quote {
+    position: relative; z-index: 2;
+    left: auto; bottom: auto; width: auto; margin: -2.5rem 1rem 0;
+  }
+  .hero__proof { align-items: flex-start; }
+  .hero__proof-t strong { display: block; }
+}

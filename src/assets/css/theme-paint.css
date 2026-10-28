@@ -153,3 +153,57 @@
 .site-footer .social a:hover { color: var(--band-accent); border-color: var(--band-accent); }
 
 /* the hero photo fades into a mid-tone here, so the mask needs no change */
+
+/* =========================================================================
+   Sections added with the plum redesign.
+   site.css gives .thread and .final a dark-band recipe built on --deep-*;
+   here those tokens are mid-tones, so the bands need the same light-to-dark
+   text inversion as the rest of this file.
+   ========================================================================= */
+
+.thread, .final {
+  background:
+    radial-gradient(120% 80% at 80% 0%, color-mix(in srgb, #fff 12%, transparent), transparent 60%),
+    linear-gradient(160deg, var(--deep-700), var(--deep-800));
+  color: var(--band-ink);
+}
+.thread .eyebrow, .final .eyebrow { color: var(--band-accent); }
+.thread .lede, .thread p, .final .lede, .final p { color: var(--band-ink-soft); }
+.thread .h2, .final .h2 { color: var(--band-ink); }
+.thread .h2 em, .final .h2 em,
+.thread__title em, .thread__quote em { color: var(--band-accent); }
+.thread .ornament__glyph, .final .ornament__glyph { fill: var(--band-accent); }
+.thread__quote { color: var(--band-ink); }
+.thread__body, .web__cap { color: var(--band-ink-soft); }
+.web__w { color: var(--band-ink); }
+.web__your { color: var(--band-accent); opacity: .8; }
+.web__wave path { stroke: var(--band-accent); opacity: .45; }
+.web__wave--echo path { stroke: var(--band-ink); opacity: .22; }
+.final .btn--ghost-light {
+  --btn-fg: var(--band-ink);
+  --btn-bd: color-mix(in srgb, var(--band-ink) 42%, transparent);
+}
+.final .btn--ghost-light:hover {
+  --btn-bg: color-mix(in srgb, var(--band-ink) 10%, transparent);
+  --btn-bd: var(--band-ink);
+}
+
+/* hero pieces that arrived with the redesign */
+.hero .h1 em, .hero__ln em { color: var(--band-accent); }
+.hero .link-underline { color: var(--band-ink); border-bottom-color: var(--band-accent); }
+.hero .link-underline:hover { color: var(--band-accent); }
+.hero__proof-t strong { color: var(--band-ink); }
+.hero__proof-t > span { color: var(--band-ink-soft); }
+.hero__quote-av { background: var(--band-ink); color: #fff; }
+.hero__facts { border-top-color: color-mix(in srgb, var(--band-ink) 20%, transparent); }
+.hero__facts li + li { border-top-color: color-mix(in srgb, var(--band-ink) 20%, transparent); }
+@media (min-width: 48em) {
+  .hero__facts li + li { border-left-color: color-mix(in srgb, var(--band-ink) 20%, transparent); }
+}
+.hero__facts strong { color: var(--band-accent); }
+.hero__facts span { color: var(--band-ink-soft); }
+
+/* the pain pull-quote and the method numeral sit on light grounds here */
+/* --deep-900 is a mid-tone in the paint themes, so these two need the ink */
+.pain__turn { background: var(--band-ink); color: #fff; }
+.method__n { color: var(--band-accent); }

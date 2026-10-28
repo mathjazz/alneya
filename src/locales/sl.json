@@ -89,8 +89,35 @@
     "hero": {
       "title": "Si pripravljena ustvariti življenje, ki se ga boš zares veselila vsako jutro?",
       "ctaPrimary": "Rezerviraj seanso Soul Mapping™",
-      "lede": "Skupaj bova odkrili, kaj te v resnici drži na mestu — in sprostili blokade, ki stojijo med tabo in življenjem, ki si ga resnično želiš.",
-      "imageAlt": "Alneja Gašpar Horvat, razbiralka duše in zdravilka"
+      "lede": "Skupaj odkrijeva, kaj se ti ponavlja v ljubezni, zdravju, plodnosti, družini, delu in poslanstvu — poiščeva korenino in jo sprostiva. Da lahko končno ustvariš življenje, ki se ga boš zares veselila.",
+      "imageAlt": "Alneja Gašpar Horvat, razbiralka duše in zdravilka",
+      "eyebrow": "Razbiralka duše in zdravilka · Avtorica metode Unblock Method™",
+      "title1": "Ne zdravim simptomov.",
+      "title2": "Poiščem skrite razloge zanje.",
+      "ctaSecondary": "Kako metoda deluje",
+      "seal": "Kjer se začne vsaka pot · Soul Mapping",
+      "proofTitle": "5 naslovnic v revijah",
+      "proofSub": "Brainz, UAE Times, HuffMag, Emprelle in CEO Journal",
+      "quote": {
+        "text": "Napredovala sem hitreje, kot sem kdaj pričakovala.",
+        "who": "Valentina, dr. med.",
+        "role": "Specialistka pediatrije",
+        "initial": "V"
+      },
+      "facts": [
+        {
+          "value": "10+ let",
+          "label": "vodenja žensk skozi preobrazbo"
+        },
+        {
+          "value": "5 jezikov",
+          "label": "angleško, nemško, madžarsko, hrvaško, slovensko"
+        },
+        {
+          "value": "Ena na ena",
+          "label": "na spletu, kjer koli na svetu si"
+        }
+      ]
     },
     "approach": {
       "title1": "Ne zdravim simptomov.",
@@ -98,6 +125,26 @@
       "body": "Nekateri vidijo težave. Jaz vidim vzorce — nevidne niti, ki povezujejo tvoje odnose, zdravje, strahove, otroštvo, prednike, poslanstvo in telo. Ko nit enkrat zagledaš, jo lahko končno potegneš.",
       "imageAlt": "Portret Alneje Gašpar Horvat",
       "free": "In te osvobodim vzorcev, ki te držijo na mestu v ljubezni, življenju, delu, zdravju ali poslanstvu."
+    },
+    "thread": {
+      "eyebrow": "Kako vidim",
+      "title1": "Nekateri vidijo težave.",
+      "title2": "Jaz vidim vzorce.",
+      "core": "ti",
+      "your": "tvoji",
+      "words": [
+        "odnosi",
+        "zdravje",
+        "strahovi",
+        "otroštvo",
+        "predniki",
+        "telo",
+        "poslanstvo"
+      ],
+      "caption": "Vsaka točka je povezana z vsemi drugimi.",
+      "quote1": "Ko nit enkrat zagledaš,",
+      "quote2": "jo lahko končno potegneš.",
+      "body": "Nevidne niti tečejo med vsem, kar doživljaš. Preberem jih, poimenujem na glas in ti pomagam, da se osvobodiš vzorcev, ki te držijo na mestu v ljubezni, življenju, delu, zdravju ali poslanstvu."
     },
     "method": {
       "eyebrow": "Pot v štirih korakih",
@@ -274,7 +321,12 @@
       ],
       "reason": "Obstaja razlog, zakaj vedno znova pristaneš tukaj.",
       "explain": "Skupaj bova odkrili skrite blokade, ki te držijo na mestu, se osvobodili tega, kar te zavira, in ustvarili življenje, ki se ga boš zares veselila.",
-      "cta": "Začniva"
+      "cta": "Začniva",
+      "eyebrow": "Morda si to ti"
+    },
+    "final": {
+      "title": "Nehaj životariti. Začni živeti.",
+      "lede": "Začni s seanso Soul Mapping™. Najprej pogledava — nato se sama odločiš, kaj boš naredila s tem, kar odkrijeva."
     }
   },
   "about": {

@@ -117,3 +117,29 @@
 }
 .section--sage .aura::before { opacity: .22; }
 
+
+/* =========================================================================
+   Sections added with the plum redesign. The hero is a dark band in this
+   family, so the pieces that default to ink need the light treatment.
+   ========================================================================= */
+
+.hero .h1 em, .hero__ln em { color: var(--gold-300); }
+.hero .link-underline { color: var(--lilac); border-bottom-color: var(--gold-400); }
+.hero .link-underline:hover { color: var(--gold-300); border-bottom-color: var(--gold-300); }
+.hero__proof-t strong { color: #fff; }
+.hero__proof-t > span { color: var(--deep-200); }
+.hero__proof:hover .hero__proof-t strong { color: var(--gold-300); }
+.hero__quote-av { background: var(--deep-900); color: var(--gold-300); }
+.hero__facts { border-top-color: color-mix(in srgb, var(--lilac) 18%, transparent); }
+.hero__facts li + li { border-top-color: color-mix(in srgb, var(--lilac) 18%, transparent); }
+@media (min-width: 48em) {
+  .hero__facts li + li { border-left-color: color-mix(in srgb, var(--lilac) 18%, transparent); }
+}
+.hero__facts strong { color: var(--gold-300); }
+.hero__facts span { color: var(--deep-200); }
+
+/* the Method band is dark in this family, so the step numeral lifts */
+.section--sage .method__n { color: var(--gold-400); }
+
+/* the pain pull-quote sits on a light section; keep it legible */
+.pain__turn { background: var(--deep-900); color: #fff; }

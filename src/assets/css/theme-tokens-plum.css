@@ -1,0 +1,79 @@
+/* =========================================================================
+   Alneya — plum palette
+
+   A deep aubergine ground with antique gold, and the baumit-0674 mauve
+   (#ab95ac) demoted from "the band" to an accent. Where the paint themes
+   make one mid-tone carry the whole page, this one works in three registers:
+   near-black plum, pale mist, and white.
+
+   Pair with theme-plum.css, which carries the structure.
+   ========================================================================= */
+
+:root {
+  /* --- the mauve, kept from baumit-0674 so the brand colour survives --- */
+  --paint:   #ab95ac;
+  --paint-d: #9a809b;
+  --paint-l: #c9b9c9;
+
+  /* --- grounds --- */
+  --ivory:     #fdfbf9;
+  --shell:     #f6f1f4;
+  --blush:     #faf5f8;
+  --lilac:     #f3eef2;
+  --lilac-200: #e9e0e7;
+  --lilac-300: #d8cbd6;
+  --sage:      #f6f1f4;
+  --sage-200:  #e9e0e7;
+  --mist:      #f6f1f4;
+  --veil:      #e9e0e7;
+  --paper:     #fdfbf9;
+
+  --line:      #e4d9e1;
+  --line-soft: #efe7ed;
+
+  /* --- antique gold --- */
+  --gold-700: #7b5e28;
+  --gold-600: #82652e;
+  --gold-500: #b2975c;
+  --gold-400: #d3c095;
+  --gold-300: #ece0c2;
+  --gold-100: #f7f1e3;
+
+  /* --- the plum ground. --deep-700 is the lightest of the three so the
+         existing gradients (deep-800 → deep-900) stay in the right order --- */
+  --deep-900: #170f18;
+  --deep-800: #1f1620;
+  --deep-700: #2a1f2b;
+  --deep-500: #6d5a6e;
+  --deep-300: #c6b6c5;
+  --deep-200: #ded2dd;
+
+  --moss-700: #2a1f2b;
+  --moss-500: #6d5a6e;
+
+  /* --- ink on the light sections --- */
+  --ink:       #2c2230;
+  --ink-soft:  #5b4a5c;
+  --ink-faint: #6d5a6e;
+
+  /* --- ink on the plum bands --- */
+  --on-dark:      #f4eef3;
+  --on-dark-soft: #c9bbc8;
+
+  /* --- type. Cormorant is a high-contrast old-style face: it needs more
+         size and less weight than Fraunces to sit right. --- */
+  --font-display: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
+  --font-body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --r-lg: 26px;
+
+  --shadow-sm: 0 1px 2px rgba(23, 15, 24, .05), 0 8px 24px rgba(23, 15, 24, .06);
+  --shadow-md: 0 2px 6px rgba(23, 15, 24, .07), 0 22px 50px rgba(23, 15, 24, .11);
+  --shadow-gold: 0 16px 42px rgba(146, 118, 60, .18);
+
+  --stars: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='26' cy='48' r='1.1' opacity='.5'/%3E%3Ccircle cx='128' cy='22' r='.7' opacity='.35'/%3E%3Ccircle cx='214' cy='70' r='1.2' opacity='.45'/%3E%3Ccircle cx='296' cy='160' r='.7' opacity='.3'/%3E%3Ccircle cx='60' cy='178' r='.9' opacity='.4'/%3E%3Ccircle cx='182' cy='208' r='1.1' opacity='.35'/%3E%3Ccircle cx='96' cy='272' r='.7' opacity='.4'/%3E%3Ccircle cx='252' cy='296' r='1' opacity='.3'/%3E%3Ccircle cx='8' cy='242' r='.7' opacity='.3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* the light washes between the plum bands */
+.section--blush { background: linear-gradient(170deg, var(--blush), var(--shell)); }
+.section--lilac { background: linear-gradient(165deg, var(--lilac), var(--blush) 76%); }

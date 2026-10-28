@@ -1,61 +1,111 @@
 <!-- ============================================================ hero hook -->
-<section class="section hero">
-  <div class="hero__media">
-    <img src="{{ @assets }}/img/alneya-hero.jpg" alt="{{ home.hero.imageAlt }}" width="1080" height="1350" fetchpriority="high">
-  </div>
-  <div class="wrap hero__inner">
+<section class="section hero" aria-labelledby="hero-title">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
     <div class="hero__copy">
-      <h1 class="h1 hero__title">{{ home.hero.title }}</h1>
-      <p class="btn-row btn-row--hero">
+      <p class="eyebrow eyebrow--rule">{{ home.hero.eyebrow }}</p>
+      <h1 class="h1 hero__title" id="hero-title">
+        <span class="hero__ln">{{ home.hero.title1 }}</span>
+        <em class="hero__ln">{{ home.hero.title2 }}</em>
+      </h1>
+      <p class="lede hero__lede">{{ home.hero.lede }}</p>
+      <div class="hero__ctas">
         <a class="btn btn--gold" href="{{ links.booking }}">{{ home.hero.ctaPrimary }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      </p>
-      <p class="lede">{{ home.hero.lede }}</p>
-      <p class="sig">
-        <span class="sig__name">{{ site.founder }}</span>
-        <span class="sig__role">{{ site.role }} &middot; {{ site.methodLine }}</span>
-      </p>
+        <a class="link-underline" href="#unblock-method">{{ home.hero.ctaSecondary }}</a>
+      </div>
+
+      <a class="hero__proof" href="{{ @nav.library.url }}">
+        <span class="hero__covers" aria-hidden="true">
+          <img src="{{ @assets }}/img/cover-brainz.jpg" width="640" height="830" alt="" loading="lazy">
+          <img src="{{ @assets }}/img/cover-uae-times.jpg" width="640" height="830" alt="" loading="lazy">
+          <img src="{{ @assets }}/img/cover-huffmag.jpg" width="640" height="830" alt="" loading="lazy">
+        </span>
+        <span class="hero__proof-t">
+          <strong>{{ home.hero.proofTitle }}</strong>
+          <span>{{ home.hero.proofSub }}</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="hero__art">
+      <figure class="hero__photo">
+        <img src="{{ @assets }}/img/alneya-hero.jpg" alt="{{ home.hero.imageAlt }}" width="1080" height="1350" fetchpriority="high">
+      </figure>
+      <a class="hero__seal" href="{{ links.booking }}" aria-label="{{ home.hero.seal }}">
+        <svg class="hero__seal-ring" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="seal-arc" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+          <text><textPath href="#seal-arc" startOffset="0">{{ home.hero.seal }} &#183; </textPath></text>
+        </svg>
+        <span class="hero__seal-mark" aria-hidden="true">{{> logo-mark}}</span>
+      </a>
+      <figure class="hero__quote">
+        <blockquote><p>{{ home.hero.quote.text }}</p></blockquote>
+        <figcaption>
+          <span class="hero__quote-av" aria-hidden="true">{{ home.hero.quote.initial }}</span>
+          <span><strong>{{ home.hero.quote.who }}</strong><span>{{ home.hero.quote.role }}</span></span>
+        </figcaption>
+      </figure>
     </div>
   </div>
+
+  <ul class="hero__facts wrap">
+    {{#each home.hero.facts}}<li><strong>{{ .value }}</strong><span>{{ .label }}</span></li>
+    {{/each}}
+  </ul>
 </section>
 
-{{> press}}
+{{> press-strip}}
 
 <!-- ============================================= the problem, and the turn -->
 <section class="section section--shell pain" id="is-this-you">
-  <div class="wrap">
-    <div class="aura">
-      <h2 class="h2 h2--center">{{ home.pain.lede }}</h2>
-      {{> ornament}}
+  <div class="wrap pain__grid">
+    <div class="pain__head">
+      <p class="eyebrow eyebrow--rule">{{ home.pain.eyebrow }}</p>
+      <h2 class="h2 pain__title">{{ home.pain.lede }}</h2>
+      <p class="pain__turn">{{ home.pain.reason }}</p>
     </div>
 
-    <ul class="pain__list">
-      {{#each home.pain.items}}<li>{{ .value }}</li>
-      {{/each}}
-    </ul>
-
-    <p class="pain__turn">{{ home.pain.reason }}</p>
-    <p class="pain__explain">{{ home.pain.explain }}</p>
-
-    <p class="btn-row btn-row--center">
-      <a class="btn btn--gold" href="#how-i-work">{{ home.pain.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-    </p>
+    <div class="pain__body">
+      <ol class="pain__list">
+        {{#each home.pain.items}}<li><span class="pain__num">{{ @number }}</span><span>{{ .value }}</span></li>
+        {{/each}}
+      </ol>
+      <p class="pain__explain">{{ home.pain.explain }}</p>
+      <p class="btn-row">
+        <a class="btn btn--gold" href="#thread">{{ home.pain.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- ============================================================= approach -->
-<section class="section section--ivory split split--compact" id="how-i-work">
-  <div class="wrap split__grid">
-    <div class="split__copy">
-      <h2 class="h2">
-        <span>{{ home.approach.title1 }}</span>
-        <em>{{ home.approach.title2 }}</em>
-      </h2>
-      <p>{{ home.approach.body }}</p>
-      <p>{{ home.approach.free }}</p>
+<!-- ======================================================= how I see: the thread -->
+<section class="section thread" id="thread" aria-labelledby="thread-title">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap thread__in">
+    <p class="eyebrow eyebrow--rule eyebrow--center">{{ home.thread.eyebrow }}</p>
+    <h2 class="h2 h2--center thread__title" id="thread-title">
+      <span>{{ home.thread.title1 }}</span>
+      <em>{{ home.thread.title2 }}</em>
+    </h2>
+
+    <div class="web" data-web>
+      <svg class="web__wave" viewBox="0 0 1200 240" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,160 C100,40 200,40 300,140 C400,240 500,240 600,120 C700,20 800,20 900,150 C1000,250 1100,250 1200,120"/>
+      </svg>
+      <svg class="web__wave web__wave--echo" viewBox="0 0 1200 240" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,120 C100,220 200,220 300,110 C400,10 500,10 600,140 C700,250 800,250 900,100 C1000,0 1100,0 1200,150"/>
+      </svg>
+      <ul class="web__words">
+        {{#each home.thread.words}}<li style="--i:{{ @index }}"><span class="web__w"><span class="web__your">{{ home.thread.your }} </span>{{ .value }}</span></li>
+        {{/each}}
+      </ul>
     </div>
-    <figure class="split__media split__media--framed">
-      <img src="{{ @assets }}/img/alneya-approach.jpg" alt="{{ home.approach.imageAlt }}" width="1080" height="1350" loading="lazy">
-    </figure>
+    <p class="web__cap">{{ home.thread.caption }}</p>
+
+    <div class="thread__foot">
+      <p class="thread__quote"><span>{{ home.thread.quote1 }}</span> <em>{{ home.thread.quote2 }}</em></p>
+      <p class="thread__body">{{ home.thread.body }}</p>
+    </div>
   </div>
 </section>
 
@@ -71,13 +121,13 @@
     <ol class="method__steps">
       {{#each home.method.steps}}<li class="method__step">
         <span class="method__disc"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-{{ .icon }}"/></svg></span>
+        <span class="method__n" aria-hidden="true">{{ @number }}</span>
         <h3 class="method__name">{{ .name }}</h3>
         <p class="method__label">{{ .label }}</p>
         <p class="method__text">{{ .text }}</p>
       </li>
       {{/each}}
     </ol>
-    <p class="method__close">{{ home.method.close }}</p>
     <p class="btn-row btn-row--center">
       <a class="btn btn--gold" href="{{ links.booking }}">{{ home.method.cta }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </p>
@@ -149,4 +199,20 @@
   </div>
 </section>
 
+{{> press-covers}}
+
 {{> newsletter}}
+
+<!-- ============================================================ final call -->
+<section class="section final" aria-labelledby="final-title">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap final__in">
+    <h2 class="h2 h2--center final__title" id="final-title">{{ home.final.title }}</h2>
+    {{> ornament}}
+    <p class="lede lede--center">{{ home.final.lede }}</p>
+    <p class="btn-row btn-row--center">
+      <a class="btn btn--gold" href="{{ links.booking }}">{{ experiences.cta.primary }} <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost-light" href="{{ @nav.contact.url }}">{{ experiences.cta.secondary }}</a>
+    </p>
+  </div>
+</section>

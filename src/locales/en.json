@@ -89,8 +89,35 @@
     "hero": {
       "title": "Are you ready to create a life you're actually excited to wake up to?",
       "ctaPrimary": "Book your Soul Mapping™ session",
-      "lede": "Together, we'll uncover what's really keeping you stuck — and help you release the blocks standing between you and the life you truly desire.",
-      "imageAlt": "Alneja Gašpar Horvat, Soul Decoder and Healer"
+      "lede": "Together we uncover what keeps repeating in your love, health, fertility, family, work and purpose — trace it to the root, and release it. So you can finally create a life you're actually excited to wake up to.",
+      "imageAlt": "Alneja Gašpar Horvat, Soul Decoder and Healer",
+      "eyebrow": "Soul Decoder & Healer · Creator of the Unblock Method™",
+      "title1": "I don't treat symptoms.",
+      "title2": "I find the hidden reasons behind them.",
+      "ctaSecondary": "How the method works",
+      "seal": "Where every path begins · Soul Mapping",
+      "proofTitle": "5 magazine cover stories",
+      "proofSub": "Brainz, UAE Times, HuffMag, Emprelle & CEO Journal",
+      "quote": {
+        "text": "I have progressed faster than I ever expected.",
+        "who": "Valentina, MD",
+        "role": "Specialist in Paediatrics",
+        "initial": "V"
+      },
+      "facts": [
+        {
+          "value": "10+ years",
+          "label": "guiding women through transformation"
+        },
+        {
+          "value": "5 languages",
+          "label": "English, German, Hungarian, Croatian, Slovenian"
+        },
+        {
+          "value": "One-to-one",
+          "label": "online, wherever you are in the world"
+        }
+      ]
     },
     "approach": {
       "title1": "I don't treat symptoms.",
@@ -98,6 +125,26 @@
       "body": "Some people see problems. I see patterns — the invisible threads connecting your relationships, your health, your fears, your childhood, your ancestry, your purpose and your body. Once you can see the thread, you can finally pull it.",
       "imageAlt": "Alneja Gašpar Horvat",
       "free": "And free you of the patterns that are keeping you stuck in love, life, work, health or purpose."
+    },
+    "thread": {
+      "eyebrow": "How I see",
+      "title1": "Some people see problems.",
+      "title2": "I see patterns.",
+      "core": "you",
+      "your": "your",
+      "words": [
+        "relationships",
+        "health",
+        "fears",
+        "childhood",
+        "ancestry",
+        "body",
+        "purpose"
+      ],
+      "caption": "Every point is connected to every other one.",
+      "quote1": "Once you can see the thread,",
+      "quote2": "you can finally pull it.",
+      "body": "The invisible threads run between everything you live through. I read them, name them out loud, and help you free yourself from the patterns that keep you stuck in love, life, work, health or purpose."
     },
     "method": {
       "eyebrow": "A four-step path",
@@ -274,7 +321,12 @@
       ],
       "reason": "There is a reason you keep ending up here.",
       "explain": "Together, we'll uncover the hidden blocks keeping you stuck, break free from what's holding you back and create a life you are actually excited to wake up to.",
-      "cta": "Let's get started"
+      "cta": "Let's get started",
+      "eyebrow": "Maybe this is you"
+    },
+    "final": {
+      "title": "Stop surviving. Start living.",
+      "lede": "Start with a Soul Mapping™ session. We look first — and then you decide what you want to do with what we find."
     }
   },
   "about": {

@@ -150,13 +150,14 @@ The logo is redrawn as vector in `src/partials/logo-mark.svg` and inherits
 recoloured anywhere by changing one CSS value — gold on the light header, pale
 gold in the amethyst footer. `favicon.svg` is generated from the same artwork. The subtitle is **"Unblock your life"**, per the brief.
 
-## Ten themes, eight palettes
+## Eleven themes, nine palettes
 
 A theme is a **palette** file, optionally plus one shared **structure** file.
 Not every palette has every version — only the ones worth comparing.
 
 | Palette | Light | Dark | Painted |
 | --- | --- | --- | --- |
+| **plum — the live design** | — | — | `build:plum` → `:4331` |
 | amethyst + lavender (default) | `build` → `:4321` | — | — |
 | deep moss + beige | — | `build:green` → `:4322` | — |
 | soft eucalyptus | `build:sage` → `:4323` | `build:sage-deep` → `:4324` | — |
@@ -166,7 +167,13 @@ Not every palette has every version — only the ones worth comparing.
 | Baumit Life 1023, olive green | — | — | `build:baumit-1023` → `:4329` |
 | Baumit Life 0674, dusty mauve | — | — | `build:baumit-0674` → `:4330` |
 
-There are two structure files, and they differ only in which way the text runs.
+**`theme-plum.css`** — the live design, and the only one with its own
+typography: Cormorant Garamond over DM Sans rather than Fraunces over
+Montserrat. Four plum bands (header, hero, thread, final — plus the story and
+testimonials) alternate with mist and white. It keeps the baumit-0674 mauve
+`#ab95ac` as an accent rather than a ground.
+
+The other two structure files differ only in which way the text runs.
 
 **`theme-dark.css`** — the header, hero, Unblock Method section, testimonials
 and footer join one near-black band
@@ -189,11 +196,13 @@ src/assets/css/
   theme-tokens-baumit-1033.css  palette only, generated from the paint colour
   theme-tokens-baumit-1023.css  palette only, generated from the paint colour
   theme-tokens-baumit-0674.css  palette only, generated from the paint colour
+  theme-tokens-plum.css         palette + the Cormorant/DM Sans pairing
   theme-dark.css                near-black bands, light text; palette-agnostic
   theme-paint.css               mid-tone bands, dark text; palette-agnostic
+  theme-plum.css                the live design; plum bands, own type scale
 ```
 
-`npm run build:all` builds all ten. A new palette is one file plus one line
+`npm run build:all` builds all eleven. A new palette is one file plus one line
 in the `THEMES` map in `build.js`.
 
 The three Baumit palettes are **generated**, not hand-picked: each takes the
@@ -280,7 +289,7 @@ show) and the fade-in on scroll. Nothing else changes.
 4. Point DNS at GitHub (see below).
 
 The workflow defaults to `SITE_URL=https://alneya.com`, `BASE_URL=/` and
-`THEME=baumit-0674`, so it needs no configuration. To override any of them
+`THEME=plum`, so it needs no configuration. To override any of them
 without editing the file, set a repository variable of the same name under
 **Settings → Secrets and variables → Actions → Variables**:
 
@@ -326,7 +335,7 @@ SITE_URL=http://horv.at BASE_URL=/alneya-green/ THEME=green OUT_DIR=dist-green n
 To build the live site exactly as Actions does, locally:
 
 ```
-SITE_URL=https://alneya.com BASE_URL=/ THEME=baumit-0674 npm run build
+SITE_URL=https://alneya.com BASE_URL=/ THEME=plum npm run build
 ```
 
 ## Redirects from baby-spell.com

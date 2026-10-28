@@ -14,7 +14,8 @@
     "build:baumit-1033": "THEME=baumit-1033 OUT_DIR=dist-baumit-1033 node build.js",
     "build:baumit-1023": "THEME=baumit-1023 OUT_DIR=dist-baumit-1023 node build.js",
     "build:baumit-0674": "THEME=baumit-0674 OUT_DIR=dist-baumit-0674 node build.js",
-    "build:all": "npm run build && npm run build:green && npm run build:sage && npm run build:sage-deep && npm run build:violet && npm run build:violet-deep && npm run build:lavender && npm run build:baumit-1033 && npm run build:baumit-1023 && npm run build:baumit-0674",
+    "build:plum": "THEME=plum OUT_DIR=dist-plum node build.js",
+    "build:all": "npm run build && npm run build:green && npm run build:sage && npm run build:sage-deep && npm run build:violet && npm run build:violet-deep && npm run build:lavender && npm run build:baumit-1033 && npm run build:baumit-1023 && npm run build:baumit-0674 && npm run build:plum",
     "serve": "node serve.js",
     "serve:green": "DIST=dist-green PORT=4322 node serve.js",
     "serve:sage": "DIST=dist-sage PORT=4323 node serve.js",
@@ -25,6 +26,7 @@
     "serve:baumit-1033": "DIST=dist-baumit-1033 PORT=4328 node serve.js",
     "serve:baumit-1023": "DIST=dist-baumit-1023 PORT=4329 node serve.js",
     "serve:baumit-0674": "DIST=dist-baumit-0674 PORT=4330 node serve.js",
+    "serve:plum": "DIST=dist-plum PORT=4331 node serve.js",
     "start": "node build.js && node serve.js"
   },
   "engines": {

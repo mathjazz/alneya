@@ -34,6 +34,7 @@ const DEFAULT_LOCALE = 'en';
 //   baumit-1033    Baumit Life 1033 as the darkest colour, dark text on it
 //   baumit-1023    Baumit Life 1023 as the darkest colour, dark text on it
 //   baumit-0674    Baumit Life 0674 as the darkest colour, dark text on it
+//   plum           deep aubergine + Cormorant/DM Sans; the live design
 const THEMES = {
   light: [],
   green: ['theme-tokens-green.css', 'theme-dark.css'],
@@ -45,6 +46,7 @@ const THEMES = {
   'baumit-1033': ['theme-tokens-baumit-1033.css', 'theme-paint.css'],
   'baumit-1023': ['theme-tokens-baumit-1023.css', 'theme-paint.css'],
   'baumit-0674': ['theme-tokens-baumit-0674.css', 'theme-paint.css'],
+  plum: ['theme-tokens-plum.css', 'theme-plum.css'],
 };
 // what the browser chrome should tint itself (Safari 15+, Chrome on Android):
 // the colour at the very top of the page, i.e. the header
@@ -59,10 +61,19 @@ const THEME_COLORS = {
   'baumit-1033': '#7d9b77',
   'baumit-1023': '#808d70',
   'baumit-0674': '#a188a2',
+  plum: '#1f1620',
 };
-const THEME = process.env.THEME || 'light';
+// Each theme states the webfonts it needs. The palette file sets --font-display
+// and --font-body to match; this only controls what gets downloaded.
+const DEFAULT_FONTS =
+  'family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Montserrat:ital,wght@0,300..700;1,300..500';
+const THEME_FONTS = {
+  plum: 'family=Cormorant+Garamond:ital,wght@0,300..700;1,300..600&family=DM+Sans:ital,opsz,wght@0,9..40,200..700;1,9..40,200..600',
+};
+const THEME = process.env.THEME || 'plum';
 if (!THEMES[THEME]) throw new Error(`Unknown THEME "${THEME}" — try: ${Object.keys(THEMES).join(', ')}`);
 const THEME_FILES = THEMES[THEME].map((file) => ({ file }));
+const FONT_HREF = `https://fonts.googleapis.com/css2?${THEME_FONTS[THEME] || DEFAULT_FONTS}&display=swap`;
 
 /* ------------------------------------------------------------------ utils */
 
@@ -272,6 +283,7 @@ function build() {
         '@theme': THEME,
         '@themeFiles': THEME_FILES,
         '@themeColor': THEME_COLORS[THEME],
+        '@fontHref': FONT_HREF,
         '@url': url,
         '@canonical': SITE_URL + url,
         '@year': year,
@@ -305,7 +317,7 @@ function build() {
     {
       '@lang': DEFAULT_LOCALE, '@page': '404', '@base': BASE, '@assets': BASE + 'assets',
       '@assetsAbs': SITE_URL + BASE + 'assets', '@hreflangs': [], '@ogAlternates': [],
-      '@theme': THEME, '@themeFiles': THEME_FILES, '@themeColor': THEME_COLORS[THEME],
+      '@theme': THEME, '@themeFiles': THEME_FILES, '@themeColor': THEME_COLORS[THEME], '@fontHref': FONT_HREF,
       '@jsonLd': jsonLd(t, SITE_URL + BASE + '404.html', SITE_URL + BASE + 'assets'),
       '@url': BASE + '404.html', '@canonical': SITE_URL + BASE + '404.html', '@year': year,
       '@alternates': [],
